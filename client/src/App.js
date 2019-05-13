@@ -18,8 +18,7 @@ const fetchCharacters = async () => {
   }
 };
 
-function App() {
-
+const App = () => {
   return (
     <div>
       <button onClick={() => fetchCharacters()}>
@@ -27,6 +26,6 @@ function App() {
       </button>
     </div>
   );
-}
+};
 
 export default App;
