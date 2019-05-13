@@ -1,0 +1,8 @@
+type Query {
+  characters: [Character]
+}
+
+type Character {
+  id: ID!
+  name: String
+}
