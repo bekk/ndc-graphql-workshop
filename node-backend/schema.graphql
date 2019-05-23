@@ -1,8 +1,26 @@
 type Query {
   characters: [Character]
+  houses: [House]
 }
 
 type Character {
   id: ID!
+  slug: String!
   name: String
+  siblings: [ID!]
+  house: ID
+  allegiances: [ID!]
+  spouse: [ID!]
+  lovers: [ID!]
+  image: String
+}
+
+type House {
+  id: ID!
+  name: String
+  words: String
+  seat: [String]
+  region: [String]
+  allegion: [ID]
+  image: String
 }
