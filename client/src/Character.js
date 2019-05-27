@@ -3,9 +3,12 @@ import { withRouter } from 'react-router-dom';
 
 class Character extends React.Component {
     render() {
+        const id = this.props.match.params.id;
 
         return (
-            <div></div>
+            <div>
+                <h1>{id}</h1>
+            </div>
         )
     }
 }

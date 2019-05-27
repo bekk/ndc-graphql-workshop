@@ -18,8 +18,11 @@ class Characters extends React.Component {
 
                     return (
                         <ul>
-                            {data.characters.map(({ name }) => (
-                                <li key={name}>{name}</li>
+                            {data.characters.map(({ name, image }) => (
+                                <li key={name}>
+                                    <img src={image} />
+                                    <span>{name}</span>
+                                </li>
                             ))}
                         </ul>
                     )
