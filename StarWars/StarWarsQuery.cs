@@ -1,7 +1,8 @@
 ﻿using System;
+using GoT.Types;
 using GraphQL.Types;
 
-namespace Starwars
+namespace GoT
 {
     public class StarWarsQuery : ObjectGraphType<object>
     {

@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.AspNetCore.Http;
 
-namespace Example
+namespace dotnet
 {
     public class GraphQLSettings
     {

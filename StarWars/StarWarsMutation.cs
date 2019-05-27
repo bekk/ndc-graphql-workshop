@@ -1,6 +1,7 @@
-﻿using GraphQL.Types;
+﻿using GoT.Types;
+using GraphQL.Types;
 
-namespace Starwars
+namespace GoT
 {
     /// <example>
     /// This is an example JSON request for a mutation

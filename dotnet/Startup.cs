@@ -1,3 +1,6 @@
+using GoT;
+using GoT.GoTTypes.Character;
+using GoT.Types;
 using GraphQL;
 using GraphQL.Http;
 using GraphQL.Types;
@@ -6,9 +9,8 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
-using Starwars;
 
-namespace Example
+namespace dotnet
 {
     public class Startup
     {
@@ -18,16 +20,19 @@ namespace Example
 
             services.AddSingleton<IDocumentExecuter, DocumentExecuter>();
             services.AddSingleton<IDocumentWriter, DocumentWriter>();
-
-            services.AddSingleton<StarWarsData>();
+            //var foo = new GoTData();
+            //services.AddSingleton<StarWarsData>();
+            services.AddSingleton<GoTData>();
+            services.AddSingleton<GotQuery>();
             services.AddSingleton<StarWarsQuery>();
-            services.AddSingleton<StarWarsMutation>();
+            //services.AddSingleton<StarWarsMutation>();
             services.AddSingleton<HumanType>();
+            services.AddSingleton<CharacterType>();
             services.AddSingleton<HumanInputType>();
             services.AddSingleton<DroidType>();
             services.AddSingleton<CharacterInterface>();
             services.AddSingleton<EpisodeEnum>();
-            services.AddSingleton<ISchema, StarWarsSchema>();
+            services.AddSingleton<ISchema, GoTSchema>();
 
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
         }

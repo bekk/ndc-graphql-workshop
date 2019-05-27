@@ -1,6 +1,6 @@
 ﻿using System.Security.Claims;
 
-namespace Example
+namespace dotnet
 {
     public class GraphQLUserContext
     {

@@ -1,6 +1,6 @@
 ﻿using GraphQL.Types;
 
-namespace Starwars
+namespace GoT.Types
 {
     public class EpisodeEnum : EnumerationGraphType
     {

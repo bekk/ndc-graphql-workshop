@@ -1,6 +1,7 @@
-﻿using GraphQL.Types;
+﻿using GoT.Types;
+using GraphQL.Types;
 
-namespace Starwars
+namespace GoT
 {
     public class HumanInputType : InputObjectGraphType<Human>
     {

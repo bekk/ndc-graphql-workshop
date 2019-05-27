@@ -1,4 +1,4 @@
-﻿namespace Starwars
+﻿namespace GoT.Types
 {
     public abstract class StarWarsCharacter
     {

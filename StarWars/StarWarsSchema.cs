@@ -1,7 +1,7 @@
 ﻿using GraphQL;
 using GraphQL.Types;
 
-namespace Starwars
+namespace GoT
 {
     public class StarWarsSchema : Schema
     {

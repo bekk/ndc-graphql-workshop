@@ -2,9 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using GoT.Types;
 using GraphQL;
 
-namespace Starwars
+namespace GoT
 {
     public class StarWarsData
     {

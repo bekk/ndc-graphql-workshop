@@ -1,8 +1,7 @@
 ﻿using System.IO;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.StaticFiles;
 
-namespace Example
+namespace dotnet
 {
     public class Program
     {
