@@ -1,7 +1,7 @@
 import React from 'react';
 import { Query } from 'react-apollo';
 import { GET_CHARACTERS } from './queries';
-import { withRouter } from 'react-router-dom';
+import { withRouter, Link } from 'react-router-dom';
 
 class Characters extends React.Component {
     render() {
@@ -18,8 +18,13 @@ class Characters extends React.Component {
 
                     return (
                         <ul>
-                            {data.characters.map(({ name }) => (
-                                <li key={name}>{name}</li>
+                            {data.characters.map(({ id, name, image }) => (
+                                <li key={name}>
+                                    <Link to={`/character/${id}`}>
+                                        <img src={image} />
+                                        <span>{name}</span>
+                                    </Link>
+                                </li>
                             ))}
                         </ul>
                     )
