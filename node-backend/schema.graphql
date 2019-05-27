@@ -1,6 +1,7 @@
 type Query {
   characters: [Character]
   houses: [House]
+  castles: [Castle]
 }
 
 type Character {
@@ -19,8 +20,16 @@ type House {
   id: ID!
   name: String
   words: String
-  seat: [String!]
+  seatIds: [ID!]
   region: [String!]
   allegionHouseIds: [ID!]
   image: String
+}
+
+type Castle {
+  id: ID!
+  name: String
+  location: String
+  religion: [String!]
+  rulerIds: [ID!]
 }

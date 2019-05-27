@@ -1,6 +1,7 @@
 const { GraphQLServer } = require("graphql-yoga");
 const characters = require("./data/characters.js");
 const houses = require("./data/houses.js");
+const castles = require("./data/castles.js");
 
 const Query = {
   characters: (root, args, context) => {
@@ -8,6 +9,9 @@ const Query = {
   },
   houses: (root, args, context) => {
     return houses;
+  },
+  castles: (root, args, context) => {
+    return castles;
   }
 };
 
@@ -43,13 +47,28 @@ const House = {
     return houses
       .filter(house => root.allegiance.includes(house.name))
       .map(alg => alg._id);
+  },
+  seatIds: (root, args, context) => {
+    return castles
+      .filter(castle => root.seat.includes(castle.name))
+      .map(castle => castle._id);
+  }
+};
+
+const Castle = {
+  id: (root, args, context) => {
+    return root._id;
+  },
+  rulerIds: (root, args, context) => {
+    return houses.filter(h => root.rulers.includes(h.name)).map(c => c._id);
   }
 };
 
 const resolvers = {
   Query,
   Character,
-  House
+  House,
+  Castle
 };
 
 const server = new GraphQLServer({
