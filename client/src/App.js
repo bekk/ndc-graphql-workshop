@@ -1,30 +1,21 @@
 import React from 'react';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import './App.css';
-
-const fetchCharacters = async () => {
-  const query = `query Query { characters { name } }`;
-
-  try {
-    await fetch('http://localhost:4000/', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        'Accept': 'application/json',
-      },
-      body: JSON.stringify({ query })
-    })
-  } catch (e) {
-    console.log(e);
-  }
-};
+import Characters from './Characters';
+import Character from './Character';
 
 const App = () => {
   return (
-    <div>
-      <button onClick={() => fetchCharacters()}>
-        Fetch characters
-      </button>
-    </div>
+      <BrowserRouter basename="/">
+        <>
+          <main className="main">
+            <Switch>
+              <Route path="/character/:id" component={Character}/>
+              <Route path="/" component={Characters}/>
+            </Switch>
+          </main>
+        </>
+      </BrowserRouter>
   );
 };
 
