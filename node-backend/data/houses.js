@@ -1,1446 +1,1013 @@
-const houses = [
+module.exports = [
   {
-    seat: [],
-    allegiance: [],
-    region: [],
-    religion: [],
-    _id: "5cc0751804e71a0010b85ccf",
+    id: "5cc0751804e71a0010b85ccf",
     name: "Great House",
-    sigil: "",
     words: "",
-    createdAt: "2019-04-24T14:39:20.433Z",
-    updatedAt: "2019-04-24T14:39:20.433Z",
-    __v: 0
-  },
-  {
-    seat: [],
-    allegiance: [],
+    seatIds: [],
     region: [],
-    religion: [],
-    _id: "5cc0751804e71a0010b85cd0",
+    allegianceHouseIds: [],
+    image: null
+  },
+  {
+    id: "5cc0751804e71a0010b85cd0",
     name: "Noble house",
-    sigil: "",
     words: "",
-    createdAt: "2019-04-24T14:39:20.433Z",
-    updatedAt: "2019-04-24T14:39:20.433Z",
-    __v: 0
+    seatIds: [],
+    region: [],
+    allegianceHouseIds: [],
+    image: null
   },
   {
-    seat: ["Godsgrace"],
-    allegiance: ["House Martell"],
-    region: ["Dorne"],
-    religion: [],
-    _id: "5cc0751804e71a0010b85cd1",
+    id: "5cc0751804e71a0010b85cd1",
     name: "House Allyrion",
-    sigil: "",
     words: '"No Foe May Pass"',
-    createdAt: "2019-04-24T14:39:20.433Z",
-    updatedAt: "2019-04-24T14:39:20.433Z",
-    __v: 0
+    seatIds: ["5cc074e304e71a0010b85bcb"],
+    region: ["Dorne"],
+    allegianceHouseIds: ["5cc0751804e71a0010b85d38"],
+    image: null
   },
   {
-    seat: [],
-    allegiance: [],
-    region: ["The North"],
-    religion: ["Old Gods of the Forest"],
-    _id: "5cc0751804e71a0010b85cd2",
+    id: "5cc0751804e71a0010b85cd2",
     name: "House Amber",
-    logoURL:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/0/08/House_Amber.png/revision/latest/scale-to-width-down/350?cb=20190125210736",
-    sigil: "",
     words: "",
-    createdAt: "2019-04-24T14:39:20.433Z",
-    updatedAt: "2019-04-24T14:39:20.433Z",
-    __v: 0
+    seatIds: [],
+    region: ["The North"],
+    allegianceHouseIds: [],
+    image:
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/0/08/House_Amber.png/revision/latest/scale-to-width-down/350?cb=20190125210736"
   },
   {
-    seat: ["The Eyrie"],
-    allegiance: [
-      "House Targaryen",
-      "House Stark",
-      "House Baratheon of King's Landing"
-    ],
-    region: ["The Vale of Arryn"],
-    religion: ["Faith of the Seven"],
-    _id: "5cc0751804e71a0010b85cd3",
+    id: "5cc0751804e71a0010b85cd3",
     name: "House Arryn",
-    logoURL:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/1/15/House-Arryn-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20170101094153",
-    sigil: "A white falcon volant and crescent moon on a blue field.",
     words: '"As High as Honor"',
-    createdAt: "2019-04-24T14:39:20.434Z",
-    updatedAt: "2019-04-24T14:39:20.434Z",
-    __v: 0
+    seatIds: ["5cc074e304e71a0010b85bc5"],
+    region: ["The Vale of Arryn"],
+    allegianceHouseIds: [
+      "5cc0751804e71a0010b85cd8",
+      "5cc0751804e71a0010b85d5d",
+      "5cc0751804e71a0010b85d66"
+    ],
+    image:
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/1/15/House-Arryn-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20170101094153"
   },
   {
-    seat: ["Ashford"],
-    allegiance: ["House Tyrell"],
-    region: ["The Reach"],
-    religion: [],
-    _id: "5cc0751804e71a0010b85cd4",
+    id: "5cc0751804e71a0010b85cd4",
     name: "House Ashford",
-    logoURL:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/6/62/House-Ashford-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20170519012643",
-    sigil: "A white sun beneath a white chevron, on a burnt-orange background.",
     words: '"Our Sun Shines Bright"',
-    createdAt: "2019-04-24T14:39:20.434Z",
-    updatedAt: "2019-04-24T14:39:20.434Z",
-    __v: 0
+    seatIds: ["5cc074e304e71a0010b85ba7"],
+    region: ["The Reach"],
+    allegianceHouseIds: ["5cc0751804e71a0010b85d72"],
+    image:
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/6/62/House-Ashford-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20170519012643"
   },
   {
-    seat: ["Unnamed Baelish castle", "Harrenhal"],
-    allegiance: ["House Arryn", "House Stark"],
-    region: ["The Vale of Arryn", "The Riverlands"],
-    religion: [],
-    _id: "5cc0751804e71a0010b85cd5",
+    id: "5cc0751804e71a0010b85cd5",
     name: "House Baelish",
-    logoURL:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/a/a4/House-Baelish-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20161231114753",
-    sigil: "A black mockingbird on a yellow field",
     words: "",
-    createdAt: "2019-04-24T14:39:20.434Z",
-    updatedAt: "2019-04-24T14:39:20.434Z",
-    __v: 0
+    seatIds: ["5cc074e304e71a0010b85bd3"],
+    region: ["The Vale of Arryn", "The Riverlands"],
+    allegianceHouseIds: [
+      "5cc0751804e71a0010b85cd3",
+      "5cc0751804e71a0010b85d5d"
+    ],
+    image:
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/a/a4/House-Baelish-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20161231114753"
   },
   {
-    seat: ["Storm's End"],
-    allegiance: ["House Baratheon of King's Landing", "House Targaryen"],
-    region: ["The Stormlands"],
-    religion: ["Faith of the Seven"],
-    _id: "5cc0751804e71a0010b85cd6",
+    id: "5cc0751804e71a0010b85cd6",
     name: "House Baratheon",
-    logoURL:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/0/00/House-Baratheon-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20170519002924",
-    sigil: "A crowned black stag rampant on a gold field",
     words: '"Ours is the Fury"',
-    createdAt: "2019-04-24T14:39:20.434Z",
-    updatedAt: "2019-04-24T14:39:20.434Z",
-    __v: 0
+    seatIds: ["5cc074e304e71a0010b85c08"],
+    region: ["The Stormlands"],
+    allegianceHouseIds: [
+      "5cc0751804e71a0010b85cd8",
+      "5cc0751804e71a0010b85d66"
+    ],
+    image:
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/0/00/House-Baratheon-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20170519002924"
   },
   {
-    seat: ["Dragonstone"],
-    allegiance: ["House Baratheon of King's Landing"],
-    region: ["The Crownlands", "The Stormlands"],
-    religion: ["R'hllor"],
-    _id: "5cc0751804e71a0010b85cd7",
+    id: "5cc0751804e71a0010b85cd7",
     name: "House Baratheon of Dragonstone",
-    logoURL:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/4/4a/House-Baratheon-of-Dragonstone-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20170519003417",
-    sigil:
-      "The crowned black stag of Baratheon enclosed within the fiery red heart of the Lord of Light",
     words:
       '"Ours Is the Fury" (official)"The Night Is Dark and Full of Terrors" (religious)',
-    createdAt: "2019-04-24T14:39:20.434Z",
-    updatedAt: "2019-04-24T14:39:20.434Z",
-    __v: 0
+    seatIds: [],
+    region: ["The Crownlands", "The Stormlands"],
+    allegianceHouseIds: ["5cc0751804e71a0010b85cd8"],
+    image:
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/4/4a/House-Baratheon-of-Dragonstone-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20170519003417"
   },
   {
-    seat: ["Red Keep", "King's Landing"],
-    allegiance: [],
-    region: ["The Crownlands"],
-    religion: ["Faith of the Seven"],
-    _id: "5cc0751804e71a0010b85cd8",
+    id: "5cc0751804e71a0010b85cd8",
     name: "House Baratheon of King's Landing",
-    logoURL:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/4/43/House-Baratheon-of-King%27s_Landing-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20170519011708",
-    sigil:
-      "The crowned stag of Baratheon black on gold and the lion of Lannister golden on red (formerly crowned stag of Baratheon before Joffrey I ascended to Iron Throne)",
     words: '"Ours Is the Fury"',
-    createdAt: "2019-04-24T14:39:20.434Z",
-    updatedAt: "2019-04-24T14:39:20.434Z",
-    __v: 0
+    seatIds: ["5cc074e304e71a0010b85bf3"],
+    region: ["The Crownlands"],
+    allegianceHouseIds: [],
+    image:
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/4/43/House-Baratheon-of-King%27s_Landing-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20170519011708"
   },
   {
-    seat: ["Honeyholt"],
-    allegiance: ["House Hightower"],
-    region: ["The Reach"],
-    religion: [],
-    _id: "5cc0751804e71a0010b85cd9",
+    id: "5cc0751804e71a0010b85cd9",
     name: "House Beesbury",
-    sigil: "",
     words: '"Beware Our Sting"[citation needed]',
-    createdAt: "2019-04-24T14:39:20.435Z",
-    updatedAt: "2019-04-24T14:39:20.435Z",
-    __v: 0
+    seatIds: ["5cc074e304e71a0010b85bd9"],
+    region: ["The Reach"],
+    allegianceHouseIds: ["5cc0751804e71a0010b85d1c"],
+    image: null
   },
   {
-    seat: [],
-    allegiance: [],
-    region: [],
-    religion: [],
-    _id: "5cc0751804e71a0010b85cda",
+    id: "5cc0751804e71a0010b85cda",
     name: "House Belgrave",
-    sigil: "",
     words: "",
-    createdAt: "2019-04-24T14:39:20.435Z",
-    updatedAt: "2019-04-24T14:39:20.435Z",
-    __v: 0
+    seatIds: [],
+    region: [],
+    allegianceHouseIds: [],
+    image: null
   },
   {
-    seat: [],
-    allegiance: ["House Targaryen"],
-    region: ["The Crownlands"],
-    religion: [],
-    _id: "5cc0751804e71a0010b85cdb",
+    id: "5cc0751804e71a0010b85cdb",
     name: "House Blackfyre",
-    logoURL:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/e/e5/House-Blackfyre-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20170511001004",
-    sigil: "A black three-headed dragon, on a red field.",
     words: "",
-    createdAt: "2019-04-24T14:39:20.435Z",
-    updatedAt: "2019-04-24T14:39:20.435Z",
-    __v: 0
+    seatIds: [],
+    region: ["The Crownlands"],
+    allegianceHouseIds: ["5cc0751804e71a0010b85d66"],
+    image:
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/e/e5/House-Blackfyre-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20170511001004"
   },
   {
-    seat: ["Blackmont"],
-    allegiance: ["House Martell"],
-    region: ["Dorne"],
-    religion: [],
-    _id: "5cc0751804e71a0010b85cdc",
+    id: "5cc0751804e71a0010b85cdc",
     name: "House Blackmont",
-    logoURL:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/6/68/Blackmont_heraldry_GOT_exhibition.jpg/revision/latest/scale-to-width-down/350?cb=20150503183457",
-    sigil:
-      "A flying grey and white vulture, grasping a baby in its talons, on a black field.",
     words: "",
-    createdAt: "2019-04-24T14:39:20.435Z",
-    updatedAt: "2019-04-24T14:39:20.435Z",
-    __v: 0
+    seatIds: ["5cc074e304e71a0010b85bad"],
+    region: ["Dorne"],
+    allegianceHouseIds: ["5cc0751804e71a0010b85d38"],
+    image:
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/6/68/Blackmont_heraldry_GOT_exhibition.jpg/revision/latest/scale-to-width-down/350?cb=20150503183457"
   },
   {
-    seat: ["Blacktyde"],
-    allegiance: ["House Greyjoy"],
-    region: ["Iron Islands"],
-    religion: [],
-    _id: "5cc0751804e71a0010b85cdd",
+    id: "5cc0751804e71a0010b85cdd",
     name: "House Blacktyde",
-    logoURL:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/7/76/House-Blacktyde-Shield.png/revision/latest/scale-to-width-down/350?cb=20160421181503",
-    sigil: "Vairy green and black",
     words: "",
-    createdAt: "2019-04-24T14:39:20.435Z",
-    updatedAt: "2019-04-24T14:39:20.435Z",
-    __v: 0
+    seatIds: [],
+    region: ["Iron Islands"],
+    allegianceHouseIds: ["5cc0751804e71a0010b85d17"],
+    image:
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/7/76/House-Blacktyde-Shield.png/revision/latest/scale-to-width-down/350?cb=20160421181503"
   },
   {
-    seat: ["Raventree Hall"],
-    allegiance: ["House Tully"],
-    region: ["Riverlands"],
-    religion: ["Old Gods of the Forest"],
-    _id: "5cc0751804e71a0010b85cde",
+    id: "5cc0751804e71a0010b85cde",
     name: "House Blackwood",
-    logoURL:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/f/f4/House-Blackwood-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20170520000010",
-    sigil:
-      "A flock of black ravens surmounting a dead white weirwood tree on a red field",
     words: "",
-    createdAt: "2019-04-24T14:39:20.435Z",
-    updatedAt: "2019-04-24T14:39:20.435Z",
-    __v: 0
-  },
-  {
-    seat: [],
-    allegiance: ["House Baratheon of King's Landing"],
-    region: ["The Crownlands"],
-    religion: [],
-    _id: "5cc0751804e71a0010b85cdf",
-    name: "House Blount",
-    logoURL:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/d/da/House-Blount-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20161117154639",
-    sigil: "A red bend sinister between two black porcupines on green",
-    words: "",
-    createdAt: "2019-04-24T14:39:20.436Z",
-    updatedAt: "2019-04-24T14:39:20.436Z",
-    __v: 0
-  },
-  {
-    seat: ["The Dreadfort", "Winterfell"],
-    allegiance: ["House Baratheon of King's Landing", "House Stark"],
-    region: ["The North"],
-    religion: ["Old Gods of the Forest"],
-    _id: "5cc0751804e71a0010b85ce0",
-    name: "House Bolton",
-    logoURL:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/d/dd/House-Bolton-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20161231131431",
-    sigil:
-      "A red flayed man, hanging upside-down on a white X-shaped cross, on a black background",
-    words: '"Our Blades Are Sharp"',
-    createdAt: "2019-04-24T14:39:20.436Z",
-    updatedAt: "2019-04-24T14:39:20.436Z",
-    __v: 0
-  },
-  {
-    seat: ["Lordsport"],
-    allegiance: ["House Greyjoy"],
-    region: ["Westeros", "Iron Islands"],
-    religion: [],
-    _id: "5cc0751804e71a0010b85ce1",
-    name: "House Botley",
-    logoURL:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/2/23/BotleyHeraldry.jpg/revision/latest?cb=20150225172555",
-    sigil: "A shoal of silver fish on pale green",
-    words: "",
-    createdAt: "2019-04-24T14:39:20.436Z",
-    updatedAt: "2019-04-24T14:39:20.436Z",
-    __v: 0
-  },
-  {
-    seat: ["Stone Hedge"],
-    allegiance: ["House Frey", "House Tully", "House Hoare", "War of Conquest"],
-    region: ["The Riverlands"],
-    religion: [
-      "Faith of the Seven",
-      "Old Gods of the Forest",
-      "Andal Invasion"
-    ],
-    _id: "5cc0751804e71a0010b85ce2",
-    name: "House Bracken",
-    logoURL:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/6/69/House-Bracken-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20170101100425",
-    sigil: "A red stallion on a gold field.",
-    words: "",
-    createdAt: "2019-04-24T14:39:20.436Z",
-    updatedAt: "2019-04-24T14:39:20.436Z",
-    __v: 0
-  },
-  {
-    seat: [],
-    allegiance: ["House Targaryen"],
-    region: [],
-    religion: ["Faith of the Seven"],
-    _id: "5cc0751804e71a0010b85ce3",
-    name: "House Branfield",
-    sigil: "",
-    words: "",
-    createdAt: "2019-04-24T14:39:20.436Z",
-    updatedAt: "2019-04-24T14:39:20.436Z",
-    __v: 0
-  },
-  {
-    seat: [],
-    allegiance: ["House Stark"],
-    region: ["The North"],
-    religion: [],
-    _id: "5cc0751804e71a0010b85ce4",
-    name: "House Brownbarrow",
-    sigil: "Unknown",
-    words: "",
-    createdAt: "2019-04-24T14:39:20.436Z",
-    updatedAt: "2019-04-24T14:39:20.436Z",
-    __v: 0
-  },
-  {
-    seat: [],
-    allegiance: ["House Baratheon of King's Landing"],
-    region: ["The Crownlands"],
-    religion: [],
-    _id: "5cc0751804e71a0010b85ce5",
-    name: "House Brune",
-    sigil: "",
-    words: "",
-    createdAt: "2019-04-24T14:39:20.437Z",
-    updatedAt: "2019-04-24T14:39:20.437Z",
-    __v: 0
-  },
-  {
-    seat: ["Antlers"],
-    allegiance: [
-      "House Lannister",
-      "House Baratheon of King's Landing",
-      "House Targaryen"
-    ],
-    region: ["The Crownlands"],
-    religion: [],
-    _id: "5cc0751804e71a0010b85ce6",
-    name: "House Buckwell",
-    sigil: "",
-    words: '"Pride and Purpose"[1]',
-    createdAt: "2019-04-24T14:39:20.437Z",
-    updatedAt: "2019-04-24T14:39:20.437Z",
-    __v: 0
-  },
-  {
-    seat: ["Blackcrown"],
-    allegiance: ["House Hightower"],
-    region: ["The Reach"],
-    religion: [],
-    _id: "5cc0751804e71a0010b85ce7",
-    name: "House Bulwer",
-    sigil: "A bull's skull, bone over blood",
-    words: '"Death Before Disgrace"',
-    createdAt: "2019-04-24T14:39:20.437Z",
-    updatedAt: "2019-04-24T14:39:20.437Z",
-    __v: 0
-  },
-  {
-    seat: [],
-    allegiance: [],
-    region: [],
-    religion: [],
-    _id: "5cc0751804e71a0010b85ce8",
-    name: "Cadet branch",
-    sigil: "",
-    words: "",
-    createdAt: "2019-04-24T14:39:20.437Z",
-    updatedAt: "2019-04-24T14:39:20.437Z",
-    __v: 0
-  },
-  {
-    seat: [],
-    allegiance: [],
-    region: ["The Crownlands"],
-    religion: [],
-    _id: "5cc0751804e71a0010b85ce9",
-    name: "House Cargyll",
-    sigil: "A golden goose on bendy sinister black and red",
-    words: "",
-    createdAt: "2019-04-24T14:39:20.437Z",
-    updatedAt: "2019-04-24T14:39:20.437Z",
-    __v: 0
-  },
-  {
-    seat: ["Nightsong"],
-    allegiance: ["House Baratheon of Dragonstone", "House Baratheon"],
-    region: ["Dornish Marches", "Stormlands"],
-    religion: [],
-    _id: "5cc0751804e71a0010b85cea",
-    name: "House Caron",
-    logoURL:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/a/a0/House-Caron-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20160312125050",
-    sigil: "A field of black nightingales on yellow",
-    words: '"No Song So Sweet"',
-    createdAt: "2019-04-24T14:39:20.437Z",
-    updatedAt: "2019-04-24T14:39:20.437Z",
-    __v: 0
-  },
-  {
-    seat: [],
-    allegiance: ["House Stark"],
-    region: ["The North"],
-    religion: [],
-    _id: "5cc0751804e71a0010b85ceb",
-    name: "House Cassel",
-    sigil: "",
-    words: "",
-    createdAt: "2019-04-24T14:39:20.438Z",
-    updatedAt: "2019-04-24T14:39:20.438Z",
-    __v: 0
-  },
-  {
-    seat: ["Casterly Rock", "Lann"],
-    allegiance: [],
-    region: ["The Westerlands"],
-    religion: ["Old Gods of the Forest"],
-    _id: "5cc0751804e71a0010b85cec",
-    name: "House Casterly",
-    sigil: "",
-    words: "",
-    createdAt: "2019-04-24T14:39:20.438Z",
-    updatedAt: "2019-04-24T14:39:20.438Z",
-    __v: 0
-  },
-  {
-    seat: [],
-    allegiance: [],
-    region: [],
-    religion: [],
-    _id: "5cc0751804e71a0010b85ced",
-    name: "House Caulfield",
-    sigil: "",
-    words: "",
-    createdAt: "2019-04-24T14:39:20.438Z",
-    updatedAt: "2019-04-24T14:39:20.438Z",
-    __v: 0
-  },
-  {
-    seat: ["Castle Cerwyn"],
-    allegiance: ["House Stark"],
-    region: ["The North"],
-    religion: ["Old Gods of the Forest"],
-    _id: "5cc0751804e71a0010b85cee",
-    name: "House Cerwyn",
-    logoURL:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/f/f3/House-Cerwyn-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20170520000237",
-    sigil: "A black battle-axe on silver",
-    words: '"Honed and Ready"',
-    createdAt: "2019-04-24T14:39:20.438Z",
-    updatedAt: "2019-04-24T14:39:20.438Z",
-    __v: 0
-  },
-  {
-    seat: [],
-    allegiance: [
-      "House Lannister",
-      "House Baratheon of King's Landing",
-      "House Targaryen"
-    ],
-    region: ["The Crownlands"],
-    religion: ["Faith of the Seven"],
-    _id: "5cc0751804e71a0010b85cef",
-    name: "House Chelsted",
-    sigil: "",
-    words: "",
-    createdAt: "2019-04-24T14:39:20.438Z",
-    updatedAt: "2019-04-24T14:39:20.438Z",
-    __v: 0
-  },
-  {
-    seat: ["Clegane's Keep"],
-    allegiance: ["House Lannister"],
-    region: ["The Westerlands"],
-    religion: [],
-    _id: "5cc0751804e71a0010b85cf0",
-    name: "House Clegane",
-    logoURL:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/8/8d/House-Clegane-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20161231141241",
-    sigil: "Three black dogs on a yellow field.",
-    words: "",
-    createdAt: "2019-04-24T14:39:20.439Z",
-    updatedAt: "2019-04-24T14:39:20.439Z",
-    __v: 0
-  },
-  {
-    seat: ["Blackhaven"],
-    allegiance: ["House Dondarrion"],
-    region: ["The Stormlands"],
-    religion: [],
-    _id: "5cc0751804e71a0010b85cf1",
-    name: "House Cole",
-    logoURL:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/2/20/House-Cole-Shield.png/revision/latest/scale-to-width-down/350?cb=20180325180633",
-    sigil: "Ten black pellets (4, 3, 2, 1) on a scarlet field",
-    words: "",
-    createdAt: "2019-04-24T14:39:20.439Z",
-    updatedAt: "2019-04-24T14:39:20.439Z",
-    __v: 0
-  },
-  {
-    seat: ["Griffin's Roost"],
-    allegiance: ["House Baratheon"],
-    region: ["The Stormlands"],
-    religion: [],
-    _id: "5cc0751804e71a0010b85cf2",
-    name: "House Connington",
-    logoURL:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/f/f0/House-Connington-Main-Shield.png/revision/latest/scale-to-width-down/350?cb=20180807004123",
-    sigil: "Two combatant griffins, counterchanged, on a red and white field",
-    words: "A Fierce Foe, A Faithful Friend",
-    createdAt: "2019-04-24T14:39:20.439Z",
-    updatedAt: "2019-04-24T14:39:20.439Z",
-    __v: 0
-  },
-  {
-    seat: ["Heart's Home"],
-    allegiance: ["House Arryn"],
-    region: ["Vale of Arryn"],
-    religion: [],
-    _id: "5cc0751804e71a0010b85cf3",
-    name: "House Corbray",
-    logoURL:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/3/32/House-Corbray-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20170520000503",
-    sigil: "Argent, a raven volant sable holding a heart gule",
-    words: "",
-    createdAt: "2019-04-24T14:39:20.439Z",
-    updatedAt: "2019-04-24T14:39:20.439Z",
-    __v: 0
-  },
-  {
-    seat: ["Crakehall"],
-    allegiance: ["House Lannister"],
-    region: ["Westerlands"],
-    religion: [],
-    _id: "5cc0751804e71a0010b85cf4",
-    name: "House Crakehall",
-    logoURL:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/f/f2/House-Crakehall-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20170520000745",
-    sigil: "A black and white brindled boar on brown.",
-    words: '"None So Fierce"',
-    createdAt: "2019-04-24T14:39:20.439Z",
-    updatedAt: "2019-04-24T14:39:20.439Z",
-    __v: 0
-  },
-  {
-    seat: ["Sunflower Hall"],
-    allegiance: ["House Hightower"],
-    region: ["The Reach"],
-    religion: [],
-    _id: "5cc0751804e71a0010b85cf5",
-    name: "House Cuy",
-    sigil: "",
-    words: "",
-    createdAt: "2019-04-24T14:39:20.439Z",
-    updatedAt: "2019-04-24T14:39:20.439Z",
-    __v: 0
-  },
-  {
-    seat: ["Lemonwood"],
-    allegiance: ["House Martell"],
-    region: ["Dorne"],
-    religion: [],
-    _id: "5cc0751804e71a0010b85cf6",
-    name: "House Dalt",
-    logoURL:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/1/17/House-Dalt-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20170520013040",
-    sigil: "Yellow wild lemons on a purple field",
-    words: "",
-    createdAt: "2019-04-24T14:39:20.440Z",
-    updatedAt: "2019-04-24T14:39:20.440Z",
-    __v: 0
-  },
-  {
-    seat: [],
-    allegiance: ["House Tully"],
-    region: ["The Riverlands"],
-    religion: [],
-    _id: "5cc0751804e71a0010b85cf7",
-    name: "House Darry",
-    sigil: "Black plowman on a brown field",
-    words: "",
-    createdAt: "2019-04-24T14:39:20.440Z",
-    updatedAt: "2019-04-24T14:39:20.440Z",
-    __v: 0
-  },
-  {
-    seat: ["Starfall"],
-    allegiance: ["House Martell"],
-    region: ["Dorne"],
-    religion: [],
-    _id: "5cc0751804e71a0010b85cf8",
-    name: "House Dayne",
-    logoURL:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/b/b2/House-Dayne-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20170523003004",
-    sigil: "A white sword and falling star on a purple field",
-    words: "",
-    createdAt: "2019-04-24T14:39:20.440Z",
-    updatedAt: "2019-04-24T14:39:20.440Z",
-    __v: 0
-  },
-  {
-    seat: ["Blackhaven"],
-    allegiance: ["House Baratheon"],
-    region: ["The Stormlands"],
-    religion: [],
-    _id: "5cc0751804e71a0010b85cf9",
-    name: "House Dondarrion",
-    logoURL:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/5/5c/House-Dondarrion-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20170523003209",
-    sigil: "A forked purple lightning bolt on a black starry sky",
-    words: "",
-    createdAt: "2019-04-24T14:39:20.440Z",
-    updatedAt: "2019-04-24T14:39:20.440Z",
-    __v: 0
-  },
-  {
-    seat: [],
-    allegiance: ["House Stark"],
-    region: ["The North"],
-    religion: ["Old Gods of the Forest"],
-    _id: "5cc0751804e71a0010b85cfa",
-    name: "House Dormund",
-    sigil: "",
-    words: "",
-    createdAt: "2019-04-24T14:39:20.440Z",
-    updatedAt: "2019-04-24T14:39:20.440Z",
-    __v: 0
-  },
-  {
-    seat: [],
-    allegiance: ["House Greyjoy"],
-    region: ["Iron Islands"],
-    religion: ["Drowned God"],
-    _id: "5cc0751804e71a0010b85cfb",
-    name: "House Drumm",
-    logoURL:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/d/d7/House-Drumm-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20170522234611",
-    sigil: "A skeletal hand on a red field.",
-    words: "",
-    createdAt: "2019-04-24T14:39:20.440Z",
-    updatedAt: "2019-04-24T14:39:20.440Z",
-    __v: 0
-  },
-  {
-    seat: ["Storm's End"],
-    allegiance: [],
-    region: ["The Stormlands"],
-    religion: [
-      "Old Gods of the Forest",
-      "Andal Invasion",
-      "Faith of the Seven",
-      "Andal Invasion"
-    ],
-    _id: "5cc0751804e71a0010b85cfc",
-    name: "House Durrandon",
-    logoURL:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/5/5b/House-Durrandon-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20181210004341",
-    sigil: "A crowned black stag rampant on a gold field",
-    words: '"Ours Is the Fury"',
-    createdAt: "2019-04-24T14:39:20.441Z",
-    updatedAt: "2019-04-24T14:39:20.441Z",
-    __v: 0
-  },
-  {
-    seat: [],
-    allegiance: ["House Tyrell"],
-    region: ["The Reach"],
-    religion: [],
-    _id: "5cc0751804e71a0010b85cfd",
-    name: "House Durwell",
-    sigil: "",
-    words: "",
-    createdAt: "2019-04-24T14:39:20.441Z",
-    updatedAt: "2019-04-24T14:39:20.441Z",
-    __v: 0
-  },
-  {
-    seat: ["Barrowton"],
-    allegiance: ["House Stark"],
-    region: ["North"],
-    religion: [],
-    _id: "5cc0751804e71a0010b85cfe",
-    name: "House Dustin",
-    sigil:
-      "Two longaxes crossed, a black crown between their heads on a field of yellow",
-    words: "",
-    createdAt: "2019-04-24T14:39:20.441Z",
-    updatedAt: "2019-04-24T14:39:20.441Z",
-    __v: 0
-  },
-  {
-    seat: [],
-    allegiance: ["House Arryn"],
-    region: ["Vale of Arryn"],
-    religion: [],
-    _id: "5cc0751804e71a0010b85cff",
-    name: "House Egen",
-    sigil:
-      "A yellow sun, white crescent moon, and silver star on blue chief above white.",
-    words: "",
-    createdAt: "2019-04-24T14:39:20.441Z",
-    updatedAt: "2019-04-24T14:39:20.441Z",
-    __v: 0
-  },
-  {
-    seat: [],
-    allegiance: ["House Stark"],
-    region: ["The North"],
-    religion: [],
-    _id: "5cc0751804e71a0010b85d00",
-    name: "House Elliver",
-    sigil: "",
-    words: "",
-    createdAt: "2019-04-24T14:39:20.441Z",
-    updatedAt: "2019-04-24T14:39:20.441Z",
-    __v: 0
-  },
-  {
-    seat: [],
-    allegiance: [],
-    region: [],
-    religion: [],
-    _id: "5cc0751804e71a0010b85d01",
-    name: "House of Eraz",
-    sigil: "",
-    words: "",
-    createdAt: "2019-04-24T14:39:20.441Z",
-    updatedAt: "2019-04-24T14:39:20.441Z",
-    __v: 0
-  },
-  {
-    seat: [],
-    allegiance: ["House Frey"],
+    seatIds: ["5cc074e304e71a0010b85bf2"],
     region: ["Riverlands"],
-    religion: [],
-    _id: "5cc0751804e71a0010b85d02",
-    name: "House Erenford",
-    sigil: "",
+    allegianceHouseIds: ["5cc0751804e71a0010b85d71"],
+    image:
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/f/f4/House-Blackwood-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20170520000010"
+  },
+  {
+    id: "5cc0751804e71a0010b85cdf",
+    name: "House Blount",
     words: "",
-    createdAt: "2019-04-24T14:39:20.442Z",
-    updatedAt: "2019-04-24T14:39:20.442Z",
-    __v: 0
-  },
-  {
-    seat: ["Haystack Hall"],
-    allegiance: ["House Baratheon of Dragonstone", "House Baratheon"],
-    region: ["The Stormlands"],
-    religion: [],
-    _id: "5cc0751804e71a0010b85d03",
-    name: "House Errol",
-    sigil: "A yellow haystack on orange",
-    words: "",
-    createdAt: "2019-04-24T14:39:20.442Z",
-    updatedAt: "2019-04-24T14:39:20.442Z",
-    __v: 0
-  },
-  {
-    seat: ["Greenstone"],
-    allegiance: [],
-    region: ["The Stormlands"],
-    religion: [],
-    _id: "5cc0751804e71a0010b85d04",
-    name: "House Estermont",
-    sigil: "A dark green sea turtle on pale green",
-    words: "",
-    createdAt: "2019-04-24T14:39:20.442Z",
-    updatedAt: "2019-04-24T14:39:20.442Z",
-    __v: 0
-  },
-  {
-    seat: ["Widow's Watch"],
-    allegiance: ["House Stark"],
-    region: ["The North"],
-    religion: ["Old Gods of the Forest"],
-    _id: "5cc0751804e71a0010b85d05",
-    name: "House Flint",
-    sigil: "",
-    words: '"Ever Vigilant"',
-    createdAt: "2019-04-24T14:39:20.442Z",
-    updatedAt: "2019-04-24T14:39:20.442Z",
-    __v: 0
-  },
-  {
-    seat: ["Brightwater Keep"],
-    allegiance: ["House Tyrell", "House Baratheon of Dragonstone"],
-    region: ["The Reach"],
-    religion: [],
-    _id: "5cc0751804e71a0010b85d06",
-    name: "House Florent",
-    logoURL:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/7/74/House-Florent-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20170523003806",
-    sigil: "A red gold fox on ermine",
-    words: "",
-    createdAt: "2019-04-24T14:39:20.442Z",
-    updatedAt: "2019-04-24T14:39:20.442Z",
-    __v: 0
-  },
-  {
-    seat: [],
-    allegiance: [
-      "House Lannister",
-      "House Baratheon of King's Landing",
-      "House Targaryen"
-    ],
+    seatIds: [],
     region: ["The Crownlands"],
-    religion: [],
-    _id: "5cc0751804e71a0010b85d07",
-    name: "House Follard",
-    sigil: "",
-    words: '"None so Wise"[1]',
-    createdAt: "2019-04-24T14:39:20.442Z",
-    updatedAt: "2019-04-24T14:39:20.442Z",
-    __v: 0
+    allegianceHouseIds: ["5cc0751804e71a0010b85cd8"],
+    image:
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/d/da/House-Blount-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20161117154639"
   },
   {
-    seat: ["Ironrath"],
-    allegiance: ["House Glover"],
+    id: "5cc0751804e71a0010b85ce0",
+    name: "House Bolton",
+    words: '"Our Blades Are Sharp"',
+    seatIds: ["5cc074e304e71a0010b85bc1", "5cc074e304e71a0010b85c1a"],
     region: ["The North"],
-    religion: ["Old Gods of the Forest"],
-    _id: "5cc0751804e71a0010b85d08",
-    name: "House Forrester",
-    logoURL:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/7/7b/House-Forrester-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20161231145807",
-    sigil:
-      "A white ironwood tree on a black field, embellished with a black sword pointed downwards",
-    words: '"Iron From Ice"',
-    createdAt: "2019-04-24T14:39:20.443Z",
-    updatedAt: "2019-04-24T14:39:20.443Z",
-    __v: 0
-  },
-  {
-    seat: ["Cider Hall"],
-    allegiance: ["House Baratheon of Dragonstone", "House Tyrell"],
-    region: ["The Reach"],
-    religion: [],
-    _id: "5cc0751804e71a0010b85d09",
-    name: "House Fossoway",
-    logoURL:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/b/bb/House-Fossoway-Shield-Red.PNG/revision/latest/scale-to-width-down/350?cb=20161127053440",
-    sigil: "A red apple on a golden field",
-    words: '"Taste of Glory"',
-    createdAt: "2019-04-24T14:39:20.443Z",
-    updatedAt: "2019-04-24T14:39:20.443Z",
-    __v: 0
-  },
-  {
-    seat: ["The Twins", "Riverrun"],
-    allegiance: [
-      "House Lannister",
-      "House Baratheon of King's Landing",
-      "House Tully",
-      "House Stark"
+    allegianceHouseIds: [
+      "5cc0751804e71a0010b85cd8",
+      "5cc0751804e71a0010b85d5d"
     ],
+    image:
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/d/dd/House-Bolton-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20161231131431"
+  },
+  {
+    id: "5cc0751804e71a0010b85ce1",
+    name: "House Botley",
+    words: "",
+    seatIds: [],
+    region: ["Westeros", "Iron Islands"],
+    allegianceHouseIds: ["5cc0751804e71a0010b85d17"],
+    image:
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/2/23/BotleyHeraldry.jpg/revision/latest?cb=20150225172555"
+  },
+  {
+    id: "5cc0751804e71a0010b85ce2",
+    name: "House Bracken",
+    words: "",
+    seatIds: ["5cc074e304e71a0010b85c05"],
     region: ["The Riverlands"],
-    religion: ["Faith of the Seven"],
-    _id: "5cc0751804e71a0010b85d0a",
-    name: "House Frey",
-    logoURL:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/e/e6/House-Frey-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20170523011255",
-    sigil:
-      "The two stone grey towers and bridge of the Twins, on a dark grey field, surmounting an escutcheon of blue water.",
-    words: '"We Stand Together"',
-    createdAt: "2019-04-24T14:39:20.443Z",
-    updatedAt: "2019-04-24T14:39:20.443Z",
-    __v: 0
-  },
-  {
-    seat: [],
-    allegiance: [],
-    region: ["The North"],
-    religion: ["Old Gods of the Forest"],
-    _id: "5cc0751804e71a0010b85d0b",
-    name: "House Frost",
-    logoURL:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/9/98/House_Frost.png/revision/latest/scale-to-width-down/350?cb=20190124224907",
-    sigil: "",
-    words: "",
-    createdAt: "2019-04-24T14:39:20.443Z",
-    updatedAt: "2019-04-24T14:39:20.443Z",
-    __v: 0
-  },
-  {
-    seat: ["Highgarden"],
-    allegiance: [],
-    region: ["The Reach"],
-    religion: [
-      "Old Gods of the Forest",
-      "Andal Invasion",
-      "Faith of the Seven",
-      "Andal Invasion"
+    allegianceHouseIds: [
+      "5cc0751804e71a0010b85d0a",
+      "5cc0751804e71a0010b85d1d",
+      "5cc0751804e71a0010b85d71"
     ],
-    _id: "5cc0751804e71a0010b85d0c",
-    name: "House Gardener",
-    logoURL:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/8/89/House-Gardener-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20170916113747",
-    sigil: "A green hand on a white field",
-    words: "",
-    createdAt: "2019-04-24T14:39:20.443Z",
-    updatedAt: "2019-04-24T14:39:20.443Z",
-    __v: 0
+    image:
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/6/69/House-Bracken-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20170101100425"
   },
   {
-    seat: ["Saltshore"],
-    allegiance: ["House Martell"],
-    region: ["Dorne"],
-    religion: [],
-    _id: "5cc0751804e71a0010b85d0d",
-    name: "House Gargalen",
-    sigil: "A red cockatrice on a gold field",
+    id: "5cc0751804e71a0010b85ce3",
+    name: "House Branfield",
     words: "",
-    createdAt: "2019-04-24T14:39:20.443Z",
-    updatedAt: "2019-04-24T14:39:20.443Z",
-    __v: 0
+    seatIds: [],
+    region: [],
+    allegianceHouseIds: ["5cc0751804e71a0010b85d66"],
+    image: null
   },
   {
-    seat: [],
-    allegiance: ["House Baratheon of King's Landing"],
+    id: "5cc0751804e71a0010b85ce4",
+    name: "House Brownbarrow",
+    words: "",
+    seatIds: [],
+    region: ["The North"],
+    allegianceHouseIds: ["5cc0751804e71a0010b85d5d"],
+    image: null
+  },
+  {
+    id: "5cc0751804e71a0010b85ce5",
+    name: "House Brune",
+    words: "",
+    seatIds: [],
     region: ["The Crownlands"],
-    religion: [],
-    _id: "5cc0751804e71a0010b85d0e",
-    name: "House Gaunt",
-    logoURL:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/8/8f/House-Gaunt-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20160312102523",
-    sigil: "Three black lances upright on pink, between black flaunches.",
-    words: "",
-    createdAt: "2019-04-24T14:39:20.444Z",
-    updatedAt: "2019-04-24T14:39:20.444Z",
-    __v: 0
+    allegianceHouseIds: ["5cc0751804e71a0010b85cd8"],
+    image: null
   },
   {
-    seat: ["Rillwater Crossing"],
-    allegiance: ["House Ryswell"],
-    region: ["The North"],
-    religion: [],
-    _id: "5cc0751804e71a0010b85d0f",
-    name: "House Glenmore",
-    logoURL:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/7/7d/House-Glenmore-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20170523015417",
-    sigil: "A bow and arrow, drawn",
-    words: "",
-    createdAt: "2019-04-24T14:39:20.444Z",
-    updatedAt: "2019-04-24T14:39:20.444Z",
-    __v: 0
-  },
-  {
-    seat: ["Deepwood Motte"],
-    allegiance: ["House Stark"],
-    region: ["The North"],
-    religion: [],
-    _id: "5cc0751804e71a0010b85d10",
-    name: "House Glover",
-    logoURL:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/9/9c/House-Glover-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20170409130955",
-    sigil: "An armored silver fist on a scarlet field",
-    words: "",
-    createdAt: "2019-04-24T14:39:20.444Z",
-    updatedAt: "2019-04-24T14:39:20.444Z",
-    __v: 0
-  },
-  {
-    seat: ["Hammerhorn"],
-    allegiance: ["House Greyjoy"],
-    region: ["Iron Islands"],
-    religion: [],
-    _id: "5cc0751804e71a0010b85d11",
-    name: "House Goodbrother",
-    sigil: "",
-    words: "",
-    createdAt: "2019-04-24T14:39:20.444Z",
-    updatedAt: "2019-04-24T14:39:20.444Z",
-    __v: 0
-  },
-  {
-    seat: [],
-    allegiance: ["House Baratheon"],
-    region: ["The Stormlands"],
-    religion: [],
-    _id: "5cc0751804e71a0010b85d12",
-    name: "House Grandison",
-    sigil: "A black sleeping lion on a yellow field",
-    words: "",
-    createdAt: "2019-04-24T14:39:20.444Z",
-    updatedAt: "2019-04-24T14:39:20.444Z",
-    __v: 0
-  },
-  {
-    seat: [],
-    allegiance: ["House Stark"],
-    region: ["The North"],
-    religion: [],
-    _id: "5cc0751804e71a0010b85d13",
-    name: "House Grayson",
-    sigil: "",
-    words: "",
-    createdAt: "2019-04-24T14:39:20.444Z",
-    updatedAt: "2019-04-24T14:39:20.444Z",
-    __v: 0
-  },
-  {
-    seat: [],
-    allegiance: ["House Lannister"],
-    region: ["The Westerlands"],
-    religion: [],
-    _id: "5cc0751804e71a0010b85d14",
-    name: "House Greenfield",
-    sigil: "",
-    words: "",
-    createdAt: "2019-04-24T14:39:20.444Z",
-    updatedAt: "2019-04-24T14:39:20.444Z",
-    __v: 0
-  },
-  {
-    seat: [],
-    allegiance: [],
-    region: ["The North"],
-    religion: ["Old Gods of the Forest"],
-    _id: "5cc0751804e71a0010b85d15",
-    name: "House Greenwood",
-    logoURL:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/8/82/House_Greenwood.png/revision/latest/scale-to-width-down/350?cb=20190124224857",
-    sigil: "",
-    words: "",
-    createdAt: "2019-04-24T14:39:20.445Z",
-    updatedAt: "2019-04-24T14:39:20.445Z",
-    __v: 0
-  },
-  {
-    seat: ["Orkmont"],
-    allegiance: [],
-    region: ["Iron Islands"],
-    religion: ["Drowned God"],
-    _id: "5cc0751804e71a0010b85d16",
-    name: "House Greyiron",
-    sigil: "",
-    words: "",
-    createdAt: "2019-04-24T14:39:20.445Z",
-    updatedAt: "2019-04-24T14:39:20.445Z",
-    __v: 0
-  },
-  {
-    seat: ["Pyke "],
-    allegiance: [
-      "House Baratheon of King's Landing",
-      "House Targaryen",
-      "House Hoare",
-      "House Greyiron"
+    id: "5cc0751804e71a0010b85ce6",
+    name: "House Buckwell",
+    words: '"Pride and Purpose"[1]',
+    seatIds: ["5cc074e304e71a0010b85ba5"],
+    region: ["The Crownlands"],
+    allegianceHouseIds: [
+      "5cc0751804e71a0010b85cd8",
+      "5cc0751804e71a0010b85d28",
+      "5cc0751804e71a0010b85d66"
     ],
+    image: null
+  },
+  {
+    id: "5cc0751804e71a0010b85ce7",
+    name: "House Bulwer",
+    words: '"Death Before Disgrace"',
+    seatIds: ["5cc074e304e71a0010b85bab"],
+    region: ["The Reach"],
+    allegianceHouseIds: ["5cc0751804e71a0010b85d1c"],
+    image: null
+  },
+  {
+    id: "5cc0751804e71a0010b85ce8",
+    name: "Cadet branch",
+    words: "",
+    seatIds: [],
+    region: [],
+    allegianceHouseIds: [],
+    image: null
+  },
+  {
+    id: "5cc0751804e71a0010b85ce9",
+    name: "House Cargyll",
+    words: "",
+    seatIds: [],
+    region: ["The Crownlands"],
+    allegianceHouseIds: [],
+    image: null
+  },
+  {
+    id: "5cc0751804e71a0010b85cea",
+    name: "House Caron",
+    words: '"No Song So Sweet"',
+    seatIds: ["5cc074e304e71a0010b85be9"],
+    region: ["Dornish Marches", "Stormlands"],
+    allegianceHouseIds: [
+      "5cc0751804e71a0010b85cd6",
+      "5cc0751804e71a0010b85cd7"
+    ],
+    image:
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/a/a0/House-Caron-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20160312125050"
+  },
+  {
+    id: "5cc0751804e71a0010b85ceb",
+    name: "House Cassel",
+    words: "",
+    seatIds: [],
+    region: ["The North"],
+    allegianceHouseIds: ["5cc0751804e71a0010b85d5d"],
+    image: null
+  },
+  {
+    id: "5cc0751804e71a0010b85cec",
+    name: "House Casterly",
+    words: "",
+    seatIds: ["5cc074e304e71a0010b85bb2"],
+    region: ["The Westerlands"],
+    allegianceHouseIds: [],
+    image: null
+  },
+  {
+    id: "5cc0751804e71a0010b85ced",
+    name: "House Caulfield",
+    words: "",
+    seatIds: [],
+    region: [],
+    allegianceHouseIds: [],
+    image: null
+  },
+  {
+    id: "5cc0751804e71a0010b85cee",
+    name: "House Cerwyn",
+    words: '"Honed and Ready"',
+    seatIds: ["5cc074e304e71a0010b85bb4"],
+    region: ["The North"],
+    allegianceHouseIds: ["5cc0751804e71a0010b85d5d"],
+    image:
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/f/f3/House-Cerwyn-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20170520000237"
+  },
+  {
+    id: "5cc0751804e71a0010b85cef",
+    name: "House Chelsted",
+    words: "",
+    seatIds: [],
+    region: ["The Crownlands"],
+    allegianceHouseIds: [
+      "5cc0751804e71a0010b85cd8",
+      "5cc0751804e71a0010b85d28",
+      "5cc0751804e71a0010b85d66"
+    ],
+    image: null
+  },
+  {
+    id: "5cc0751804e71a0010b85cf0",
+    name: "House Clegane",
+    words: "",
+    seatIds: ["5cc074e304e71a0010b85bb8"],
+    region: ["The Westerlands"],
+    allegianceHouseIds: ["5cc0751804e71a0010b85d28"],
+    image:
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/8/8d/House-Clegane-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20161231141241"
+  },
+  {
+    id: "5cc0751804e71a0010b85cf1",
+    name: "House Cole",
+    words: "",
+    seatIds: ["5cc074e304e71a0010b85bac"],
+    region: ["The Stormlands"],
+    allegianceHouseIds: ["5cc0751804e71a0010b85cf9"],
+    image:
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/2/20/House-Cole-Shield.png/revision/latest/scale-to-width-down/350?cb=20180325180633"
+  },
+  {
+    id: "5cc0751804e71a0010b85cf2",
+    name: "House Connington",
+    words: "A Fierce Foe, A Faithful Friend",
+    seatIds: ["5cc074e304e71a0010b85bd1"],
+    region: ["The Stormlands"],
+    allegianceHouseIds: ["5cc0751804e71a0010b85cd6"],
+    image:
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/f/f0/House-Connington-Main-Shield.png/revision/latest/scale-to-width-down/350?cb=20180807004123"
+  },
+  {
+    id: "5cc0751804e71a0010b85cf3",
+    name: "House Corbray",
+    words: "",
+    seatIds: ["5cc074e304e71a0010b85bd5"],
+    region: ["Vale of Arryn"],
+    allegianceHouseIds: ["5cc0751804e71a0010b85cd3"],
+    image:
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/3/32/House-Corbray-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20170520000503"
+  },
+  {
+    id: "5cc0751804e71a0010b85cf4",
+    name: "House Crakehall",
+    words: '"None So Fierce"',
+    seatIds: ["5cc074e304e71a0010b85bbb"],
+    region: ["Westerlands"],
+    allegianceHouseIds: ["5cc0751804e71a0010b85d28"],
+    image:
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/f/f2/House-Crakehall-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20170520000745"
+  },
+  {
+    id: "5cc0751804e71a0010b85cf5",
+    name: "House Cuy",
+    words: "",
+    seatIds: ["5cc074e304e71a0010b85c0a"],
+    region: ["The Reach"],
+    allegianceHouseIds: ["5cc0751804e71a0010b85d1c"],
+    image: null
+  },
+  {
+    id: "5cc0751804e71a0010b85cf6",
+    name: "House Dalt",
+    words: "",
+    seatIds: ["5cc074e304e71a0010b85be2"],
+    region: ["Dorne"],
+    allegianceHouseIds: ["5cc0751804e71a0010b85d38"],
+    image:
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/1/17/House-Dalt-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20170520013040"
+  },
+  {
+    id: "5cc0751804e71a0010b85cf7",
+    name: "House Darry",
+    words: "",
+    seatIds: [],
+    region: ["The Riverlands"],
+    allegianceHouseIds: ["5cc0751804e71a0010b85d71"],
+    image: null
+  },
+  {
+    id: "5cc0751804e71a0010b85cf8",
+    name: "House Dayne",
+    words: "",
+    seatIds: ["5cc074e304e71a0010b85c04"],
+    region: ["Dorne"],
+    allegianceHouseIds: ["5cc0751804e71a0010b85d38"],
+    image:
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/b/b2/House-Dayne-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20170523003004"
+  },
+  {
+    id: "5cc0751804e71a0010b85cf9",
+    name: "House Dondarrion",
+    words: "",
+    seatIds: ["5cc074e304e71a0010b85bac"],
+    region: ["The Stormlands"],
+    allegianceHouseIds: ["5cc0751804e71a0010b85cd6"],
+    image:
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/5/5c/House-Dondarrion-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20170523003209"
+  },
+  {
+    id: "5cc0751804e71a0010b85cfa",
+    name: "House Dormund",
+    words: "",
+    seatIds: [],
+    region: ["The North"],
+    allegianceHouseIds: ["5cc0751804e71a0010b85d5d"],
+    image: null
+  },
+  {
+    id: "5cc0751804e71a0010b85cfb",
+    name: "House Drumm",
+    words: "",
+    seatIds: [],
     region: ["Iron Islands"],
-    religion: ["Drowned God"],
-    _id: "5cc0751804e71a0010b85d17",
+    allegianceHouseIds: ["5cc0751804e71a0010b85d17"],
+    image:
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/d/d7/House-Drumm-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20170522234611"
+  },
+  {
+    id: "5cc0751804e71a0010b85cfc",
+    name: "House Durrandon",
+    words: '"Ours Is the Fury"',
+    seatIds: ["5cc074e304e71a0010b85c08"],
+    region: ["The Stormlands"],
+    allegianceHouseIds: [],
+    image:
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/5/5b/House-Durrandon-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20181210004341"
+  },
+  {
+    id: "5cc0751804e71a0010b85cfd",
+    name: "House Durwell",
+    words: "",
+    seatIds: [],
+    region: ["The Reach"],
+    allegianceHouseIds: ["5cc0751804e71a0010b85d72"],
+    image: null
+  },
+  {
+    id: "5cc0751804e71a0010b85cfe",
+    name: "House Dustin",
+    words: "",
+    seatIds: [],
+    region: ["North"],
+    allegianceHouseIds: ["5cc0751804e71a0010b85d5d"],
+    image: null
+  },
+  {
+    id: "5cc0751804e71a0010b85cff",
+    name: "House Egen",
+    words: "",
+    seatIds: [],
+    region: ["Vale of Arryn"],
+    allegianceHouseIds: ["5cc0751804e71a0010b85cd3"],
+    image: null
+  },
+  {
+    id: "5cc0751804e71a0010b85d00",
+    name: "House Elliver",
+    words: "",
+    seatIds: [],
+    region: ["The North"],
+    allegianceHouseIds: ["5cc0751804e71a0010b85d5d"],
+    image: null
+  },
+  {
+    id: "5cc0751804e71a0010b85d01",
+    name: "House of Eraz",
+    words: "",
+    seatIds: [],
+    region: [],
+    allegianceHouseIds: [],
+    image: null
+  },
+  {
+    id: "5cc0751804e71a0010b85d02",
+    name: "House Erenford",
+    words: "",
+    seatIds: [],
+    region: ["Riverlands"],
+    allegianceHouseIds: ["5cc0751804e71a0010b85d0a"],
+    image: null
+  },
+  {
+    id: "5cc0751804e71a0010b85d03",
+    name: "House Errol",
+    words: "",
+    seatIds: ["5cc074e304e71a0010b85bd4"],
+    region: ["The Stormlands"],
+    allegianceHouseIds: [
+      "5cc0751804e71a0010b85cd6",
+      "5cc0751804e71a0010b85cd7"
+    ],
+    image: null
+  },
+  {
+    id: "5cc0751804e71a0010b85d04",
+    name: "House Estermont",
+    words: "",
+    seatIds: [],
+    region: ["The Stormlands"],
+    allegianceHouseIds: [],
+    image: null
+  },
+  {
+    id: "5cc0751804e71a0010b85d05",
+    name: "House Flint",
+    words: '"Ever Vigilant"',
+    seatIds: ["5cc074e304e71a0010b85c19"],
+    region: ["The North"],
+    allegianceHouseIds: ["5cc0751804e71a0010b85d5d"],
+    image: null
+  },
+  {
+    id: "5cc0751804e71a0010b85d06",
+    name: "House Florent",
+    words: "",
+    seatIds: ["5cc074e304e71a0010b85baf"],
+    region: ["The Reach"],
+    allegianceHouseIds: [
+      "5cc0751804e71a0010b85cd7",
+      "5cc0751804e71a0010b85d72"
+    ],
+    image:
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/7/74/House-Florent-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20170523003806"
+  },
+  {
+    id: "5cc0751804e71a0010b85d07",
+    name: "House Follard",
+    words: '"None so Wise"[1]',
+    seatIds: [],
+    region: ["The Crownlands"],
+    allegianceHouseIds: [
+      "5cc0751804e71a0010b85cd8",
+      "5cc0751804e71a0010b85d28",
+      "5cc0751804e71a0010b85d66"
+    ],
+    image: null
+  },
+  {
+    id: "5cc0751804e71a0010b85d08",
+    name: "House Forrester",
+    words: '"Iron From Ice"',
+    seatIds: ["5cc074e304e71a0010b85bde"],
+    region: ["The North"],
+    allegianceHouseIds: ["5cc0751804e71a0010b85d10"],
+    image:
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/7/7b/House-Forrester-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20161231145807"
+  },
+  {
+    id: "5cc0751804e71a0010b85d09",
+    name: "House Fossoway",
+    words: '"Taste of Glory"',
+    seatIds: ["5cc074e304e71a0010b85bb6"],
+    region: ["The Reach"],
+    allegianceHouseIds: [
+      "5cc0751804e71a0010b85cd7",
+      "5cc0751804e71a0010b85d72"
+    ],
+    image:
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/b/bb/House-Fossoway-Shield-Red.PNG/revision/latest/scale-to-width-down/350?cb=20161127053440"
+  },
+  {
+    id: "5cc0751804e71a0010b85d0a",
+    name: "House Frey",
+    words: '"We Stand Together"',
+    seatIds: ["5cc074e304e71a0010b85bf7", "5cc074e304e71a0010b85c12"],
+    region: ["The Riverlands"],
+    allegianceHouseIds: [
+      "5cc0751804e71a0010b85cd8",
+      "5cc0751804e71a0010b85d28",
+      "5cc0751804e71a0010b85d5d",
+      "5cc0751804e71a0010b85d71"
+    ],
+    image:
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/e/e6/House-Frey-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20170523011255"
+  },
+  {
+    id: "5cc0751804e71a0010b85d0b",
+    name: "House Frost",
+    words: "",
+    seatIds: [],
+    region: ["The North"],
+    allegianceHouseIds: [],
+    image:
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/9/98/House_Frost.png/revision/latest/scale-to-width-down/350?cb=20190124224907"
+  },
+  {
+    id: "5cc0751804e71a0010b85d0c",
+    name: "House Gardener",
+    words: "",
+    seatIds: ["5cc074e304e71a0010b85bd7"],
+    region: ["The Reach"],
+    allegianceHouseIds: [],
+    image:
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/8/89/House-Gardener-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20170916113747"
+  },
+  {
+    id: "5cc0751804e71a0010b85d0d",
+    name: "House Gargalen",
+    words: "",
+    seatIds: ["5cc074e304e71a0010b85bfa"],
+    region: ["Dorne"],
+    allegianceHouseIds: ["5cc0751804e71a0010b85d38"],
+    image: null
+  },
+  {
+    id: "5cc0751804e71a0010b85d0e",
+    name: "House Gaunt",
+    words: "",
+    seatIds: [],
+    region: ["The Crownlands"],
+    allegianceHouseIds: ["5cc0751804e71a0010b85cd8"],
+    image:
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/8/8f/House-Gaunt-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20160312102523"
+  },
+  {
+    id: "5cc0751804e71a0010b85d0f",
+    name: "House Glenmore",
+    words: "",
+    seatIds: ["5cc074e304e71a0010b85bf6"],
+    region: ["The North"],
+    allegianceHouseIds: ["5cc0751804e71a0010b85d53"],
+    image:
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/7/7d/House-Glenmore-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20170523015417"
+  },
+  {
+    id: "5cc0751804e71a0010b85d10",
+    name: "House Glover",
+    words: "",
+    seatIds: ["5cc074e304e71a0010b85bbf"],
+    region: ["The North"],
+    allegianceHouseIds: ["5cc0751804e71a0010b85d5d"],
+    image:
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/9/9c/House-Glover-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20170409130955"
+  },
+  {
+    id: "5cc0751804e71a0010b85d11",
+    name: "House Goodbrother",
+    words: "",
+    seatIds: ["5cc074e304e71a0010b85bd2"],
+    region: ["Iron Islands"],
+    allegianceHouseIds: ["5cc0751804e71a0010b85d17"],
+    image: null
+  },
+  {
+    id: "5cc0751804e71a0010b85d12",
+    name: "House Grandison",
+    words: "",
+    seatIds: [],
+    region: ["The Stormlands"],
+    allegianceHouseIds: ["5cc0751804e71a0010b85cd6"],
+    image: null
+  },
+  {
+    id: "5cc0751804e71a0010b85d13",
+    name: "House Grayson",
+    words: "",
+    seatIds: [],
+    region: ["The North"],
+    allegianceHouseIds: ["5cc0751804e71a0010b85d5d"],
+    image: null
+  },
+  {
+    id: "5cc0751804e71a0010b85d14",
+    name: "House Greenfield",
+    words: "",
+    seatIds: [],
+    region: ["The Westerlands"],
+    allegianceHouseIds: ["5cc0751804e71a0010b85d28"],
+    image: null
+  },
+  {
+    id: "5cc0751804e71a0010b85d15",
+    name: "House Greenwood",
+    words: "",
+    seatIds: [],
+    region: ["The North"],
+    allegianceHouseIds: [],
+    image:
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/8/82/House_Greenwood.png/revision/latest/scale-to-width-down/350?cb=20190124224857"
+  },
+  {
+    id: "5cc0751804e71a0010b85d16",
+    name: "House Greyiron",
+    words: "",
+    seatIds: [],
+    region: ["Iron Islands"],
+    allegianceHouseIds: [],
+    image: null
+  },
+  {
+    id: "5cc0751804e71a0010b85d17",
     name: "House Greyjoy",
-    logoURL:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/8/86/House-Greyjoy-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20170523015836",
-    sigil: "A golden kraken on a black field",
     words:
       '"We Do Not Sow" (official)"What Is Dead May Never Die" (common saying)',
-    createdAt: "2019-04-24T14:39:20.445Z",
-    updatedAt: "2019-04-24T14:39:20.445Z",
-    __v: 0
+    seatIds: [],
+    region: ["Iron Islands"],
+    allegianceHouseIds: [
+      "5cc0751804e71a0010b85cd8",
+      "5cc0751804e71a0010b85d16",
+      "5cc0751804e71a0010b85d1d",
+      "5cc0751804e71a0010b85d66"
+    ],
+    image:
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/8/86/House-Greyjoy-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20170523015836"
   },
   {
-    seat: [],
-    allegiance: ["House Baratheon of Dragonstone", "House Frey"],
-    region: ["The Riverlands"],
-    religion: [],
-    _id: "5cc0751804e71a0010b85d18",
+    id: "5cc0751804e71a0010b85d18",
     name: "House Haigh",
-    logoURL:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/b/b1/House-Haigh-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20170523022603",
-    sigil: "A black pitchfork on a gold bend sinister, on a russet brown field",
     words: "",
-    createdAt: "2019-04-24T14:39:20.445Z",
-    updatedAt: "2019-04-24T14:39:20.445Z",
-    __v: 0
+    seatIds: [],
+    region: ["The Riverlands"],
+    allegianceHouseIds: [
+      "5cc0751804e71a0010b85cd7",
+      "5cc0751804e71a0010b85d0a"
+    ],
+    image:
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/b/b1/House-Haigh-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20170523022603"
   },
   {
-    seat: ["Ten Towers"],
-    allegiance: ["House Greyjoy"],
-    region: ["Iron Islands"],
-    religion: [],
-    _id: "5cc0751804e71a0010b85d19",
+    id: "5cc0751804e71a0010b85d19",
     name: "House Harlaw",
-    logoURL:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/c/ca/House-Harlaw-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20170511002807",
-    sigil: "Silver scythe on black",
     words: "",
-    createdAt: "2019-04-24T14:39:20.445Z",
-    updatedAt: "2019-04-24T14:39:20.445Z",
-    __v: 0
-  },
-  {
-    seat: ["Harrenhal"],
-    allegiance: ["House Tully"],
-    region: ["Riverlands"],
-    religion: [],
-    _id: "5cc0751804e71a0010b85d1a",
-    name: "House Harroway",
-    logoURL:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/3/32/House-Harroway-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20180201031756",
-    sigil:
-      "Per bend sinister orange and black rayonne, a castle countercharged.",
-    words: "",
-    createdAt: "2019-04-24T14:39:20.445Z",
-    updatedAt: "2019-04-24T14:39:20.445Z",
-    __v: 0
-  },
-  {
-    seat: [],
-    allegiance: ["House Lannister"],
-    region: ["The Westerlands"],
-    religion: [],
-    _id: "5cc0751804e71a0010b85d1b",
-    name: "House Hetherspoon",
-    sigil: "",
-    words: "",
-    createdAt: "2019-04-24T14:39:20.446Z",
-    updatedAt: "2019-04-24T14:39:20.446Z",
-    __v: 0
-  },
-  {
-    seat: ["The Hightower"],
-    allegiance: ["House Tyrell", "Greens", "Dance of the Dragons"],
-    region: ["The Reach"],
-    religion: [],
-    _id: "5cc0751804e71a0010b85d1c",
-    name: "House Hightower",
-    logoURL:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/4/4b/House-Hightower-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20161213161859",
-    sigil: "A stone white watchtower, with a fire on the top, on a grey field.",
-    words: '"We Light the Way"',
-    createdAt: "2019-04-24T14:39:20.446Z",
-    updatedAt: "2019-04-24T14:39:20.446Z",
-    __v: 0
-  },
-  {
-    seat: ["Harrenhal"],
-    allegiance: [],
-    region: ["Iron Islands", "The Riverlands"],
-    religion: ["Drowned God"],
-    _id: "5cc0751804e71a0010b85d1d",
-    name: "House Hoare",
-    logoURL:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/2/29/House-Hoare-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20161202182224",
-    sigil:
-      "Per saltire and with two heavy silver chains crossing between a gold longship on black, a dark green pine on white, a cluster of red grapes on gold, and a black raven flying in a blue sky.",
-    words: "",
-    createdAt: "2019-04-24T14:39:20.446Z",
-    updatedAt: "2019-04-24T14:39:20.446Z",
-    __v: 0
-  },
-  {
-    seat: [],
-    allegiance: ["House Baratheon of King's Landing", "House Targaryen"],
-    region: ["The Crownlands"],
-    religion: [],
-    _id: "5cc0751804e71a0010b85d1e",
-    name: "House Hollard",
-    logoURL:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/d/d2/House-Hollard-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20160313163436",
-    sigil: "Barry red and pink, three golden crowns on a blue chief",
-    words: "",
-    createdAt: "2019-04-24T14:39:20.446Z",
-    updatedAt: "2019-04-24T14:39:20.446Z",
-    __v: 0
-  },
-  {
-    seat: [],
-    allegiance: [],
-    region: ["The North"],
-    religion: [],
-    _id: "5cc0751804e71a0010b85d1f",
-    name: "House Holt",
-    sigil: "",
-    words: "",
-    createdAt: "2019-04-24T14:39:20.447Z",
-    updatedAt: "2019-04-24T14:39:20.447Z",
-    __v: 0
-  },
-  {
-    seat: ["Hornwood"],
-    allegiance: ["House Stark"],
-    region: ["The North"],
-    religion: ["Old Gods of the Forest"],
-    _id: "5cc0751804e71a0010b85d20",
-    name: "House Hornwood",
-    logoURL:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/c/c8/House-Hornwood-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20170523023037",
-    sigil: "A black moose head on an orange field.",
-    words: '"Righteous in Wrath"',
-    createdAt: "2019-04-24T14:39:20.447Z",
-    updatedAt: "2019-04-24T14:39:20.447Z",
-    __v: 0
-  },
-  {
-    seat: ["Seagard"],
-    allegiance: ["House Mallister", "House Tully"],
-    region: ["The Riverlands"],
-    religion: [],
-    _id: "5cc0751804e71a0010b85d21",
-    name: "House Mallister",
-    logoURL:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/1/1f/House-Mallister-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20170523024145",
-    sigil: "A silver eagle on a blue field",
-    words: '"Above the Rest"',
-    createdAt: "2019-04-24T14:39:20.447Z",
-    updatedAt: "2019-04-24T14:39:20.447Z",
-    __v: 0
-  },
-  {
-    seat: [],
-    allegiance: ["House Greyjoy"],
+    seatIds: ["5cc074e304e71a0010b85c0d"],
     region: ["Iron Islands"],
-    religion: [],
-    _id: "5cc0751804e71a0010b85d22",
-    name: "House Humble",
-    sigil: "Unknown",
-    words: "",
-    createdAt: "2019-04-24T14:39:20.448Z",
-    updatedAt: "2019-04-24T14:39:20.448Z",
-    __v: 0
+    allegianceHouseIds: ["5cc0751804e71a0010b85d17"],
+    image:
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/c/ca/House-Harlaw-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20170511002807"
   },
   {
-    seat: ["Longbow Hall"],
-    allegiance: ["House Arryn"],
-    region: ["The Vale of Arryn"],
-    religion: [],
-    _id: "5cc0751804e71a0010b85d23",
-    name: "House Hunter",
-    sigil: "Five silver arrows, fanned, on a brown field.",
+    id: "5cc0751804e71a0010b85d1a",
+    name: "House Harroway",
     words: "",
-    createdAt: "2019-04-24T14:39:20.448Z",
-    updatedAt: "2019-04-24T14:39:20.448Z",
-    __v: 0
+    seatIds: ["5cc074e304e71a0010b85bd3"],
+    region: ["Riverlands"],
+    allegianceHouseIds: ["5cc0751804e71a0010b85d71"],
+    image:
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/3/32/House-Harroway-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20180201031756"
   },
   {
-    seat: ["The Tor"],
-    allegiance: ["House Martell"],
-    region: ["Dorne"],
-    religion: [],
-    _id: "5cc0751804e71a0010b85d24",
-    name: "House Jordayne",
-    sigil:
-      "A golden writing quill, on a checkered background of alternating light and dark green squares.",
+    id: "5cc0751804e71a0010b85d1b",
+    name: "House Hetherspoon",
     words: "",
-    createdAt: "2019-04-24T14:39:20.448Z",
-    updatedAt: "2019-04-24T14:39:20.448Z",
-    __v: 0
+    seatIds: [],
+    region: ["The Westerlands"],
+    allegianceHouseIds: ["5cc0751804e71a0010b85d28"],
+    image: null
   },
   {
-    seat: [],
-    allegiance: [],
-    region: ["The Riverlands"],
-    religion: [],
-    _id: "5cc0751804e71a0010b85d25",
-    name: "House Justman",
-    sigil: "",
-    words: "",
-    createdAt: "2019-04-24T14:39:20.448Z",
-    updatedAt: "2019-04-24T14:39:20.448Z",
-    __v: 0
+    id: "5cc0751804e71a0010b85d1c",
+    name: "House Hightower",
+    words: '"We Light the Way"',
+    seatIds: [],
+    region: ["The Reach"],
+    allegianceHouseIds: ["5cc0751804e71a0010b85d72"],
+    image:
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/4/4b/House-Hightower-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20161213161859"
   },
   {
-    seat: ["Karhold"],
-    allegiance: ["House Stark", "House Bolton"],
+    id: "5cc0751804e71a0010b85d1d",
+    name: "House Hoare",
+    words: "",
+    seatIds: ["5cc074e304e71a0010b85bd3"],
+    region: ["Iron Islands", "The Riverlands"],
+    allegianceHouseIds: [],
+    image:
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/2/29/House-Hoare-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20161202182224"
+  },
+  {
+    id: "5cc0751804e71a0010b85d1e",
+    name: "House Hollard",
+    words: "",
+    seatIds: [],
+    region: ["The Crownlands"],
+    allegianceHouseIds: [
+      "5cc0751804e71a0010b85cd8",
+      "5cc0751804e71a0010b85d66"
+    ],
+    image:
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/d/d2/House-Hollard-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20160313163436"
+  },
+  {
+    id: "5cc0751804e71a0010b85d1f",
+    name: "House Holt",
+    words: "",
+    seatIds: [],
     region: ["The North"],
-    religion: [],
-    _id: "5cc0751804e71a0010b85d26",
-    name: "House Karstark",
-    logoURL:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/5/5c/House-Karstark-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20170523023312",
-    sigil: "A white sunburst on black.",
-    words: '"The Sun of Winter"',
-    createdAt: "2019-04-24T14:39:20.449Z",
-    updatedAt: "2019-04-24T14:39:20.449Z",
-    __v: 0
+    allegianceHouseIds: [],
+    image: null
   },
   {
-    seat: [],
-    allegiance: ["House Harlaw"],
-    region: ["Harlaw", "Iron Islands"],
-    religion: [],
-    _id: "5cc0751804e71a0010b85d27",
-    name: "House Kenning",
-    sigil:
-      "The Storm God's cloudly hand, pale grey, yellow lightning flashing from the fingertips, on black",
+    id: "5cc0751804e71a0010b85d20",
+    name: "House Hornwood",
+    words: '"Righteous in Wrath"',
+    seatIds: ["5cc074e304e71a0010b85bdc"],
+    region: ["The North"],
+    allegianceHouseIds: ["5cc0751804e71a0010b85d5d"],
+    image:
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/c/c8/House-Hornwood-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20170523023037"
+  },
+  {
+    id: "5cc0751804e71a0010b85d21",
+    name: "House Mallister",
+    words: '"Above the Rest"',
+    seatIds: ["5cc074e304e71a0010b85bfd"],
+    region: ["The Riverlands"],
+    allegianceHouseIds: [
+      "5cc0751804e71a0010b85d21",
+      "5cc0751804e71a0010b85d71"
+    ],
+    image:
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/1/1f/House-Mallister-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20170523024145"
+  },
+  {
+    id: "5cc0751804e71a0010b85d22",
+    name: "House Humble",
     words: "",
-    createdAt: "2019-04-24T14:39:20.449Z",
-    updatedAt: "2019-04-24T14:39:20.449Z",
-    __v: 0
+    seatIds: [],
+    region: ["Iron Islands"],
+    allegianceHouseIds: ["5cc0751804e71a0010b85d17"],
+    image: null
   },
   {
-    seat: ["Red Keep", "King's Landing", "Casterly Rock"],
-    allegiance: ["House Targaryen", "House Baratheon of King's Landing"],
-    region: ["The Crownlands", "The Westerlands"],
-    religion: ["Faith of the Seven"],
-    _id: "5cc0751804e71a0010b85d28",
+    id: "5cc0751804e71a0010b85d23",
+    name: "House Hunter",
+    words: "",
+    seatIds: ["5cc074e304e71a0010b85be5"],
+    region: ["The Vale of Arryn"],
+    allegianceHouseIds: ["5cc0751804e71a0010b85cd3"],
+    image: null
+  },
+  {
+    id: "5cc0751804e71a0010b85d24",
+    name: "House Jordayne",
+    words: "",
+    seatIds: ["5cc074e304e71a0010b85c0f"],
+    region: ["Dorne"],
+    allegianceHouseIds: ["5cc0751804e71a0010b85d38"],
+    image: null
+  },
+  {
+    id: "5cc0751804e71a0010b85d25",
+    name: "House Justman",
+    words: "",
+    seatIds: [],
+    region: ["The Riverlands"],
+    allegianceHouseIds: [],
+    image: null
+  },
+  {
+    id: "5cc0751804e71a0010b85d26",
+    name: "House Karstark",
+    words: '"The Sun of Winter"',
+    seatIds: ["5cc074e304e71a0010b85bdf"],
+    region: ["The North"],
+    allegianceHouseIds: [
+      "5cc0751804e71a0010b85ce0",
+      "5cc0751804e71a0010b85d5d"
+    ],
+    image:
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/5/5c/House-Karstark-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20170523023312"
+  },
+  {
+    id: "5cc0751804e71a0010b85d27",
+    name: "House Kenning",
+    words: "",
+    seatIds: [],
+    region: ["Harlaw", "Iron Islands"],
+    allegianceHouseIds: ["5cc0751804e71a0010b85d19"],
+    image: null
+  },
+  {
+    id: "5cc0751804e71a0010b85d28",
     name: "House Lannister",
-    logoURL:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/8/8a/House-Lannister-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20170101095357",
-    sigil: "A golden lion rampant on a crimson field",
     words:
       '"Hear Me Roar!" (official)"A Lannister Always Pays His Debts" (common saying)',
-    createdAt: "2019-04-24T14:39:20.449Z",
-    updatedAt: "2019-04-24T14:39:20.449Z",
-    __v: 0
+    seatIds: ["5cc074e304e71a0010b85bb2", "5cc074e304e71a0010b85bf3"],
+    region: ["The Crownlands", "The Westerlands"],
+    allegianceHouseIds: [
+      "5cc0751804e71a0010b85cd8",
+      "5cc0751804e71a0010b85d66"
+    ],
+    image:
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/8/8a/House-Lannister-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20170101095357"
   },
   {
-    seat: ["Lannisport"],
-    allegiance: ["House Lannister"],
-    region: ["The Westerlands"],
-    religion: [],
-    _id: "5cc0751804e71a0010b85d29",
+    id: "5cc0751804e71a0010b85d29",
     name: "House Lannister of Lannisport",
-    logoURL:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/8/8a/House-Lannister-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20170101095357",
-    sigil: "A golden lion rampant on a crimson field.",
     words:
       '"Hear Me Roar!" (official)"A Lannister Always Pays His Debts." (common saying)',
-    createdAt: "2019-04-24T14:39:20.450Z",
-    updatedAt: "2019-04-24T14:39:20.450Z",
-    __v: 0
-  },
-  {
-    seat: ["Golden Tooth"],
-    allegiance: ["House Lannister"],
+    seatIds: [],
     region: ["The Westerlands"],
-    religion: [],
-    _id: "5cc0751804e71a0010b85d2a",
+    allegianceHouseIds: ["5cc0751804e71a0010b85d28"],
+    image:
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/8/8a/House-Lannister-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20170101095357"
+  },
+  {
+    id: "5cc0751804e71a0010b85d2a",
     name: "House Lefford",
-    logoURL:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/a/a2/House-Lefford-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20160312122721",
-    sigil: "A golden pile on dark blue, a sun right in the sky",
     words: "",
-    createdAt: "2019-04-24T14:39:20.450Z",
-    updatedAt: "2019-04-24T14:39:20.450Z",
-    __v: 0
+    seatIds: ["5cc074e304e71a0010b85bcc"],
+    region: ["The Westerlands"],
+    allegianceHouseIds: ["5cc0751804e71a0010b85d28"],
+    image:
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/a/a2/House-Lefford-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20160312122721"
   },
   {
-    seat: [],
-    allegiance: ["House Tyrell"],
-    region: ["The Reach"],
-    religion: [],
-    _id: "5cc0751804e71a0010b85d2b",
+    id: "5cc0751804e71a0010b85d2b",
     name: "House Leygood",
-    sigil: "A black threefold thunderbolt on orange",
     words: "",
-    createdAt: "2019-04-24T14:39:20.450Z",
-    updatedAt: "2019-04-24T14:39:20.450Z",
-    __v: 0
+    seatIds: [],
+    region: ["The Reach"],
+    allegianceHouseIds: ["5cc0751804e71a0010b85d72"],
+    image: null
   },
   {
-    seat: [],
-    allegiance: ["House Baratheon of Storm's End"],
-    region: [],
-    religion: ["Faith of the Seven"],
-    _id: "5cc0751804e71a0010b85d2c",
+    id: "5cc0751804e71a0010b85d2c",
     name: "House Lonmouth",
-    sigil: "",
     words: "",
-    createdAt: "2019-04-24T14:39:20.450Z",
-    updatedAt: "2019-04-24T14:39:20.450Z",
-    __v: 0
-  },
-  {
-    seat: ["Meereen"],
-    allegiance: ["House Targaryen", "Great Masters"],
-    region: ["Slaver&apos;s Bay"],
-    religion: ["Ghiscari religion"],
-    _id: "5cc0751804e71a0010b85d2d",
-    name: "House of Loraq",
-    sigil: "",
-    words: "",
-    createdAt: "2019-04-24T14:39:20.450Z",
-    updatedAt: "2019-04-24T14:39:20.450Z",
-    __v: 0
-  },
-  {
-    seat: [],
-    allegiance: ["House Lannister"],
-    region: ["Westerlands"],
-    religion: [],
-    _id: "5cc0751804e71a0010b85d2e",
-    name: "House Lorch",
-    sigil: "A black manticore on a red field",
-    words: "",
-    createdAt: "2019-04-24T14:39:20.450Z",
-    updatedAt: "2019-04-24T14:39:20.450Z",
-    __v: 0
-  },
-  {
-    seat: [],
-    allegiance: [],
+    seatIds: [],
     region: [],
-    religion: [],
-    _id: "5cc0751804e71a0010b85d2f",
-    name: "User:Lord Bardo",
-    logoURL:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/0/0f/House_Bardo.png/revision/latest/scale-to-width-down/343?cb=20160430143001",
-    sigil: "A red snake on a black and light gray field with a white border.",
-    words: '"By Posion, By Flames, By Sword"',
-    createdAt: "2019-04-24T14:39:20.450Z",
-    updatedAt: "2019-04-24T14:39:20.450Z",
-    __v: 0
+    allegianceHouseIds: [],
+    image: null
   },
   {
-    seat: ["Harrenhal"],
-    allegiance: ["House Tully"],
-    region: ["Riverlands"],
-    religion: [],
-    _id: "5cc0751804e71a0010b85d30",
-    name: "House Lothston",
-    logoURL:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/5/50/Lothston_sigil.png/revision/latest?cb=20140623185915",
-    sigil: "A black bat on a field divided bendwise, silver and gold.",
+    id: "5cc0751804e71a0010b85d2d",
+    name: "House of Loraq",
     words: "",
-    createdAt: "2019-04-24T14:39:20.451Z",
-    updatedAt: "2019-04-24T14:39:20.451Z",
-    __v: 0
+    seatIds: [],
+    region: ["Slaver&apos;s Bay"],
+    allegianceHouseIds: ["5cc0751804e71a0010b85d66"],
+    image: null
   },
   {
-    seat: ["Summerhall", "Fourteen Fires"],
-    allegiance: [
-      "House Baratheon of King's Landing",
-      "House Lannister",
-      "House Targaryen"
-    ],
+    id: "5cc0751804e71a0010b85d2e",
+    name: "House Lorch",
+    words: "",
+    seatIds: [],
+    region: ["Westerlands"],
+    allegianceHouseIds: ["5cc0751804e71a0010b85d28"],
+    image: null
+  },
+  {
+    id: "5cc0751804e71a0010b85d2f",
+    name: "User:Lord Bardo",
+    words: '"By Posion, By Flames, By Sword"',
+    seatIds: [],
+    region: [],
+    allegianceHouseIds: [],
+    image:
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/0/0f/House_Bardo.png/revision/latest/scale-to-width-down/343?cb=20160430143001"
+  },
+  {
+    id: "5cc0751804e71a0010b85d30",
+    name: "House Lothston",
+    words: "",
+    seatIds: ["5cc074e304e71a0010b85bd3"],
+    region: ["Riverlands"],
+    allegianceHouseIds: ["5cc0751804e71a0010b85d71"],
+    image:
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/5/50/Lothston_sigil.png/revision/latest?cb=20140623185915"
+  },
+  {
+    id: "5cc0751804e71a0010b85d31",
+    name: "User:Luke Saint Sophia",
+    words: "Beyond the skies we rise",
+    seatIds: ["5cc074e304e71a0010b85c09"],
     region: [
       "The Stormlands",
       "Westeros",
@@ -1448,1177 +1015,836 @@ const houses = [
       "Essos",
       "The Crownlands"
     ],
-    religion: [],
-    _id: "5cc0751804e71a0010b85d31",
-    name: "User:Luke Saint Sophia",
-    sigil: "A black ship on a pale grey field with a white onion on its sails.",
-    words: "Beyond the skies we rise",
-    createdAt: "2019-04-24T14:39:20.451Z",
-    updatedAt: "2019-04-24T14:39:20.451Z",
-    __v: 0
+    allegianceHouseIds: [
+      "5cc0751804e71a0010b85cd8",
+      "5cc0751804e71a0010b85d28",
+      "5cc0751804e71a0010b85d66"
+    ],
+    image: null
   },
   {
-    seat: ["Snakewood"],
-    allegiance: [],
-    region: ["The Vale of Arryn"],
-    religion: [],
-    _id: "5cc0751804e71a0010b85d32",
+    id: "5cc0751804e71a0010b85d32",
     name: "House Lynderly",
-    sigil: "",
     words: "",
-    createdAt: "2019-04-24T14:39:20.452Z",
-    updatedAt: "2019-04-24T14:39:20.452Z",
-    __v: 0
+    seatIds: ["5cc074e304e71a0010b85c03"],
+    region: ["The Vale of Arryn"],
+    allegianceHouseIds: [],
+    image: null
   },
   {
-    seat: [],
-    allegiance: [],
-    region: ["Volantis"],
-    religion: [],
-    _id: "5cc0751804e71a0010b85d33",
+    id: "5cc0751804e71a0010b85d33",
     name: "Maegyr family",
-    sigil: "",
     words: "",
-    createdAt: "2019-04-24T14:39:20.452Z",
-    updatedAt: "2019-04-24T14:39:20.452Z",
-    __v: 0
+    seatIds: [],
+    region: ["Volantis"],
+    allegianceHouseIds: [],
+    image: null
   },
   {
-    seat: ["White Harbor"],
-    allegiance: ["House Stark", "House Bolton", "House Gardener"],
-    region: ["The North", "The Reach"],
-    religion: ["Faith of the Seven"],
-    _id: "5cc0751804e71a0010b85d34",
+    id: "5cc0751804e71a0010b85d34",
     name: "House Manderly",
-    logoURL:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/2/25/House-Manderly-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20170523024351",
-    sigil: "A white merman holding a trident, over a blue-green field",
     words: "",
-    createdAt: "2019-04-24T14:39:20.452Z",
-    updatedAt: "2019-04-24T14:39:20.452Z",
-    __v: 0
+    seatIds: [],
+    region: ["The North", "The Reach"],
+    allegianceHouseIds: [
+      "5cc0751804e71a0010b85ce0",
+      "5cc0751804e71a0010b85d0c",
+      "5cc0751804e71a0010b85d5d"
+    ],
+    image:
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/2/25/House-Manderly-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20170523024351"
   },
   {
-    seat: ["Kingsgrave"],
-    allegiance: ["House Martell"],
-    region: ["Dorne"],
-    religion: [],
-    _id: "5cc0751804e71a0010b85d35",
+    id: "5cc0751804e71a0010b85d35",
     name: "House Manwoody",
-    logoURL:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/f/f7/Manwoody.jpg/revision/latest/scale-to-width-down/350?cb=20150503182300",
-    sigil: "A white skull wearing a golden crown, on a black field.",
     words: "",
-    createdAt: "2019-04-24T14:39:20.452Z",
-    updatedAt: "2019-04-24T14:39:20.452Z",
-    __v: 0
+    seatIds: ["5cc074e304e71a0010b85be0"],
+    region: ["Dorne"],
+    allegianceHouseIds: ["5cc0751804e71a0010b85d38"],
+    image:
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/f/f7/Manwoody.jpg/revision/latest/scale-to-width-down/350?cb=20150503182300"
   },
   {
-    seat: ["Ashemark"],
-    allegiance: ["House Lannister"],
-    region: ["Westerlands"],
-    religion: [],
-    _id: "5cc0751804e71a0010b85d36",
+    id: "5cc0751804e71a0010b85d36",
     name: "House Marbrand",
-    logoURL:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/0/05/House-Marbrand-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20170523024602",
-    sigil: "A burning tree, orange on smoke",
     words: '"Burning Bright"',
-    createdAt: "2019-04-24T14:39:20.452Z",
-    updatedAt: "2019-04-24T14:39:20.452Z",
-    __v: 0
+    seatIds: ["5cc074e304e71a0010b85ba6"],
+    region: ["Westerlands"],
+    allegianceHouseIds: ["5cc0751804e71a0010b85d28"],
+    image:
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/0/05/House-Marbrand-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20170523024602"
   },
   {
-    seat: [],
-    allegiance: ["House Reed"],
-    region: ["The Neck", "The North"],
-    religion: [],
-    _id: "5cc0751804e71a0010b85d37",
+    id: "5cc0751804e71a0010b85d37",
     name: "House Marsh",
-    sigil: "",
     words: "",
-    createdAt: "2019-04-24T14:39:20.452Z",
-    updatedAt: "2019-04-24T14:39:20.452Z",
-    __v: 0
+    seatIds: [],
+    region: ["The Neck", "The North"],
+    allegianceHouseIds: ["5cc0751804e71a0010b85d4d"],
+    image: null
   },
   {
-    seat: ["Sunspear"],
-    allegiance: [
-      "House Targaryen",
-      "Ellaria Sand",
-      "House Baratheon of King's Landing"
-    ],
-    region: ["Dorne"],
-    religion: [],
-    _id: "5cc0751804e71a0010b85d38",
+    id: "5cc0751804e71a0010b85d38",
     name: "House Martell",
-    logoURL:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/7/7e/House-Martell-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20170523024859",
-    sigil:
-      "A red sun pierced by a gold spear, on an orange fieldFormerly just a gold spear on an orange field",
     words: '"Unbowed, Unbent, Unbroken"',
-    createdAt: "2019-04-24T14:39:20.453Z",
-    updatedAt: "2019-04-24T14:39:20.453Z",
-    __v: 0
+    seatIds: ["5cc074e304e71a0010b85c0b"],
+    region: ["Dorne"],
+    allegianceHouseIds: [
+      "5cc0751804e71a0010b85cd8",
+      "5cc0751804e71a0010b85d66"
+    ],
+    image:
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/7/7e/House-Martell-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20170523024859"
   },
   {
-    seat: [],
-    allegiance: ["House Stark"],
-    region: ["The North"],
-    religion: [],
-    _id: "5cc0751804e71a0010b85d39",
+    id: "5cc0751804e71a0010b85d39",
     name: "House Mazin",
-    logoURL:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/0/02/House-Mazin-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20160607084304",
-    sigil: "Blue and white chequy with gold plates inside the blue",
     words: "",
-    createdAt: "2019-04-24T14:39:20.453Z",
-    updatedAt: "2019-04-24T14:39:20.453Z",
-    __v: 0
+    seatIds: [],
+    region: ["The North"],
+    allegianceHouseIds: ["5cc0751804e71a0010b85d5d"],
+    image:
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/0/02/House-Mazin-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20160607084304"
   },
   {
-    seat: [],
-    allegiance: ["House Greyjoy"],
-    region: ["Iron Islands"],
-    religion: [],
-    _id: "5cc0751804e71a0010b85d3a",
+    id: "5cc0751804e71a0010b85d3a",
     name: "House Merlyn",
-    sigil: "Twining waterspouts, green on white",
     words: "",
-    createdAt: "2019-04-24T14:39:20.453Z",
-    updatedAt: "2019-04-24T14:39:20.453Z",
-    __v: 0
-  },
-  {
-    seat: ["Long Table"],
-    allegiance: ["House Tyrell"],
-    region: ["The Reach"],
-    religion: ["Faith of the Seven"],
-    _id: "5cc0751804e71a0010b85d3b",
-    name: "House Merryweather",
-    sigil: "",
-    words: "",
-    createdAt: "2019-04-24T14:39:20.453Z",
-    updatedAt: "2019-04-24T14:39:20.453Z",
-    __v: 0
-  },
-  {
-    seat: [],
-    allegiance: ["House Stark"],
-    region: ["North"],
-    religion: [],
-    _id: "5cc0751804e71a0010b85d3c",
-    name: "House Mollen",
-    sigil: "",
-    words: "",
-    createdAt: "2019-04-24T14:39:20.453Z",
-    updatedAt: "2019-04-24T14:39:20.453Z",
-    __v: 0
-  },
-  {
-    seat: [],
-    allegiance: ["House Arryn"],
-    region: ["The Vale"],
-    religion: [],
-    _id: "5cc0751804e71a0010b85d3d",
-    name: "House Moore",
-    sigil: "",
-    words: "",
-    createdAt: "2019-04-24T14:39:20.453Z",
-    updatedAt: "2019-04-24T14:39:20.453Z",
-    __v: 0
-  },
-  {
-    seat: ["Maidenpool"],
-    allegiance: ["House Frey", "House Tully"],
-    region: ["Riverlands"],
-    religion: [],
-    _id: "5cc0751804e71a0010b85d3e",
-    name: "House Mooton",
-    sigil: "A red salmon on a white field",
-    words: "",
-    createdAt: "2019-04-24T14:39:20.454Z",
-    updatedAt: "2019-04-24T14:39:20.454Z",
-    __v: 0
-  },
-  {
-    seat: ["Bear Island"],
-    allegiance: ["House Stark"],
-    region: ["The North"],
-    religion: ["Old Gods of the Forest"],
-    _id: "5cc0751804e71a0010b85d3f",
-    name: "House Mormont",
-    logoURL:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/0/03/House-Mormont-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20161231120854",
-    sigil:
-      "A rampant (formerly passant) black bear on a white field, surrounded by a green escutcheon",
-    words: '"Here We Stand"',
-    createdAt: "2019-04-24T14:39:20.454Z",
-    updatedAt: "2019-04-24T14:39:20.454Z",
-    __v: 0
-  },
-  {
-    seat: ["Crow's Nest"],
-    allegiance: [],
-    region: ["Stormlands"],
-    religion: [],
-    _id: "5cc0751804e71a0010b85d40",
-    name: "House Morrigen",
-    logoURL:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/0/0d/House-Morrigen-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20161231142114",
-    sigil: "A black crow in flight on a storm-green field",
-    words: "",
-    createdAt: "2019-04-24T14:39:20.454Z",
-    updatedAt: "2019-04-24T14:39:20.454Z",
-    __v: 0
-  },
-  {
-    seat: ["Oldstones"],
-    allegiance: [],
-    region: ["The Riverlands"],
-    religion: [],
-    _id: "5cc0751804e71a0010b85d41",
-    name: "House Mudd",
-    logoURL:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/1/11/House-Mudd-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20170523025935",
-    sigil: "A golden crown studded with emeralds over a red-brown field",
-    words: "",
-    createdAt: "2019-04-24T14:39:20.454Z",
-    updatedAt: "2019-04-24T14:39:20.454Z",
-    __v: 0
-  },
-  {
-    seat: [],
-    allegiance: [],
-    region: ["The Stormlands"],
-    religion: [],
-    _id: "5cc0751804e71a0010b85d42",
-    name: "House Musgood",
-    sigil: "",
-    words: "",
-    createdAt: "2019-04-24T14:39:20.454Z",
-    updatedAt: "2019-04-24T14:39:20.454Z",
-    __v: 0
-  },
-  {
-    seat: ["Old Oak"],
-    allegiance: ["House Tyrell"],
-    region: ["The Reach"],
-    religion: [],
-    _id: "5cc0751804e71a0010b85d43",
-    name: "House Oakheart",
-    sigil: "",
-    words: "",
-    createdAt: "2019-04-24T14:39:20.454Z",
-    updatedAt: "2019-04-24T14:39:20.454Z",
-    __v: 0
-  },
-  {
-    seat: [],
-    allegiance: [],
-    region: [],
-    religion: [],
-    _id: "5cc0751804e71a0010b85d44",
-    name: "House of Pahl",
-    sigil: "",
-    words: "",
-    createdAt: "2019-04-24T14:39:20.455Z",
-    updatedAt: "2019-04-24T14:39:20.455Z",
-    __v: 0
-  },
-  {
-    seat: [],
-    allegiance: ["House Lannister"],
-    region: ["The Westerlands"],
-    religion: [],
-    _id: "5cc0751804e71a0010b85d45",
-    name: "House Payne",
-    logoURL:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/c/ca/House-Payne-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20160611190748",
-    sigil: "Purple and white chequy with gold coins in the checks.",
-    words: "",
-    createdAt: "2019-04-24T14:39:20.455Z",
-    updatedAt: "2019-04-24T14:39:20.455Z",
-    __v: 0
-  },
-  {
-    seat: [],
-    allegiance: [],
-    region: ["The Stormlands"],
-    religion: [],
-    _id: "5cc0751804e71a0010b85d46",
-    name: "House Peasebury",
-    sigil: "",
-    words: "",
-    createdAt: "2019-04-24T14:39:20.455Z",
-    updatedAt: "2019-04-24T14:39:20.455Z",
-    __v: 0
-  },
-  {
-    seat: [],
-    allegiance: ["House Baratheon"],
-    region: ["The Stormlands"],
-    religion: [],
-    _id: "5cc0751804e71a0010b85d47",
-    name: "House Penrose",
-    sigil: "",
-    words: '"Set Down Our Deeds"[1]',
-    createdAt: "2019-04-24T14:39:20.455Z",
-    updatedAt: "2019-04-24T14:39:20.455Z",
-    __v: 0
-  },
-  {
-    seat: [],
-    allegiance: ["House Stark"],
-    region: ["The North"],
-    religion: ["Old Gods of the Forest"],
-    _id: "5cc0751804e71a0010b85d48",
-    name: "House Poole",
-    sigil: "",
-    words: "",
-    createdAt: "2019-04-24T14:39:20.455Z",
-    updatedAt: "2019-04-24T14:39:20.455Z",
-    __v: 0
-  },
-  {
-    seat: [],
-    allegiance: ["Wise Masters"],
-    region: ["Slaver&apos;s Bay"],
-    religion: ["Ghiscari religion"],
-    _id: "5cc0751804e71a0010b85d49",
-    name: "House of Qaggaz",
-    sigil: "",
-    words: "",
-    createdAt: "2019-04-24T14:39:20.455Z",
-    updatedAt: "2019-04-24T14:39:20.455Z",
-    __v: 0
-  },
-  {
-    seat: ["Harrenhal"],
-    allegiance: ["House Tully", "House Targaryen"],
-    region: ["The Riverlands"],
-    religion: [],
-    _id: "5cc0751804e71a0010b85d4a",
-    name: "House Qoherys",
-    logoURL:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/d/d2/Qoherys_sigil.png/revision/latest?cb=20140626211515",
-    sigil:
-      "A flaming saltire, red and yellow, between four white skulls, on black",
-    words: "",
-    createdAt: "2019-04-24T14:39:20.455Z",
-    updatedAt: "2019-04-24T14:39:20.455Z",
-    __v: 0
-  },
-  {
-    seat: ["Sandstone"],
-    allegiance: ["House Martell"],
-    region: ["Dorne"],
-    religion: [],
-    _id: "5cc0751804e71a0010b85d4b",
-    name: "House Qorgyle",
-    logoURL:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/2/20/House-Qorgyle-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20170523030433",
-    sigil: "Three black scorpions on a red field.",
-    words: "",
-    createdAt: "2019-04-24T14:39:20.456Z",
-    updatedAt: "2019-04-24T14:39:20.456Z",
-    __v: 0
-  },
-  {
-    seat: ["The Arbor"],
-    allegiance: ["House Tyrell"],
-    region: ["The Reach"],
-    religion: [],
-    _id: "5cc0751804e71a0010b85d4c",
-    name: "House Redwyne",
-    logoURL:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/7/73/House-Redwyne-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20161231134630",
-    sigil: "A burgundy grape cluster on a white field.",
-    words: '"Ripe for Victory"',
-    createdAt: "2019-04-24T14:39:20.456Z",
-    updatedAt: "2019-04-24T14:39:20.456Z",
-    __v: 0
-  },
-  {
-    seat: ["Greywater Watch"],
-    allegiance: ["House Stark"],
-    region: ["The North"],
-    religion: ["Old Gods of the Forest"],
-    _id: "5cc0751804e71a0010b85d4d",
-    name: "House Reed",
-    logoURL:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/2/2f/House-Reed-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20170523031146",
-    sigil: "A black lizard-lion on a grey-green field",
-    words: "",
-    createdAt: "2019-04-24T14:39:20.456Z",
-    updatedAt: "2019-04-24T14:39:20.456Z",
-    __v: 0
-  },
-  {
-    seat: ["Castamere"],
-    allegiance: ["House Lannister"],
-    region: ["The Westerlands"],
-    religion: ["Faith of the Seven"],
-    _id: "5cc0751804e71a0010b85d4e",
-    name: "House Reyne",
-    logoURL:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/9/9f/House-Reyne-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20170523032314",
-    sigil:
-      "A red lion rampant regardant with a forked tail on a field of silver.",
-    words: "",
-    createdAt: "2019-04-24T14:39:20.456Z",
-    updatedAt: "2019-04-24T14:39:20.456Z",
-    __v: 0
-  },
-  {
-    seat: ["Rosby"],
-    allegiance: [
-      "House Lannister",
-      "House Baratheon of King's Landing",
-      "House Targaryen"
-    ],
-    region: ["Crownlands"],
-    religion: [],
-    _id: "5cc0751804e71a0010b85d4f",
-    name: "House Rosby",
-    sigil: "",
-    words: "",
-    createdAt: "2019-04-24T14:39:20.456Z",
-    updatedAt: "2019-04-24T14:39:20.456Z",
-    __v: 0
-  },
-  {
-    seat: ["Goldengrove"],
-    allegiance: ["House Tyrell"],
-    region: ["The Reach"],
-    religion: ["Faith of the Seven"],
-    _id: "5cc0751804e71a0010b85d50",
-    name: "House Rowan",
-    sigil: "",
-    words: "",
-    createdAt: "2019-04-24T14:39:20.456Z",
-    updatedAt: "2019-04-24T14:39:20.456Z",
-    __v: 0
-  },
-  {
-    seat: ["Runestone"],
-    allegiance: ["House Arryn", "House Stark"],
-    region: ["The Vale of Arryn"],
-    religion: [],
-    _id: "5cc0751804e71a0010b85d51",
-    name: "House Royce",
-    logoURL:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/d/db/House-Royce-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20161231122055",
-    sigil: "A shower of pebbles on an orange field surrounded by runes.",
-    words: '"We Remember"',
-    createdAt: "2019-04-24T14:39:20.456Z",
-    updatedAt: "2019-04-24T14:39:20.456Z",
-    __v: 0
-  },
-  {
-    seat: ["Duskendale"],
-    allegiance: [
-      "House Lannister",
-      "House Baratheon of King's Landing",
-      "House Targaryen"
-    ],
-    region: ["The Crownlands"],
-    religion: [],
-    _id: "5cc0751804e71a0010b85d52",
-    name: "House Rykker",
-    sigil: "",
-    words: "",
-    createdAt: "2019-04-24T14:39:20.457Z",
-    updatedAt: "2019-04-24T14:39:20.457Z",
-    __v: 0
-  },
-  {
-    seat: [],
-    allegiance: ["House Stark"],
-    region: ["The Rills", "The North"],
-    religion: [],
-    _id: "5cc0751804e71a0010b85d53",
-    name: "House Ryswell",
-    sigil:
-      "A black horse's head, eyes and mane red, on bronze within a black engrailed border",
-    words: "",
-    createdAt: "2019-04-24T14:39:20.457Z",
-    updatedAt: "2019-04-24T14:39:20.457Z",
-    __v: 0
-  },
-  {
-    seat: [],
-    allegiance: ["House Martell"],
-    region: ["Dorne"],
-    religion: [],
-    _id: "5cc0751804e71a0010b85d54",
-    name: "House Santagar",
-    sigil: "",
-    words: "",
-    createdAt: "2019-04-24T14:39:20.457Z",
-    updatedAt: "2019-04-24T14:39:20.457Z",
-    __v: 0
-  },
-  {
-    seat: ["Sarsfield"],
-    allegiance: ["House Lannister"],
-    region: ["Westerlands"],
-    religion: [],
-    _id: "5cc0751804e71a0010b85d55",
-    name: "House Sarsfield",
-    sigil: "",
-    words: "",
-    createdAt: "2019-04-24T14:39:20.457Z",
-    updatedAt: "2019-04-24T14:39:20.457Z",
-    __v: 0
-  },
-  {
-    seat: [],
-    allegiance: ["House Stark", "House Baratheon of Dragonstone"],
-    region: ["The Stormlands"],
-    religion: [],
-    _id: "5cc0751804e71a0010b85d56",
-    name: "House Seaworth",
-    logoURL:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/e/e5/House-Seaworth-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20170523033250",
-    sigil: "A black ship on a pale grey field with a white onion on its sails.",
-    words: "",
-    createdAt: "2019-04-24T14:39:20.457Z",
-    updatedAt: "2019-04-24T14:39:20.457Z",
-    __v: 0
-  },
-  {
-    seat: [],
-    allegiance: [
-      "House Stark",
-      "House Tully",
-      "House Blackwood",
-      "House Bolton"
-    ],
-    region: ["The North"],
-    religion: ["Old Gods of the Forest"],
-    _id: "5cc0751804e71a0010b85d57",
-    name: "User:Sebastian2101",
-    logoURL:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/d/de/House_Frostbyte.png/revision/latest?cb=20171209112609",
-    sigil: "Two red wolves guarding on a dark blue field",
-    words: '"Here We Howl"',
-    createdAt: "2019-04-24T14:39:20.457Z",
-    updatedAt: "2019-04-24T14:39:20.457Z",
-    __v: 0
-  },
-  {
-    seat: [],
-    allegiance: ["House Baratheon"],
-    region: ["The Stormlands"],
-    religion: [],
-    _id: "5cc0751804e71a0010b85d58",
-    name: "House Selmy",
-    logoURL:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/4/4a/House-Selmy-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20161231144811",
-    sigil: "Three stalks of yellow wheat on a brown field",
-    words: "",
-    createdAt: "2019-04-24T14:39:20.457Z",
-    updatedAt: "2019-04-24T14:39:20.457Z",
-    __v: 0
-  },
-  {
-    seat: ["Silverhill"],
-    allegiance: ["House Lannister"],
-    region: ["The Westerlands"],
-    religion: ["Faith of the Seven"],
-    _id: "5cc0751804e71a0010b85d59",
-    name: "House Serrett",
-    sigil: "A peacock in his pride on a field of cream.",
-    words: "",
-    createdAt: "2019-04-24T14:39:20.458Z",
-    updatedAt: "2019-04-24T14:39:20.458Z",
-    __v: 0
-  },
-  {
-    seat: ["Harrenhal"],
-    allegiance: ["House Baratheon of King's Landing"],
-    region: ["The Riverlands"],
-    religion: [],
-    _id: "5cc0751804e71a0010b85d5a",
-    name: "House Slynt",
-    sigil: "",
-    words: "",
-    createdAt: "2019-04-24T14:39:20.458Z",
-    updatedAt: "2019-04-24T14:39:20.458Z",
-    __v: 0
-  },
-  {
-    seat: ["Acorn Hall"],
-    allegiance: ["House Frey", "House Tully"],
-    region: ["Riverlands"],
-    religion: [],
-    _id: "5cc0751804e71a0010b85d5b",
-    name: "House Smallwood",
-    sigil: "",
-    words: "",
-    createdAt: "2019-04-24T14:39:20.458Z",
-    updatedAt: "2019-04-24T14:39:20.458Z",
-    __v: 0
-  },
-  {
-    seat: [],
-    allegiance: ["House Greyjoy"],
+    seatIds: [],
     region: ["Iron Islands"],
-    religion: [],
-    _id: "5cc0751804e71a0010b85d5c",
-    name: "House Sparr",
-    sigil: "Oak saltire on blue",
+    allegianceHouseIds: ["5cc0751804e71a0010b85d17"],
+    image: null
+  },
+  {
+    id: "5cc0751804e71a0010b85d3b",
+    name: "House Merryweather",
     words: "",
-    createdAt: "2019-04-24T14:39:20.458Z",
-    updatedAt: "2019-04-24T14:39:20.458Z",
-    __v: 0
-  },
-  {
-    seat: ["Winterfell"],
-    allegiance: ["House Targaryen", "House Baratheon of King's Landing"],
-    region: ["The North"],
-    religion: ["Old Gods of the Forest", "Faith of the Seven"],
-    _id: "5cc0751804e71a0010b85d5d",
-    name: "House Stark",
-    logoURL:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/8/8a/House-Stark-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20170101103142",
-    sigil: "A grey direwolf on a white field",
-    words: '"Winter Is Coming"',
-    createdAt: "2019-04-24T14:39:20.458Z",
-    updatedAt: "2019-04-24T14:39:20.458Z",
-    __v: 0
-  },
-  {
-    seat: ["Rook's Rest"],
-    allegiance: [
-      "House Lannister",
-      "House Baratheon of King's Landing",
-      "House Targaryen"
-    ],
-    region: ["The Crownlands"],
-    religion: [],
-    _id: "5cc0751804e71a0010b85d5e",
-    name: "House Staunton",
-    sigil: "",
-    words: "",
-    createdAt: "2019-04-24T14:39:20.458Z",
-    updatedAt: "2019-04-24T14:39:20.458Z",
-    __v: 0
-  },
-  {
-    seat: [],
-    allegiance: ["House Targaryen"],
-    region: ["Crownlands"],
-    religion: [],
-    _id: "5cc0751804e71a0010b85d5f",
-    name: "User:SteveIntercept",
-    sigil: "A black eagle on a gold field.",
-    words: '"Dust To Dust."',
-    createdAt: "2019-04-24T14:39:20.459Z",
-    updatedAt: "2019-04-24T14:39:20.459Z",
-    __v: 0
-  },
-  {
-    seat: ["Castle Stokeworth"],
-    allegiance: [
-      "House Lannister",
-      "House Baratheon of King's Landing",
-      "House Targaryen"
-    ],
-    region: ["The Crownlands"],
-    religion: [],
-    _id: "5cc0751804e71a0010b85d60",
-    name: "House Stokeworth",
-    logoURL:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/1/10/House-Stokeworth-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20170523034644",
-    sigil: "A white lamb holding a golden cup, on a green background",
-    words: '"Proud to Be Faithful"',
-    createdAt: "2019-04-24T14:39:20.459Z",
-    updatedAt: "2019-04-24T14:39:20.459Z",
-    __v: 0
-  },
-  {
-    seat: ["Harrenhal"],
-    allegiance: ["House Tully"],
-    region: ["The Riverlands"],
-    religion: [],
-    _id: "5cc0751804e71a0010b85d61",
-    name: "House Strong",
-    logoURL:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/b/b6/House-Strong-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20170523035431",
-    sigil: "a tripartite pale blue, red, and green on white",
-    words: "",
-    createdAt: "2019-04-24T14:39:20.459Z",
-    updatedAt: "2019-04-24T14:39:20.459Z",
-    __v: 0
-  },
-  {
-    seat: ["Stonehelm"],
-    allegiance: ["House Baratheon"],
-    region: ["Dornish Marches", "The Stormlands"],
-    religion: [],
-    _id: "5cc0751804e71a0010b85d62",
-    name: "House Swann",
-    logoURL:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/f/fe/House-Swann-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20170523040251",
-    sigil: "Two swans black and white, on opposite fields of white and black",
-    words: "",
-    createdAt: "2019-04-24T14:39:20.459Z",
-    updatedAt: "2019-04-24T14:39:20.459Z",
-    __v: 0
-  },
-  {
-    seat: ["Cornfield"],
-    allegiance: ["House Lannister"],
-    region: ["The Westerlands"],
-    religion: [],
-    _id: "5cc0751804e71a0010b85d63",
-    name: "House Swyft",
-    logoURL:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/6/6d/House-Swyft-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20161231153546",
-    sigil: "A blue bantam rooster on yellow",
-    words: '"Awake! Awake!"',
-    createdAt: "2019-04-24T14:39:20.459Z",
-    updatedAt: "2019-04-24T14:39:20.459Z",
-    __v: 0
-  },
-  {
-    seat: ["Torrhen's Square"],
-    allegiance: ["House Stark"],
-    region: ["The North"],
-    religion: [],
-    _id: "5cc0751804e71a0010b85d64",
-    name: "House Tallhart",
-    sigil: "Three green sentinel trees, over a brown field[citation needed]",
-    words: '"Proud and Free"[citation needed]',
-    createdAt: "2019-04-24T14:39:20.459Z",
-    updatedAt: "2019-04-24T14:39:20.459Z",
-    __v: 0
-  },
-  {
-    seat: ["Tarbeck Hall"],
-    allegiance: ["House Reyne", "House Lannister"],
-    region: ["The Westerlands"],
-    religion: ["Faith of the Seven"],
-    _id: "5cc0751804e71a0010b85d65",
-    name: "House Tarbeck",
-    logoURL:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/1/1c/House-Tarbeck-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20181217164159",
-    sigil: "A silver and blue seven-pointed star on a silver and blue field",
-    words: "",
-    createdAt: "2019-04-24T14:39:20.459Z",
-    updatedAt: "2019-04-24T14:39:20.459Z",
-    __v: 0
-  },
-  {
-    seat: [
-      "Dragonstone ",
-      "Great Pyramid",
-      "Meereen",
-      "Red Keep",
-      "King's Landing",
-      "Aegonfort"
-    ],
-    allegiance: ["Valyrian Freehold"],
-    region: ["The Crownlands", "Slaver&apos;s Bay", "Valyrian Peninsula"],
-    religion: ["Valyrian religion"],
-    _id: "5cc0751804e71a0010b85d66",
-    name: "House Targaryen",
-    logoURL:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/4/43/House-Targaryen-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20181113055101",
-    sigil: "A red three-headed dragon, on a black field.",
-    words: '"Fire and Blood"',
-    createdAt: "2019-04-24T14:39:20.460Z",
-    updatedAt: "2019-04-24T14:39:20.460Z",
-    __v: 0
-  },
-  {
-    seat: ["Horn Hill"],
-    allegiance: ["House Lannister", "House Tyrell", "House Gardener"],
+    seatIds: ["5cc074e304e71a0010b85be4"],
     region: ["The Reach"],
-    religion: ["Faith of the Seven"],
-    _id: "5cc0751804e71a0010b85d67",
-    name: "House Tarly",
-    logoURL:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/2/2d/House-Tarly-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20170809082143",
-    sigil: "A striding huntsman, red on green.",
-    words: '"First in Battle"',
-    createdAt: "2019-04-24T14:39:20.461Z",
-    updatedAt: "2019-04-24T14:39:20.461Z",
-    __v: 0
+    allegianceHouseIds: ["5cc0751804e71a0010b85d72"],
+    image: null
   },
   {
-    seat: ["Evenfall Hall"],
-    allegiance: ["House Baratheon"],
-    region: ["The Stormlands"],
-    religion: [],
-    _id: "5cc0751804e71a0010b85d68",
-    name: "House Tarth",
-    logoURL:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/3/33/House-Tarth-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20170724014934",
-    sigil: "Yellow suns on rose quartered with white crescents on azure.",
+    id: "5cc0751804e71a0010b85d3c",
+    name: "House Mollen",
     words: "",
-    createdAt: "2019-04-24T14:39:20.461Z",
-    updatedAt: "2019-04-24T14:39:20.461Z",
-    __v: 0
+    seatIds: [],
+    region: ["North"],
+    allegianceHouseIds: ["5cc0751804e71a0010b85d5d"],
+    image: null
   },
   {
-    seat: [],
-    allegiance: [],
-    region: [],
-    religion: [],
-    _id: "5cc0751804e71a0010b85d69",
-    name: "House Tarwick",
-    sigil: "",
+    id: "5cc0751804e71a0010b85d3d",
+    name: "House Moore",
     words: "",
-    createdAt: "2019-04-24T14:39:20.461Z",
-    updatedAt: "2019-04-24T14:39:20.461Z",
-    __v: 0
+    seatIds: [],
+    region: ["The Vale"],
+    allegianceHouseIds: ["5cc0751804e71a0010b85cd3"],
+    image: null
   },
   {
-    seat: [],
-    allegiance: ["House Arryn"],
-    region: ["The Vale of Arryn"],
-    religion: ["Faith of the Seven"],
-    _id: "5cc0751804e71a0010b85d6a",
-    name: "House Templeton",
-    sigil: "",
+    id: "5cc0751804e71a0010b85d3e",
+    name: "House Mooton",
     words: "",
-    createdAt: "2019-04-24T14:39:20.461Z",
-    updatedAt: "2019-04-24T14:39:20.461Z",
-    __v: 0
-  },
-  {
-    seat: [],
-    allegiance: [
-      "House Lannister",
-      "House Baratheon of King's Landing",
-      "House Targaryen"
-    ],
-    region: ["Crownlands"],
-    religion: [],
-    _id: "5cc0751804e71a0010b85d6b",
-    name: "House Thorne",
-    sigil: "",
-    words: "",
-    createdAt: "2019-04-24T14:39:20.461Z",
-    updatedAt: "2019-04-24T14:39:20.461Z",
-    __v: 0
-  },
-  {
-    seat: [],
-    allegiance: ["House Royce"],
-    region: ["The Vale of Arryn"],
-    religion: [],
-    _id: "5cc0751804e71a0010b85d6c",
-    name: "House Tollett",
-    sigil: "",
-    words: "",
-    createdAt: "2019-04-24T14:39:20.462Z",
-    updatedAt: "2019-04-24T14:39:20.462Z",
-    __v: 0
-  },
-  {
-    seat: ["Harrenhal"],
-    allegiance: ["House Tully"],
+    seatIds: [],
     region: ["Riverlands"],
-    religion: [],
-    _id: "5cc0751804e71a0010b85d6d",
-    name: "House Towers",
-    logoURL:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/a/ab/Towers_sigil.png/revision/latest?cb=20140626232200",
-    sigil:
-      "Five black towers on white, surrounded by a double tressure red and black.",
-    words: "",
-    createdAt: "2019-04-24T14:39:20.462Z",
-    updatedAt: "2019-04-24T14:39:20.462Z",
-    __v: 0
+    allegianceHouseIds: [
+      "5cc0751804e71a0010b85d0a",
+      "5cc0751804e71a0010b85d71"
+    ],
+    image: null
   },
   {
-    seat: [],
-    allegiance: [],
+    id: "5cc0751804e71a0010b85d3f",
+    name: "House Mormont",
+    words: '"Here We Stand"',
+    seatIds: [],
     region: ["The North"],
-    religion: ["Old Gods of the Forest"],
-    _id: "5cc0751804e71a0010b85d6e",
-    name: "House Towers (North)",
-    logoURL:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/5/5c/House_Towers_North.png/revision/latest?cb=20190125205248",
-    sigil: "",
-    words: "",
-    createdAt: "2019-04-24T14:39:20.462Z",
-    updatedAt: "2019-04-24T14:39:20.462Z",
-    __v: 0
+    allegianceHouseIds: ["5cc0751804e71a0010b85d5d"],
+    image:
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/0/03/House-Mormont-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20161231120854"
   },
   {
-    seat: [],
-    allegiance: ["House Baratheon"],
-    region: ["The Stormlands"],
-    religion: [],
-    _id: "5cc0751804e71a0010b85d6f",
-    name: "House Toyne",
-    sigil: "",
+    id: "5cc0751804e71a0010b85d40",
+    name: "House Morrigen",
     words: "",
-    createdAt: "2019-04-24T14:39:20.462Z",
-    updatedAt: "2019-04-24T14:39:20.462Z",
-    __v: 0
+    seatIds: ["5cc074e304e71a0010b85bbc"],
+    region: ["Stormlands"],
+    allegianceHouseIds: [],
+    image:
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/0/0d/House-Morrigen-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20161231142114"
   },
   {
-    seat: [],
-    allegiance: ["House Baratheon"],
-    region: ["The Stormlands"],
-    religion: [],
-    _id: "5cc0751804e71a0010b85d70",
-    name: "House Trant",
-    sigil: "",
+    id: "5cc0751804e71a0010b85d41",
+    name: "House Mudd",
     words: "",
-    createdAt: "2019-04-24T14:39:20.462Z",
-    updatedAt: "2019-04-24T14:39:20.462Z",
-    __v: 0
-  },
-  {
-    seat: ["Riverrun"],
-    allegiance: [
-      "House Frey",
-      "House Stark",
-      "House Baratheon of King's Landing",
-      "House Targaryen",
-      "House Hoare",
-      "House Durrandon",
-      "House Mudd"
-    ],
+    seatIds: [],
     region: ["The Riverlands"],
-    religion: ["Faith of the Seven"],
-    _id: "5cc0751804e71a0010b85d71",
-    name: "House Tully",
-    logoURL:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/b/bd/House-Tully-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20170523040648",
-    sigil: "A silver trout leaping on a red and blue background.",
-    words: '"Family, Duty, Honor"',
-    createdAt: "2019-04-24T14:39:20.462Z",
-    updatedAt: "2019-04-24T14:39:20.462Z",
-    __v: 0
+    allegianceHouseIds: [],
+    image:
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/1/11/House-Mudd-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20170523025935"
   },
   {
-    seat: ["Highgarden"],
-    allegiance: [
-      "House Targaryen",
-      "House Baratheon of King's Landing",
-      "House Baratheon",
-      "House Gardener"
-    ],
+    id: "5cc0751804e71a0010b85d42",
+    name: "House Musgood",
+    words: "",
+    seatIds: [],
+    region: ["The Stormlands"],
+    allegianceHouseIds: [],
+    image: null
+  },
+  {
+    id: "5cc0751804e71a0010b85d43",
+    name: "House Oakheart",
+    words: "",
+    seatIds: ["5cc074e304e71a0010b85bea"],
     region: ["The Reach"],
-    religion: [],
-    _id: "5cc0751804e71a0010b85d72",
-    name: "House Tyrell",
-    logoURL:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/c/cf/House-Tyrell-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20170108163035",
-    sigil: "A golden rose on a green field",
-    words: '"Growing Strong"',
-    createdAt: "2019-04-24T14:39:20.463Z",
-    updatedAt: "2019-04-24T14:39:20.463Z",
-    __v: 0
+    allegianceHouseIds: ["5cc0751804e71a0010b85d72"],
+    image: null
   },
   {
-    seat: ["Hellholt"],
-    allegiance: ["House Martell"],
-    region: ["Dorne"],
-    religion: [],
-    _id: "5cc0751804e71a0010b85d73",
-    name: "House Uller",
-    sigil: "",
+    id: "5cc0751804e71a0010b85d44",
+    name: "House of Pahl",
     words: "",
-    createdAt: "2019-04-24T14:39:20.463Z",
-    updatedAt: "2019-04-24T14:39:20.463Z",
-    __v: 0
-  },
-  {
-    seat: ["Last Hearth"],
-    allegiance: ["House Stark", "House Bolton"],
-    region: ["The North"],
-    religion: [],
-    _id: "5cc0751804e71a0010b85d74",
-    name: "House Umber",
-    logoURL:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/2/2f/House-Umber-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20161231125826",
-    sigil: "Four silver chains linked by a central ring on dark red",
-    words: "",
-    createdAt: "2019-04-24T14:39:20.463Z",
-    updatedAt: "2019-04-24T14:39:20.463Z",
-    __v: 0
-  },
-  {
-    seat: ["Driftmark"],
-    allegiance: [
-      "House Baratheon of Dragonstone",
-      "House Baratheon of King's Landing",
-      "House Targaryen",
-      "Valyrian Freehold"
-    ],
-    region: ["The Crownlands", "Valyrian Peninsula"],
-    religion: [],
-    _id: "5cc0751804e71a0010b85d75",
-    name: "House Velaryon",
-    logoURL:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/7/76/House-Velaryon-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20161219204203",
-    sigil: "A silver seahorse on a sea green field",
-    words: '"The Old, the True, the Brave"',
-    createdAt: "2019-04-24T14:39:20.463Z",
-    updatedAt: "2019-04-24T14:39:20.463Z",
-    __v: 0
-  },
-  {
-    seat: [],
-    allegiance: ["House Whitehill"],
-    region: ["The North"],
-    religion: ["Faith of the Seven"],
-    _id: "5cc0751804e71a0010b85d76",
-    name: "House Warrick",
-    sigil: "",
-    words: "",
-    createdAt: "2019-04-24T14:39:20.463Z",
-    updatedAt: "2019-04-24T14:39:20.463Z",
-    __v: 0
-  },
-  {
-    seat: ["Ironoaks"],
-    allegiance: ["House Arryn"],
-    region: ["Vale of Arryn"],
-    religion: [],
-    _id: "5cc0751804e71a0010b85d77",
-    name: "House Waynwood",
-    logoURL:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/4/4e/House-Waynwood-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20170523041151",
-    sigil: "A black broken wheel on green",
-    words: "",
-    createdAt: "2019-04-24T14:39:20.463Z",
-    updatedAt: "2019-04-24T14:39:20.463Z",
-    __v: 0
-  },
-  {
-    seat: [],
-    allegiance: [],
+    seatIds: [],
     region: [],
-    religion: [],
-    _id: "5cc0751804e71a0010b85d78",
-    name: "House Wells",
-    sigil: "",
+    allegianceHouseIds: [],
+    image: null
+  },
+  {
+    id: "5cc0751804e71a0010b85d45",
+    name: "House Payne",
     words: "",
-    createdAt: "2019-04-24T14:39:20.463Z",
-    updatedAt: "2019-04-24T14:39:20.463Z",
-    __v: 0
+    seatIds: [],
+    region: ["The Westerlands"],
+    allegianceHouseIds: ["5cc0751804e71a0010b85d28"],
+    image:
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/c/ca/House-Payne-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20160611190748"
   },
   {
-    seat: ["The Crag"],
-    allegiance: ["House Lannister"],
-    region: ["Westerlands"],
-    religion: [],
-    _id: "5cc0751804e71a0010b85d79",
-    name: "House Westerling",
-    sigil: "Six white shells on a sand-colored field.",
-    words: '"Honor, Not Honors"',
-    createdAt: "2019-04-24T14:39:20.464Z",
-    updatedAt: "2019-04-24T14:39:20.464Z",
-    __v: 0
-  },
-  {
-    seat: ["Harrenhal"],
-    allegiance: ["House Tully"],
-    region: ["The Riverlands"],
-    religion: [],
-    _id: "5cc0751804e71a0010b85d7a",
-    name: "House Whent",
-    logoURL:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/5/52/House-Whent-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20170523041852",
-    sigil: "Nine black bats on a gold field.",
+    id: "5cc0751804e71a0010b85d46",
+    name: "House Peasebury",
     words: "",
-    createdAt: "2019-04-24T14:39:20.464Z",
-    updatedAt: "2019-04-24T14:39:20.464Z",
-    __v: 0
-  },
-  {
-    seat: ["Highpoint"],
-    allegiance: ["House Bolton"],
-    region: ["The North"],
-    religion: ["Faith of the Seven"],
-    _id: "5cc0751804e71a0010b85d7b",
-    name: "House Whitehill",
-    logoURL:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/6/6a/House-Whitehill-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20170523043108",
-    sigil:
-      "A white pile inverted on indigo, with a single four-pointed star above",
-    words: '"Ever Higher"',
-    createdAt: "2019-04-24T14:39:20.464Z",
-    updatedAt: "2019-04-24T14:39:20.464Z",
-    __v: 0
-  },
-  {
-    seat: [],
-    allegiance: [],
-    region: [],
-    religion: [],
-    _id: "5cc0751804e71a0010b85d7c",
-    name: "House Wibberley",
-    sigil: "",
-    words: "",
-    createdAt: "2019-04-24T14:39:20.464Z",
-    updatedAt: "2019-04-24T14:39:20.464Z",
-    __v: 0
-  },
-  {
-    seat: [],
-    allegiance: ["House Whent"],
-    region: ["The Riverlands"],
-    religion: [],
-    _id: "5cc0751804e71a0010b85d7d",
-    name: "House Wode",
-    sigil: "",
-    words: "",
-    createdAt: "2019-04-24T14:39:20.464Z",
-    updatedAt: "2019-04-24T14:39:20.464Z",
-    __v: 0
-  },
-  {
-    seat: ["Rain House"],
-    allegiance: [],
+    seatIds: [],
     region: ["The Stormlands"],
-    religion: [],
-    _id: "5cc0751804e71a0010b85d7e",
-    name: "House Wylde",
-    logoURL:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/1/1b/House-Wylde-Shield.png/revision/latest/scale-to-width-down/350?cb=20160421172928",
-    sigil: "A blue-green maelstrom on gold.",
-    words: "",
-    createdAt: "2019-04-24T14:39:20.464Z",
-    updatedAt: "2019-04-24T14:39:20.464Z",
-    __v: 0
+    allegianceHouseIds: [],
+    image: null
   },
   {
-    seat: [],
-    allegiance: ["House Lannister"],
-    region: ["Westerlands"],
-    religion: [],
-    _id: "5cc0751804e71a0010b85d7f",
-    name: "House Yarwyck",
-    sigil: "Two bronze halberds crossed between four red diamonds, on white",
-    words: "",
-    createdAt: "2019-04-24T14:39:20.464Z",
-    updatedAt: "2019-04-24T14:39:20.464Z",
-    __v: 0
+    id: "5cc0751804e71a0010b85d47",
+    name: "House Penrose",
+    words: '"Set Down Our Deeds"[1]',
+    seatIds: [],
+    region: ["The Stormlands"],
+    allegianceHouseIds: ["5cc0751804e71a0010b85cd6"],
+    image: null
   },
   {
-    seat: ["Yronwood"],
-    allegiance: ["House Martell"],
+    id: "5cc0751804e71a0010b85d48",
+    name: "House Poole",
+    words: "",
+    seatIds: [],
+    region: ["The North"],
+    allegianceHouseIds: ["5cc0751804e71a0010b85d5d"],
+    image: null
+  },
+  {
+    id: "5cc0751804e71a0010b85d49",
+    name: "House of Qaggaz",
+    words: "",
+    seatIds: [],
+    region: ["Slaver&apos;s Bay"],
+    allegianceHouseIds: [],
+    image: null
+  },
+  {
+    id: "5cc0751804e71a0010b85d4a",
+    name: "House Qoherys",
+    words: "",
+    seatIds: ["5cc074e304e71a0010b85bd3"],
+    region: ["The Riverlands"],
+    allegianceHouseIds: [
+      "5cc0751804e71a0010b85d66",
+      "5cc0751804e71a0010b85d71"
+    ],
+    image:
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/d/d2/Qoherys_sigil.png/revision/latest?cb=20140626211515"
+  },
+  {
+    id: "5cc0751804e71a0010b85d4b",
+    name: "House Qorgyle",
+    words: "",
+    seatIds: ["5cc074e304e71a0010b85bfb"],
     region: ["Dorne"],
-    religion: [],
-    _id: "5cc0751804e71a0010b85d80",
-    name: "House Yronwood",
-    sigil: "",
+    allegianceHouseIds: ["5cc0751804e71a0010b85d38"],
+    image:
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/2/20/House-Qorgyle-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20170523030433"
+  },
+  {
+    id: "5cc0751804e71a0010b85d4c",
+    name: "House Redwyne",
+    words: '"Ripe for Victory"',
+    seatIds: [],
+    region: ["The Reach"],
+    allegianceHouseIds: ["5cc0751804e71a0010b85d72"],
+    image:
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/7/73/House-Redwyne-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20161231134630"
+  },
+  {
+    id: "5cc0751804e71a0010b85d4d",
+    name: "House Reed",
     words: "",
-    createdAt: "2019-04-24T14:39:20.465Z",
-    updatedAt: "2019-04-24T14:39:20.465Z",
-    __v: 0
+    seatIds: ["5cc074e304e71a0010b85bd0"],
+    region: ["The North"],
+    allegianceHouseIds: ["5cc0751804e71a0010b85d5d"],
+    image:
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/2/2f/House-Reed-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20170523031146"
+  },
+  {
+    id: "5cc0751804e71a0010b85d4e",
+    name: "House Reyne",
+    words: "",
+    seatIds: ["5cc074e304e71a0010b85bb1"],
+    region: ["The Westerlands"],
+    allegianceHouseIds: ["5cc0751804e71a0010b85d28"],
+    image:
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/9/9f/House-Reyne-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20170523032314"
+  },
+  {
+    id: "5cc0751804e71a0010b85d4f",
+    name: "House Rosby",
+    words: "",
+    seatIds: ["5cc074e304e71a0010b85bf8"],
+    region: ["Crownlands"],
+    allegianceHouseIds: [
+      "5cc0751804e71a0010b85cd8",
+      "5cc0751804e71a0010b85d28",
+      "5cc0751804e71a0010b85d66"
+    ],
+    image: null
+  },
+  {
+    id: "5cc0751804e71a0010b85d50",
+    name: "House Rowan",
+    words: "",
+    seatIds: ["5cc074e304e71a0010b85bcd"],
+    region: ["The Reach"],
+    allegianceHouseIds: ["5cc0751804e71a0010b85d72"],
+    image: null
+  },
+  {
+    id: "5cc0751804e71a0010b85d51",
+    name: "House Royce",
+    words: '"We Remember"',
+    seatIds: ["5cc074e304e71a0010b85bf9"],
+    region: ["The Vale of Arryn"],
+    allegianceHouseIds: [
+      "5cc0751804e71a0010b85cd3",
+      "5cc0751804e71a0010b85d5d"
+    ],
+    image:
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/d/db/House-Royce-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20161231122055"
+  },
+  {
+    id: "5cc0751804e71a0010b85d52",
+    name: "House Rykker",
+    words: "",
+    seatIds: [],
+    region: ["The Crownlands"],
+    allegianceHouseIds: [
+      "5cc0751804e71a0010b85cd8",
+      "5cc0751804e71a0010b85d28",
+      "5cc0751804e71a0010b85d66"
+    ],
+    image: null
+  },
+  {
+    id: "5cc0751804e71a0010b85d53",
+    name: "House Ryswell",
+    words: "",
+    seatIds: [],
+    region: ["The Rills", "The North"],
+    allegianceHouseIds: ["5cc0751804e71a0010b85d5d"],
+    image: null
+  },
+  {
+    id: "5cc0751804e71a0010b85d54",
+    name: "House Santagar",
+    words: "",
+    seatIds: [],
+    region: ["Dorne"],
+    allegianceHouseIds: ["5cc0751804e71a0010b85d38"],
+    image: null
+  },
+  {
+    id: "5cc0751804e71a0010b85d55",
+    name: "House Sarsfield",
+    words: "",
+    seatIds: ["5cc074e304e71a0010b85bfc"],
+    region: ["Westerlands"],
+    allegianceHouseIds: ["5cc0751804e71a0010b85d28"],
+    image: null
+  },
+  {
+    id: "5cc0751804e71a0010b85d56",
+    name: "House Seaworth",
+    words: "",
+    seatIds: [],
+    region: ["The Stormlands"],
+    allegianceHouseIds: [
+      "5cc0751804e71a0010b85cd7",
+      "5cc0751804e71a0010b85d5d"
+    ],
+    image:
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/e/e5/House-Seaworth-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20170523033250"
+  },
+  {
+    id: "5cc0751804e71a0010b85d57",
+    name: "User:Sebastian2101",
+    words: '"Here We Howl"',
+    seatIds: [],
+    region: ["The North"],
+    allegianceHouseIds: [
+      "5cc0751804e71a0010b85cde",
+      "5cc0751804e71a0010b85ce0",
+      "5cc0751804e71a0010b85d5d",
+      "5cc0751804e71a0010b85d71"
+    ],
+    image:
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/d/de/House_Frostbyte.png/revision/latest?cb=20171209112609"
+  },
+  {
+    id: "5cc0751804e71a0010b85d58",
+    name: "House Selmy",
+    words: "",
+    seatIds: [],
+    region: ["The Stormlands"],
+    allegianceHouseIds: ["5cc0751804e71a0010b85cd6"],
+    image:
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/4/4a/House-Selmy-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20161231144811"
+  },
+  {
+    id: "5cc0751804e71a0010b85d59",
+    name: "House Serrett",
+    words: "",
+    seatIds: ["5cc074e304e71a0010b85c01"],
+    region: ["The Westerlands"],
+    allegianceHouseIds: ["5cc0751804e71a0010b85d28"],
+    image: null
+  },
+  {
+    id: "5cc0751804e71a0010b85d5a",
+    name: "House Slynt",
+    words: "",
+    seatIds: ["5cc074e304e71a0010b85bd3"],
+    region: ["The Riverlands"],
+    allegianceHouseIds: ["5cc0751804e71a0010b85cd8"],
+    image: null
+  },
+  {
+    id: "5cc0751804e71a0010b85d5b",
+    name: "House Smallwood",
+    words: "",
+    seatIds: ["5cc074e304e71a0010b85ba4"],
+    region: ["Riverlands"],
+    allegianceHouseIds: [
+      "5cc0751804e71a0010b85d0a",
+      "5cc0751804e71a0010b85d71"
+    ],
+    image: null
+  },
+  {
+    id: "5cc0751804e71a0010b85d5c",
+    name: "House Sparr",
+    words: "",
+    seatIds: [],
+    region: ["Iron Islands"],
+    allegianceHouseIds: ["5cc0751804e71a0010b85d17"],
+    image: null
+  },
+  {
+    id: "5cc0751804e71a0010b85d5d",
+    name: "House Stark",
+    words: '"Winter Is Coming"',
+    seatIds: ["5cc074e304e71a0010b85c1a"],
+    region: ["The North"],
+    allegianceHouseIds: [
+      "5cc0751804e71a0010b85cd8",
+      "5cc0751804e71a0010b85d66"
+    ],
+    image:
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/8/8a/House-Stark-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20170101103142"
+  },
+  {
+    id: "5cc0751804e71a0010b85d5e",
+    name: "House Staunton",
+    words: "",
+    seatIds: [],
+    region: ["The Crownlands"],
+    allegianceHouseIds: [
+      "5cc0751804e71a0010b85cd8",
+      "5cc0751804e71a0010b85d28",
+      "5cc0751804e71a0010b85d66"
+    ],
+    image: null
+  },
+  {
+    id: "5cc0751804e71a0010b85d5f",
+    name: "User:SteveIntercept",
+    words: '"Dust To Dust."',
+    seatIds: [],
+    region: ["Crownlands"],
+    allegianceHouseIds: ["5cc0751804e71a0010b85d66"],
+    image: null
+  },
+  {
+    id: "5cc0751804e71a0010b85d60",
+    name: "House Stokeworth",
+    words: '"Proud to Be Faithful"',
+    seatIds: ["5cc074e304e71a0010b85bb5"],
+    region: ["The Crownlands"],
+    allegianceHouseIds: [
+      "5cc0751804e71a0010b85cd8",
+      "5cc0751804e71a0010b85d28",
+      "5cc0751804e71a0010b85d66"
+    ],
+    image:
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/1/10/House-Stokeworth-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20170523034644"
+  },
+  {
+    id: "5cc0751804e71a0010b85d61",
+    name: "House Strong",
+    words: "",
+    seatIds: ["5cc074e304e71a0010b85bd3"],
+    region: ["The Riverlands"],
+    allegianceHouseIds: ["5cc0751804e71a0010b85d71"],
+    image:
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/b/b6/House-Strong-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20170523035431"
+  },
+  {
+    id: "5cc0751804e71a0010b85d62",
+    name: "House Swann",
+    words: "",
+    seatIds: ["5cc074e304e71a0010b85c07"],
+    region: ["Dornish Marches", "The Stormlands"],
+    allegianceHouseIds: ["5cc0751804e71a0010b85cd6"],
+    image:
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/f/fe/House-Swann-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20170523040251"
+  },
+  {
+    id: "5cc0751804e71a0010b85d63",
+    name: "House Swyft",
+    words: '"Awake! Awake!"',
+    seatIds: [],
+    region: ["The Westerlands"],
+    allegianceHouseIds: ["5cc0751804e71a0010b85d28"],
+    image:
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/6/6d/House-Swyft-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20161231153546"
+  },
+  {
+    id: "5cc0751804e71a0010b85d64",
+    name: "House Tallhart",
+    words: '"Proud and Free"[citation needed]',
+    seatIds: ["5cc074e304e71a0010b85c10"],
+    region: ["The North"],
+    allegianceHouseIds: ["5cc0751804e71a0010b85d5d"],
+    image: null
+  },
+  {
+    id: "5cc0751804e71a0010b85d65",
+    name: "House Tarbeck",
+    words: "",
+    seatIds: ["5cc074e304e71a0010b85c0c"],
+    region: ["The Westerlands"],
+    allegianceHouseIds: [
+      "5cc0751804e71a0010b85d28",
+      "5cc0751804e71a0010b85d4e"
+    ],
+    image:
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/1/1c/House-Tarbeck-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20181217164159"
+  },
+  {
+    id: "5cc0751804e71a0010b85d66",
+    name: "House Targaryen",
+    words: '"Fire and Blood"',
+    seatIds: ["5cc074e304e71a0010b85bf3"],
+    region: ["The Crownlands", "Slaver&apos;s Bay", "Valyrian Peninsula"],
+    allegianceHouseIds: [],
+    image:
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/4/43/House-Targaryen-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20181113055101"
+  },
+  {
+    id: "5cc0751804e71a0010b85d67",
+    name: "House Tarly",
+    words: '"First in Battle"',
+    seatIds: ["5cc074e304e71a0010b85bda"],
+    region: ["The Reach"],
+    allegianceHouseIds: [
+      "5cc0751804e71a0010b85d0c",
+      "5cc0751804e71a0010b85d28",
+      "5cc0751804e71a0010b85d72"
+    ],
+    image:
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/2/2d/House-Tarly-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20170809082143"
+  },
+  {
+    id: "5cc0751804e71a0010b85d68",
+    name: "House Tarth",
+    words: "",
+    seatIds: ["5cc074e304e71a0010b85bc4"],
+    region: ["The Stormlands"],
+    allegianceHouseIds: ["5cc0751804e71a0010b85cd6"],
+    image:
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/3/33/House-Tarth-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20170724014934"
+  },
+  {
+    id: "5cc0751804e71a0010b85d69",
+    name: "House Tarwick",
+    words: "",
+    seatIds: [],
+    region: [],
+    allegianceHouseIds: [],
+    image: null
+  },
+  {
+    id: "5cc0751804e71a0010b85d6a",
+    name: "House Templeton",
+    words: "",
+    seatIds: [],
+    region: ["The Vale of Arryn"],
+    allegianceHouseIds: ["5cc0751804e71a0010b85cd3"],
+    image: null
+  },
+  {
+    id: "5cc0751804e71a0010b85d6b",
+    name: "House Thorne",
+    words: "",
+    seatIds: [],
+    region: ["Crownlands"],
+    allegianceHouseIds: [
+      "5cc0751804e71a0010b85cd8",
+      "5cc0751804e71a0010b85d28",
+      "5cc0751804e71a0010b85d66"
+    ],
+    image: null
+  },
+  {
+    id: "5cc0751804e71a0010b85d6c",
+    name: "House Tollett",
+    words: "",
+    seatIds: [],
+    region: ["The Vale of Arryn"],
+    allegianceHouseIds: ["5cc0751804e71a0010b85d51"],
+    image: null
+  },
+  {
+    id: "5cc0751804e71a0010b85d6d",
+    name: "House Towers",
+    words: "",
+    seatIds: ["5cc074e304e71a0010b85bd3"],
+    region: ["Riverlands"],
+    allegianceHouseIds: ["5cc0751804e71a0010b85d71"],
+    image:
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/a/ab/Towers_sigil.png/revision/latest?cb=20140626232200"
+  },
+  {
+    id: "5cc0751804e71a0010b85d6e",
+    name: "House Towers (North)",
+    words: "",
+    seatIds: [],
+    region: ["The North"],
+    allegianceHouseIds: [],
+    image:
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/5/5c/House_Towers_North.png/revision/latest?cb=20190125205248"
+  },
+  {
+    id: "5cc0751804e71a0010b85d6f",
+    name: "House Toyne",
+    words: "",
+    seatIds: [],
+    region: ["The Stormlands"],
+    allegianceHouseIds: ["5cc0751804e71a0010b85cd6"],
+    image: null
+  },
+  {
+    id: "5cc0751804e71a0010b85d70",
+    name: "House Trant",
+    words: "",
+    seatIds: [],
+    region: ["The Stormlands"],
+    allegianceHouseIds: ["5cc0751804e71a0010b85cd6"],
+    image: null
+  },
+  {
+    id: "5cc0751804e71a0010b85d71",
+    name: "House Tully",
+    words: '"Family, Duty, Honor"',
+    seatIds: ["5cc074e304e71a0010b85bf7"],
+    region: ["The Riverlands"],
+    allegianceHouseIds: [
+      "5cc0751804e71a0010b85cd8",
+      "5cc0751804e71a0010b85cfc",
+      "5cc0751804e71a0010b85d0a",
+      "5cc0751804e71a0010b85d1d",
+      "5cc0751804e71a0010b85d41",
+      "5cc0751804e71a0010b85d5d",
+      "5cc0751804e71a0010b85d66"
+    ],
+    image:
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/b/bd/House-Tully-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20170523040648"
+  },
+  {
+    id: "5cc0751804e71a0010b85d72",
+    name: "House Tyrell",
+    words: '"Growing Strong"',
+    seatIds: ["5cc074e304e71a0010b85bd7"],
+    region: ["The Reach"],
+    allegianceHouseIds: [
+      "5cc0751804e71a0010b85cd6",
+      "5cc0751804e71a0010b85cd8",
+      "5cc0751804e71a0010b85d0c",
+      "5cc0751804e71a0010b85d66"
+    ],
+    image:
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/c/cf/House-Tyrell-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20170108163035"
+  },
+  {
+    id: "5cc0751804e71a0010b85d73",
+    name: "House Uller",
+    words: "",
+    seatIds: ["5cc074e304e71a0010b85bd6"],
+    region: ["Dorne"],
+    allegianceHouseIds: ["5cc0751804e71a0010b85d38"],
+    image: null
+  },
+  {
+    id: "5cc0751804e71a0010b85d74",
+    name: "House Umber",
+    words: "",
+    seatIds: ["5cc074e304e71a0010b85be1"],
+    region: ["The North"],
+    allegianceHouseIds: [
+      "5cc0751804e71a0010b85ce0",
+      "5cc0751804e71a0010b85d5d"
+    ],
+    image:
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/2/2f/House-Umber-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20161231125826"
+  },
+  {
+    id: "5cc0751804e71a0010b85d75",
+    name: "House Velaryon",
+    words: '"The Old, the True, the Brave"',
+    seatIds: [],
+    region: ["The Crownlands", "Valyrian Peninsula"],
+    allegianceHouseIds: [
+      "5cc0751804e71a0010b85cd7",
+      "5cc0751804e71a0010b85cd8",
+      "5cc0751804e71a0010b85d66"
+    ],
+    image:
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/7/76/House-Velaryon-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20161219204203"
+  },
+  {
+    id: "5cc0751804e71a0010b85d76",
+    name: "House Warrick",
+    words: "",
+    seatIds: [],
+    region: ["The North"],
+    allegianceHouseIds: ["5cc0751804e71a0010b85d7b"],
+    image: null
+  },
+  {
+    id: "5cc0751804e71a0010b85d77",
+    name: "House Waynwood",
+    words: "",
+    seatIds: ["5cc074e304e71a0010b85bdd"],
+    region: ["Vale of Arryn"],
+    allegianceHouseIds: ["5cc0751804e71a0010b85cd3"],
+    image:
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/4/4e/House-Waynwood-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20170523041151"
+  },
+  {
+    id: "5cc0751804e71a0010b85d78",
+    name: "House Wells",
+    words: "",
+    seatIds: [],
+    region: [],
+    allegianceHouseIds: [],
+    image: null
+  },
+  {
+    id: "5cc0751804e71a0010b85d79",
+    name: "House Westerling",
+    words: '"Honor, Not Honors"',
+    seatIds: ["5cc074e304e71a0010b85bba"],
+    region: ["Westerlands"],
+    allegianceHouseIds: ["5cc0751804e71a0010b85d28"],
+    image: null
+  },
+  {
+    id: "5cc0751804e71a0010b85d7a",
+    name: "House Whent",
+    words: "",
+    seatIds: ["5cc074e304e71a0010b85bd3"],
+    region: ["The Riverlands"],
+    allegianceHouseIds: ["5cc0751804e71a0010b85d71"],
+    image:
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/5/52/House-Whent-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20170523041852"
+  },
+  {
+    id: "5cc0751804e71a0010b85d7b",
+    name: "House Whitehill",
+    words: '"Ever Higher"',
+    seatIds: ["5cc074e304e71a0010b85bd8"],
+    region: ["The North"],
+    allegianceHouseIds: ["5cc0751804e71a0010b85ce0"],
+    image:
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/6/6a/House-Whitehill-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20170523043108"
+  },
+  {
+    id: "5cc0751804e71a0010b85d7c",
+    name: "House Wibberley",
+    words: "",
+    seatIds: [],
+    region: [],
+    allegianceHouseIds: [],
+    image: null
+  },
+  {
+    id: "5cc0751804e71a0010b85d7d",
+    name: "House Wode",
+    words: "",
+    seatIds: [],
+    region: ["The Riverlands"],
+    allegianceHouseIds: ["5cc0751804e71a0010b85d7a"],
+    image: null
+  },
+  {
+    id: "5cc0751804e71a0010b85d7e",
+    name: "House Wylde",
+    words: "",
+    seatIds: ["5cc074e304e71a0010b85bf0"],
+    region: ["The Stormlands"],
+    allegianceHouseIds: [],
+    image:
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/1/1b/House-Wylde-Shield.png/revision/latest/scale-to-width-down/350?cb=20160421172928"
+  },
+  {
+    id: "5cc0751804e71a0010b85d7f",
+    name: "House Yarwyck",
+    words: "",
+    seatIds: [],
+    region: ["Westerlands"],
+    allegianceHouseIds: ["5cc0751804e71a0010b85d28"],
+    image: null
+  },
+  {
+    id: "5cc0751804e71a0010b85d80",
+    name: "House Yronwood",
+    words: "",
+    seatIds: ["5cc074e304e71a0010b85c1c"],
+    region: ["Dorne"],
+    allegianceHouseIds: ["5cc0751804e71a0010b85d38"],
+    image: null
   }
 ];
-
-module.exports = houses;

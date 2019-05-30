@@ -1,28 +1,34 @@
 type Query {
   characters: [Character]
+  character(id: String, name: String): Character
   houses: [House]
   castles: [Castle]
+}
+
+type Mutation {
+  pushFromWindow(id: String): Character
 }
 
 type Character {
   id: ID!
   slug: String!
   name: String
-  siblingIds: [ID!]
-  houseId: ID
+  siblings: [Character!]
+  house: House
   allegiances: [String!]
-  spouseIds: [ID!]
-  loverIds: [ID!]
+  spouses: [Character!]
+  lovers: [Character!]
   image: String
+  isHealthy: Boolean
 }
 
 type House {
   id: ID!
   name: String
   words: String
-  seatIds: [ID!]
+  seats: [Castle!]
   region: [String!]
-  allegionHouseIds: [ID!]
+  allegiances: [House!]
   image: String
 }
 
@@ -31,5 +37,5 @@ type Castle {
   name: String
   location: String
   religion: [String!]
-  rulerIds: [ID!]
+  rulers: [House!]
 }

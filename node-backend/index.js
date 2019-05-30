@@ -7,6 +7,11 @@ const Query = {
   characters: (root, args, context) => {
     return characters;
   },
+  character: (root, args, context) => {
+    return characters.find(
+      char => char.id === args.id || char.name === args.name
+    );
+  },
   houses: (root, args, context) => {
     return houses;
   },
@@ -15,57 +20,52 @@ const Query = {
   }
 };
 
-const Character = {
-  siblingIds: (root, args, context) => {
-    const siblings = root.related.filter(rel =>
-      root.siblings.includes(rel.name)
+const Mutation = {
+  pushFromWindow: (root, args, context) => {
+    const char = characters.find(
+      char => char.id === args.id || char.name === args.name
     );
-    return siblings.map(sib => characters.find(c => c.slug === sib.slug)._id);
+    char.isHealthy = false;
+    return char;
+  }
+};
+
+const Character = {
+  siblings: (root, args, context) => {
+    return characters.filter(char => root.siblingIds.includes(char.id));
   },
-  houseId: (root, args, context) => {
-    const house = houses.find(h => h.name === root.house);
-    return house && house._id;
+  house: (root, args, context) => {
+    return houses.find(h => h.id === root.houseId);
   },
-  spouseIds: (root, args, context) => {
-    const spouse = root.related.filter(rel => root.spouse.includes(rel.name));
-    return spouse.map(sib => characters.find(c => c.slug === sib.slug)._id);
+  spouses: (root, args, context) => {
+    return characters.filter(char => root.spouseIds.includes(char.id));
   },
-  loverIds: (root, args, context) => {
-    const lovers = root.related.filter(rel => root.lovers.includes(rel.name));
-    return lovers.map(sib => characters.find(c => c.slug === sib.slug)._id);
+  lovers: (root, args, context) => {
+    return characters.filter(char => root.loverIds.includes(char.id));
+  },
+  isHealthy: (root, args, context) => {
+    return root.isHealthy != false;
   }
 };
 
 const House = {
-  id: (root, args, context) => {
-    return root._id;
+  allegiances: (root, args, context) => {
+    return houses.filter(house => root.allegianceHouseIds.includes(house.id));
   },
-  image: (root, args, context) => {
-    return root.logoURL;
-  },
-  allegionHouseIds: (root, args, context) => {
-    return houses
-      .filter(house => root.allegiance.includes(house.name))
-      .map(alg => alg._id);
-  },
-  seatIds: (root, args, context) => {
-    return castles
-      .filter(castle => root.seat.includes(castle.name))
-      .map(castle => castle._id);
+  seats: (root, args, context) => {
+    return castles.filter(castle => root.seatIds.includes(castle.id));
   }
 };
 
 const Castle = {
-  id: (root, args, context) => {
-    return root._id;
-  },
-  rulerIds: (root, args, context) => {
-    return houses.filter(h => root.rulers.includes(h.name)).map(c => c._id);
+  rulers: (root, args, context) => {
+    return houses.filter(house => root.rulerIds.includes(house.id));
   }
 };
 
 const resolvers = {
   Query,
+  Mutation,
   Character,
   House,
   Castle
