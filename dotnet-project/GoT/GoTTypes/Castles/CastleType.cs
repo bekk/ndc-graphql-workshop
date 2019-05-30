@@ -14,7 +14,6 @@ namespace GoT.GoTTypes.Castles
             Field(h => h.Name, nullable: true);
             Field(h => h.Location, nullable: true);
             Field(h => h.Religion, nullable: true);
-            Field(h => h.RulerIds, nullable: true);
             Field<ListGraphType<HouseType>>(
                 "rulers",
                 resolve: context => data.GetRulers(context.Source)
