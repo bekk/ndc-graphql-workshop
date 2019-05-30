@@ -1,4 +1,6 @@
-﻿using GoT.GoTTypes.Character;
+﻿using GoT.GoTTypes.Castles;
+using GoT.GoTTypes.Character;
+using GoT.GoTTypes.Houses;
 using GraphQL.Types;
 
 namespace GoT
@@ -9,14 +11,20 @@ namespace GoT
         {
             Name = "Query";
 
-            Field<ListGraphType<CharacterType>>("getCharacters", resolve: context => data.GetCharacters());
+            Field<ListGraphType<CharacterType>>("characters", resolve: context => data.GetCharacters());
 
             Field<CharacterType>(
-                "getById",
+                "character",
                 arguments: new QueryArguments(
-                    new QueryArgument<NonNullGraphType<StringGraphType>> { Name = "id", Description = "id of the character" }
+                    new QueryArgument<StringGraphType> { Name = "id", Description = "id of the character" },
+                    new QueryArgument<StringGraphType> { Name = "name", Description = "name of the character" }
                 ),
-                resolve: context => data.GetCharacterById(context.GetArgument<string>("id")));
+                resolve: data.GetCharacter);
+
+            Field<ListGraphType<HouseType>>("houses", resolve: context => data.GetHouses());
+            //Field<ListGraphType<HouseType>>("getHouseById", resolve: context => data.GetHouses());
+
+            Field<ListGraphType<CastleType>>("castles", resolve: context => data.GetCastles());
         }
     }
 }

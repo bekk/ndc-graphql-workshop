@@ -1,5 +1,7 @@
 using GoT;
+using GoT.GoTTypes.Castles;
 using GoT.GoTTypes.Character;
+using GoT.GoTTypes.Houses;
 using GoT.Types;
 using GraphQL;
 using GraphQL.Http;
@@ -24,10 +26,14 @@ namespace dotnet
             //services.AddSingleton<StarWarsData>();
             services.AddSingleton<GoTData>();
             services.AddSingleton<GotQuery>();
+            services.AddSingleton<GotMutation>();
+            services.AddSingleton<CharacterInputType>();
             services.AddSingleton<StarWarsQuery>();
             //services.AddSingleton<StarWarsMutation>();
-            services.AddSingleton<HumanType>();
             services.AddSingleton<CharacterType>();
+            services.AddSingleton<HouseType>();
+            services.AddSingleton<CastleType>();
+            services.AddSingleton<HumanType>();
             services.AddSingleton<HumanInputType>();
             services.AddSingleton<DroidType>();
             services.AddSingleton<CharacterInterface>();

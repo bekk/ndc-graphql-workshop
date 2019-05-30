@@ -9,6 +9,7 @@ namespace GoT
             : base(resolver)
         {
             Query = resolver.Resolve<GotQuery>();
+            Mutation = resolver.Resolve<GotMutation>();
         }
     }
 }

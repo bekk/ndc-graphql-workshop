@@ -1,4 +1,5 @@
-﻿using GraphQL.Types;
+﻿using GoT.GoTTypes.Houses;
+using GraphQL.Types;
 
 namespace GoT.GoTTypes.Character
 {
@@ -8,10 +9,32 @@ namespace GoT.GoTTypes.Character
         {
             Name = "Character";
 
-            Field(h => h.Id).Description("The id of the character.");
-            Field(h => h.Name, nullable: true).Description("The name of the character.");
-            Field(h => h.Image, nullable: true).Description("The url to the image");
-            Field(h => h.House, nullable: true).Description("The name of the human.");
+            Field(h => h.Id);
+            Field(h => h.Name, nullable: true);
+            Field(h => h.HouseId, nullable: true);
+            Field(h => h.Image, nullable: true);
+            Field(h => h.SpouseIds, nullable: true);
+            Field(h => h.LoverIds, nullable: true);
+            Field(h => h.Allegiances, nullable: true);
+            Field<ListGraphType<CharacterType>>(
+                "lovers",
+                resolve: context => data.GetLovers(context.Source)
+            );
+            Field<ListGraphType<CharacterType>>(
+                "spouses",
+                resolve: context => data.GetSpouses(context.Source)
+            );
+            Field<ListGraphType<CharacterType>>(
+                "siblings",
+                resolve: context => data.GetSiblings(context.Source)
+            );
+            Field<HouseType>(
+                "house",
+                resolve: context => data.GetHouseById(context.Source.HouseId)
+            );
+            Field(h => h.Healthy, nullable: true);
+            Field(h => h.Titles, nullable: true);
+
         }
     }
 }
