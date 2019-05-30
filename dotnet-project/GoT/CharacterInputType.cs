@@ -10,9 +10,6 @@ namespace GoT
         {
             Name = "Characterinput";
             Field(x => x.Id);
-            Field(x => x.Healthy, nullable:true);
-            Field(x => x.Titles, nullable:true);
-            Field(x => x.Name, nullable: true);
         }
     }
 }

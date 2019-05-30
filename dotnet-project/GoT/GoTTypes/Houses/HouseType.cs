@@ -22,7 +22,7 @@ namespace GoT.GoTTypes.Houses
                 resolve: context => data.GetAllegiance(context.Source)
             );
             Field<ListGraphType<CharacterType>>(
-                "Residents",
+                "Members",
                 resolve: context => data.GetResidents(context.Source)
             );
             Field<ListGraphType<CastleType>>(

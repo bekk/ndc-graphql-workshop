@@ -18,7 +18,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Starwars\GoT.csproj" />
+    <ProjectReference Include="..\GoT\GoT.csproj" />
   </ItemGroup>
 
 </Project>

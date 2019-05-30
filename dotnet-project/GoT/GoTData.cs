@@ -45,9 +45,9 @@ namespace GoT
             return _characters.Find(x => x.Id == id);
         }
 
-        public IEnumerable<Character> GetCharacterByName(string name)
+        public Character GetCharacterByName(string name)
         {
-            return _characters.Where(x => x.Name.Equals(name));
+            return _characters.Find(x => x.Name.Equals(name));
         }
 
         public IEnumerable<Character> GetLovers(Character character)
@@ -95,25 +95,12 @@ namespace GoT
             return castle?.RulerIds.Select(GetHouseById);
         }
 
-        public Character UpdateCharacter(Character characterInput)
+        public Character PushFromwindow(Character characterInput)
         {
             var characterId = characterInput.Id;
 
             var character = _characters.Find(x => x.Id == characterId);
-
-            if (characterInput.Healthy != null)
-            {
-                character.Healthy = characterInput.Healthy;
-            }
-
-            if (characterInput.Name != null)
-            {
-                character.Name = characterInput.Name;
-            }
-            if (characterInput.Titles != null)
-            {
-                character.Titles = characterInput.Titles;
-            }
+            character.Healthy = false;
             return character;
         }
 
@@ -133,7 +120,24 @@ namespace GoT
 
             if (name != null)
             {
-                return GetCharacterByName(name).FirstOrDefault();
+                return GetCharacterByName(name);
+            }
+
+            return null;
+        }
+
+        public House GetHouse(ResolveFieldContext<object> context)
+        {
+            var id = context.GetArgument<string>("id");
+            var name = context.GetArgument<string>("name");
+            if (id != null)
+            {
+                return _houses.Find(x => x.Id == id);
+            }
+
+            if (name != null)
+            {
+                return _houses.Find(x => x.Name.Equals(name));
             }
 
             return null;

@@ -10,14 +10,14 @@ namespace GoT
             Name = "Mutation";
 
             Field<CharacterType>(
-                "character",
+                "pushFromWindow",
                 arguments: new QueryArguments(
                     new QueryArgument<NonNullGraphType<CharacterInputType>> { Name = "character" }
                 ),
                 resolve: context =>
                 {
                     var character = context.GetArgument<Character>("character");
-                    return data.UpdateCharacter(character);
+                    return data.PushFromwindow(character);
                 });
         }
 
