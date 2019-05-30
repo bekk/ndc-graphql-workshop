@@ -1,5 +1,4 @@
 ﻿using GoT.GoTTypes.Character;
-using GoT.Types;
 using GraphQL.Types;
 
 namespace GoT

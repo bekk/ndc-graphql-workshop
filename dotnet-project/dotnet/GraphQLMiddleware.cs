@@ -60,7 +60,6 @@ namespace dotnet
                 _.OperationName = request?.OperationName;
                 _.Inputs = request?.Variables.ToInputs();
                 _.UserContext = _settings.BuildUserContext?.Invoke(context);
-                _.ValidationRules = DocumentValidator.CoreRules().Concat(new [] { new InputValidationRule() });
             });
 
             await WriteResponseAsync(context, result);
