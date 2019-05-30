@@ -15,8 +15,18 @@ const Query = {
   houses: (root, args, context) => {
     return houses;
   },
+  house: (root, args, context) => {
+    return houses.find(
+      house => house.id === args.id || house.name === args.name
+    );
+  },
   castles: (root, args, context) => {
     return castles;
+  },
+  castle: (root, args, context) => {
+    return castles.find(
+      castle => castle.id === args.id || castle.name === args.name
+    );
   }
 };
 
@@ -26,6 +36,13 @@ const Mutation = {
       char => char.id === args.id || char.name === args.name
     );
     char.isHealthy = false;
+    return char;
+  },
+  addTitle: (root, args, context) => {
+    const char = characters.find(
+      char => char.id === args.id || char.name === args.name
+    );
+    char.titles = [...(char.titles || []), args.title];
     return char;
   }
 };
@@ -45,6 +62,9 @@ const Character = {
   },
   isHealthy: (root, args, context) => {
     return root.isHealthy != false;
+  },
+  titles: (root, args, context) => {
+    return root.titles || [];
   }
 };
 
@@ -54,6 +74,9 @@ const House = {
   },
   seats: (root, args, context) => {
     return castles.filter(castle => root.seatIds.includes(castle.id));
+  },
+  members: (root, args, context) => {
+    return characters.filter(char => char.houseId === root.id);
   }
 };
 
