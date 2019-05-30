@@ -9,6 +9,7 @@ namespace GoT
         {
             Name = "Characterinput";
             Field(x => x.Id);
+            Field(x => x.Titles, nullable:true);
         }
     }
 }

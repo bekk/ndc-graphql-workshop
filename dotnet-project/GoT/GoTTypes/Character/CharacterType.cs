@@ -11,10 +11,7 @@ namespace GoT.GoTTypes.Character
 
             Field(h => h.Id);
             Field(h => h.Name, nullable: true);
-            Field(h => h.HouseId, nullable: true);
             Field(h => h.Image, nullable: true);
-            Field(h => h.SpouseIds, nullable: true);
-            Field(h => h.LoverIds, nullable: true);
             Field(h => h.Allegiances, nullable: true);
             Field<ListGraphType<CharacterType>>(
                 "lovers",

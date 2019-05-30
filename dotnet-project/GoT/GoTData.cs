@@ -142,5 +142,12 @@ namespace GoT
 
             return null;
         }
+
+        public Character AddTitles(Character characterinput)
+        {
+            var character = _characters.Find(x => x.Id == characterinput.Id);
+            character.Titles = characterinput.Titles;
+            return character;
+        }
     }
 }

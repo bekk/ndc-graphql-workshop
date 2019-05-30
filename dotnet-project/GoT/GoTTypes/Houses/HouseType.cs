@@ -15,7 +15,6 @@ namespace GoT.GoTTypes.Houses
             Field(h => h.Region, nullable: true);
             Field(h => h.Image, nullable: true);
             Field(h => h.Words, nullable: true);
-            Field(h => h.SeatIds, nullable: true);
             Field(h => h.AllegionHouseIds, nullable: true);
             Field<ListGraphType<HouseType>>(
                 "Allegion",
