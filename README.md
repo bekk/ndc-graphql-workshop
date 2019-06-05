@@ -2,6 +2,10 @@
 
 TODO: 
 - Legg til isHealthy og titles i datasettet
+- Kna tekster
+- Lag scratch-branch (og fasit branch) 
+- Lag node og .NET spesifikke READMEs for prerequisites. 
+- Lag fasit for marry
 
 ## Introduction
 
