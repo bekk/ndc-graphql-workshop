@@ -145,7 +145,7 @@ const Query = {
 };
 ```
 
-** b) Add `House` to the API. **
+**b) Add `House` to the API.**
 
 ```graphql
 type House {
@@ -158,7 +158,7 @@ type House {
 }
 ```
 
-** c) It should also be possible to find which house a character belongs to. **
+**c) It should also be possible to find which house a character belongs to.**
 
 
 ## Task 4 - Mutations
@@ -173,11 +173,11 @@ type Mutation {
 }
 ```
 
-** a) Implement the pushFromWindow mutation. This includes changes to both schema and resolver. The push should set the isHealthy field to false for Bran Stark.** 
+**a) Implement the pushFromWindow mutation. This includes changes to both schema and resolver. The push should set the isHealthy field to false for Bran Stark.** 
 
 It is not just in Westeros the action is happening. Across the Narrow Sea, an important wedding is taking place. The ruggedly handsome Khal Drogo is marrying the beautiful Daenerys Targaryan. 
 
-** b) Make sure the wedding takes place. Create a mutation taking two names as arguments.**
+**b) Make sure the wedding takes place. Create a mutation taking two names as arguments.**
 
 ```graphql
 type Mutation {
@@ -188,6 +188,9 @@ type Mutation {
 
 Allthough the claim may be poor, Joffrey Baratheon manages to be crowned King of the Seven Kingdoms. We have to make sure our API keeps track. 
 
-** c) Give King Joffrey the titles: the First of His Name, King of the Andals and the First Men, Lord of the Seven Kingdoms, and Protector of the Realm**
+**c) Give King Joffrey the titles: the First of His Name, King of the Andals and the First Men, Lord of the Seven Kingdoms, and Protector of the Realm**
 
+## Bonus task 
+
+Add seat to all the the houses. To do this you need to define a `Castle` type with the necessary fields (check the data set). 
 
