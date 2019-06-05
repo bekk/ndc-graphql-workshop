@@ -6,6 +6,7 @@ TODO:
 - Lag scratch-branch (og fasit branch) 
 - Lag node og .NET spesifikke READMEs for prerequisites. 
 - Lag fasit for marry
+- Lag ferdig intro for graphQL (THORSTEIN)
 
 ## Introduction
 
