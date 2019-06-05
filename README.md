@@ -1,5 +1,8 @@
 # GraphQL Workshop
 
+TODO: 
+- Legg til isHealthy og titles i datasettet
+
 ## Introduction
 
 (TODO KNA TEKSTEN) Most of us may be very familiar with creating REST APIs. GraphQL is a query language, created by Facebook with the purpose of building client applications based on intuitive and flexible syntax, for describing their data requirements and interactions. GraphQL was designed to solve one of the biggest drawbacks of REST-like APIs. A GraphQL service is created by defining types and fields on those types, then providing functions for each field on each type.
@@ -51,7 +54,7 @@ query {
 }
 ```
 
-**c) Use a nested query to see the characters' siblings.
+**c) Use a nested query to see the characters' siblings.**
 
 ## Task 2 - Schema 
 
@@ -86,6 +89,8 @@ The `Character` type defines two fields of type `ID` and `String`. Both are one 
 
 For scalar types, you can just add a field to a type in your schema - and GraphQL will resolve it based on matching name in the data set. 
 
+The `!` behind `ID` simply means that the field is non-nullable. 
+
 **a) Add the field `alligiances`to the `Character`type. Use GraphiQL to find alligiances of all characters.**
 
 ## Task 3 - Resolvers
@@ -96,7 +101,7 @@ For the `Character` type, there is already defined one resolver - the one that r
 
 ```js
 const Character = {
-  siblings: (root) => {
+  siblings: (root, args) => {
       return characters.filter(character => root.siblingIds.includes(character.id));
     }
   }
@@ -104,26 +109,85 @@ const Character = {
 
 All resolvers receives the `root` argument, which is the parent beeing resolved. To find all the siblings, the resolver filters all characters using the `siblingIds` list.
 
-**a) Add resolvers for **
+**a) Add lovers and spouses to `Character`. Remember to also add it to your schema**
 
-2. Legg på litt ekstra informasjon på hver karakter
+Up until now we have queried all characters, but we want to be able to get one specific. The following query should return Bran Stark:
+
+```graphql
+query {
+  character(name: "Bran Stark"){
+    name
+  }
+}
+```
+
+To support this query you need to extend the `Query` type in your schema:
+
+```graphql
+type Query {
+  characters: [Character]
+  character(id: String, name: String): Character
+  }
+```
+
+Now we will make use of the `args` argument. Adding a `character` resolver like below, will allow you to query a specific character by name.
+
+```js
+const Query = {
+  characters: (root, args, context) => {
+    return characters;
+  },
+  character: (root, args, context) => {
+    return characters.find(
+      char => char.name === args.name
+    );
+  }
+};
+```
+
+** b) Add `House` to the API. **
+
+```graphql
+type House {
+  id: ID!
+  name: String
+  words: String
+  region: [String!]
+  allegiances: [House!]
+  members: [Character!]
+}
+```
+
+** c) It should also be possible to find which house a character belongs to. **
 
 
-### Add extra information on characters
+## Task 4 - Mutations
 
-- Utvid typedef med x og y
-- Utvid typedef med objektet z
+(TODO KNA) So far we have been dealing with queries; operations to retrieve data. Mutations are the second main operation in GraphQL which deal with creating, deleting and updating of data. Let's focus on some examples of how to carry out mutations. For instance, we want to update a user with id==1 and change their age their name and age and return the new user details.
 
-3. Finn Brad Stark
-   - Lag en ny resolver som kan hente ut karakter basert på ID
-   - Lag en ny spørring som henter ut Brad Start basert på IDen hans
-4. Dytt Brad Stark ut av tårnet (Mutation)
-   - Legg til en ny boolsk property på Character i typedef "isHealthy"
-   - Bruk en mutation til å endre "isHealthy" på Brad Stark til "false"
-5. Hent alle houses
-   - Lag en ny resolver for å hente ut houses
-   - Utvid House i typedef til å inneholde en liste med IDene til alle karakterene som "bor der"
-6. Finn alle karakterer fra House Lannister
-   - Lag en ny resolver
-7. Gjør Geoffry til konge - Legg til feltet "titles" i Character som en liste av strings - Legg til "Protector of the realm", etc.. i titles til Geofrry
-   Collapse
+As with the `Query` type in your schema, you will need to add a `Mutation` type. Lets imagine you are Jaime Lannister, secrets are important to you - sometimes desperate actions are needed: 
+
+```graphql
+type Mutation {
+  pushFromWindow(name: String!): Character
+}
+```
+
+** a) Implement the pushFromWindow mutation. This includes changes to both schema and resolver. The push should set the isHealthy field to false for Bran Stark.** 
+
+It is not just in Westeros the action is happening. Across the Narrow Sea, an important wedding is taking place. The ruggedly handsome Khal Drogo is marrying the beautiful Daenerys Targaryan. 
+
+** b) Make sure the wedding takes place. Create a mutation taking two names as arguments.**
+
+```graphql
+type Mutation {
+  pushFromWindow(name: String!): Character
+  marry(spouseName1: String!, spouseName2: String!): [Character]
+}
+```
+
+Allthough the claim may be poor, Joffrey Baratheon manages to be crowned King of the Seven Kingdoms. We have to make sure our API keeps track. 
+
+** c) Give King Joffrey the titles: the First of His Name, King of the Andals and the First Men, Lord of the Seven Kingdoms, and Protector of the Realm**
+
+
