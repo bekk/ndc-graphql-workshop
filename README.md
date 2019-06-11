@@ -27,9 +27,9 @@ Good luck!
 
 ## Task 1 - Basic Queries
 
-(TODO KNA) If you've seen a GraphQL query before, you know that the GraphQL query language is basically about selecting fields on objects
+The GraphQL query language is basically about selecting fields on objects, which means that the client is now in control. The GraphQL server will return only the fields asked for.
 
-A query is built hierarchical
+A query is built hierarchical, with a top-level `query`
 
 ```graphql
 query {
@@ -52,7 +52,7 @@ query {
 }
 ```
 
-**b) Extend the the query to also list the `name` of each character.**
+**b) Extend the the query from a) to also list the `name` of each character.**
 
 Nested queries can be used to find information about a characters siblings:
 
@@ -70,9 +70,9 @@ query {
 
 **c) Use a nested query to see the characters' siblings.**
 
-## Task 2 - Schema
+## Task 2 - Schemas and Types
 
-(TODO KNA) In GraphQL, the Schema manages queries and mutations, defining what is allowed to be executed in the GraphQL server. A schema defines a GraphQL API's type system. It describes the complete set of possible data (objects, fields, relationships, everything) that a client can access. Calls from the client are validated and executed against the schema. A client can find information about the schema via introspection. A schema resides on the GraphQL API server.
+The schema defines your GraphQL API's type system, and what is allowed to be executed in the GraphQL server. Calls from the client are validated and executed against the schema.
 
 Every schema needs a root query type, defining the top level queries.
 
@@ -88,8 +88,8 @@ The `characters` field is defined as a list of type `Character`.
 type Character {
   id: ID!
   name: String
-  allegiances: [String!]
-  siblings: [Character!]
+  allegiances: [String]
+  siblings: [Character]
 }
 ```
 
@@ -98,7 +98,7 @@ The `Character` type defines two fields of type `ID` and `String`. Both are one 
 - Int: A signed 32‐bit integer.
 - Float: A signed double-precision floating-point value.
 - String: A UTF‐8 character sequence.
-- Boolean: true or false.
+- Boolean: `true` or `false`.
 - ID: represents a unique identifier and is serialized in the same way as a String
 
 For scalar types, you can just add a field to a type in your schema - and GraphQL will resolve it based on matching name in the data set.
@@ -109,9 +109,7 @@ The `!` behind `ID` simply means that the field is non-nullable.
 
 ## Task 3 - Resolvers
 
-(TODO KNA) A resolver is responsible for mapping the operation to actual function. Inside type Query, we have an operation called users. We map this operation to a function with the same name inside root. We will also create some dummy users for this functionality.
-
-For the `Character` type, there is already defined one resolver - the one that resolved your query for siblings earlier.
+Resolvers are responsible for mapping the operations to actual functions. For the `Character` type, there is already defined one resolver - the one that resolved your query for siblings earlier.
 
 ```js
 const Character = {
@@ -176,9 +174,7 @@ type House {
 
 ## Task 4 - Mutations
 
-(TODO KNA) So far we have been dealing with queries; operations to retrieve data. Mutations are the second main operation in GraphQL which deal with creating, deleting and updating of data. Let's focus on some examples of how to carry out mutations. For instance, we want to update a user with id==1 and change their age their name and age and return the new user details.
-
-As with the `Query` type in your schema, you will need to add a `Mutation` type. Lets imagine you are Jaime Lannister, secrets are important to you - sometimes desperate actions are needed:
+Mutations are the second main operation in GraphQL. It deals with creating, deleting and updating data. As with the `Query` type in your schema, you will need to add a `Mutation` type. Lets imagine you are Jaime Lannister, secrets are important to you - sometimes desperate actions are needed:
 
 ```graphql
 type Mutation {
