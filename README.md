@@ -12,6 +12,8 @@ GraphQL is an open-source data query language for API's, and a runtime for fulfi
 
 We will cover basic topics like fetching data from a GraphQL server using queries and mutations, writing schemas to describe what data can be queried and getting to know the schema type system. At the end of the workshop you will be well equipped to start implementing a new, or to query an existing, GraphQL API.
 
+The master of whisperers is starting to lose track of all the comings and goings in Westeros. So decides to build an GraphQL API to keep track.
+
 ## Getting started
 
 First, clone this project.
