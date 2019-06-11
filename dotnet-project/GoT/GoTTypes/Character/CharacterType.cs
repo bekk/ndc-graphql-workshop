@@ -29,7 +29,7 @@ namespace GoT.GoTTypes.Character
                 "house",
                 resolve: context => data.GetHouseById(context.Source.HouseId)
             );
-            Field(h => h.Healthy, nullable: true);
+            Field(h => h.IsHealthy, nullable: true);
             Field(h => h.Titles, nullable: true);
 
         }

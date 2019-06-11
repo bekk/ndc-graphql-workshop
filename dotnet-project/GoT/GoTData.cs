@@ -95,12 +95,11 @@ namespace GoT
             return castle?.RulerIds.Select(GetHouseById);
         }
 
-        public Character PushFromwindow(Character characterInput)
+        public Character PushFromwindow(string name)
         {
-            var characterId = characterInput.Id;
 
-            var character = _characters.Find(x => x.Id == characterId);
-            character.Healthy = false;
+            var character = _characters.Find(x => x.Name == name);
+            character.IsHealthy = false;
             return character;
         }
 
@@ -143,11 +142,19 @@ namespace GoT
             return null;
         }
 
-        public Character AddTitles(Character characterinput)
+        public Character AddTitles(string characterName, IEnumerable<string> titles)
         {
-            var character = _characters.Find(x => x.Id == characterinput.Id);
-            character.Titles = characterinput.Titles;
+            var character = _characters.Find(x => x.Name == characterName);
+            character.Titles = titles;
             return character;
+        }
+        public List<Character> Marry(string spouseName1, string spouseName2)
+        {
+            var spouse1 = _characters.Find(x => x.Name == spouseName1);
+            var spouse2 = _characters.Find(x => x.Name == spouseName2);
+            spouse1.SpouseIds = spouse1.SpouseIds.Concat(new List<string>(){ spouse2.Id});
+            spouse2.SpouseIds = spouse2.SpouseIds.Concat(new List<string>(){ spouse1.Id});
+            return new List<Character>() {spouse1, spouse2};
         }
     }
 }

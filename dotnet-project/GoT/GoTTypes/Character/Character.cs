@@ -13,6 +13,6 @@ namespace GoT.GoTTypes.Character
         public IEnumerable<string> LoverIds { get; set; }
         public IEnumerable<string> SiblingIds { get; set; }
         public IEnumerable<string> Titles { get; set; }
-        public bool? Healthy { get; set; }
+        public bool IsHealthy { get; set; }
     }
 }

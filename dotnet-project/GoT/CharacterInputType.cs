@@ -8,7 +8,7 @@ namespace GoT
         public CharacterInputType()
         {
             Name = "Characterinput";
-            Field(x => x.Id);
+            Field(x => x.Name);
             Field(x => x.Titles, nullable:true);
         }
     }
