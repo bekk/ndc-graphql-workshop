@@ -1,7 +1,7 @@
 ﻿using System.IO;
 using Microsoft.AspNetCore.Hosting;
 
-namespace dotnet
+namespace GraphQLServer
 {
     public class Program
     {

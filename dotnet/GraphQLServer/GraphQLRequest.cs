@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json.Linq;
 
-namespace dotnet
+namespace GraphQLServer
 {
     public class GraphQLRequest
     {
