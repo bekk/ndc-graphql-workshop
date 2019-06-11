@@ -2,8 +2,6 @@
 
 TODO:
 
-- Kna tekster
-- Lag scratch-branch (og fasit branch)
 - Lag ferdig intro for graphQL (THORSTEIN)
 
 ## Introduction
