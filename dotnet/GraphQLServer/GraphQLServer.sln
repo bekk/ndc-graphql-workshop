@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.28803.352
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dotnet", "dotnet.csproj", "{9B8C50AD-DBEE-46E5-9DD1-F80AD0E1CB3B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GraphQLServer", "GraphQLServer.csproj", "{9B8C50AD-DBEE-46E5-9DD1-F80AD0E1CB3B}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GoT", "..\GoT\GoT.csproj", "{13ED8C99-F026-4759-9BFB-FB9E8FB7AE6B}"
 EndProject

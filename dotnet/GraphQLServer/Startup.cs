@@ -11,7 +11,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 
-namespace dotnet
+namespace GraphQLServer
 {
     public class Startup
     {
@@ -21,13 +21,10 @@ namespace dotnet
 
             services.AddSingleton<IDocumentExecuter, DocumentExecuter>();
             services.AddSingleton<IDocumentWriter, DocumentWriter>();
-            //var foo = new GoTData();
-            //services.AddSingleton<StarWarsData>();
             services.AddSingleton<GoTData>();
             services.AddSingleton<GotQuery>();
             services.AddSingleton<GotMutation>();
             services.AddSingleton<CharacterInputType>();
-            //services.AddSingleton<StarWarsMutation>();
             services.AddSingleton<CharacterType>();
             services.AddSingleton<HouseType>();
             services.AddSingleton<CastleType>();
