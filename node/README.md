@@ -20,11 +20,9 @@ To start the server, run
 npm run start
 ```
 
-and open [http://localhost:4000]() in the browser.
+and open [http://localhost:4000]() in the browser. All changes to the API will restart the server.
 
 You are now ready to start doing the exercises.
-
-**Remember to restart the server after doing changes to the code.**
 
 ### Project structure
 
@@ -32,9 +30,9 @@ We use the [graphql-yoga](https://github.com/prisma/graphql-yoga), which means t
 
 To solve the exercises, you only need to make changes to `index.js` and `schema.graphql`.
 
-- `index.js` includes the setup for the GraphQL server, and the implementation of the resolvers. We will use an in memory database, which includes all the files in the `node/data` folder. Import the data needed as done with `characters` in `index.js`.
+- `index.js` includes the setup for the GraphQL server, and the implementation of the resolvers. We will use an in memory database, which includes all the files in the `node/data` folder. Import the data needed as done with `characters` in `index.js`. Remember that all changes to the API will restart the server, which means that the in-memory database will be reset as well.
 
-- `schema.graphql` includes the GraphQL schemas for our API. If there is a mismatch between the resolvers in `index.js` and the schema, the project will not compile.
+- `schema.js` includes the GraphQL schemas for our API. All changes must be done within the `gql` template string. If there is a mismatch between the resolvers in `index.js` and the schema, the project will not compile.
 
 ### IDE
 

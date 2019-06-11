@@ -1,4 +1,5 @@
 const { GraphQLServer } = require("graphql-yoga");
+const typeDefs = require("./schema.js");
 const characters = require("./data/characters.js");
 const houses = require("./data/houses.js");
 const castles = require("./data/castles.js");
@@ -98,7 +99,7 @@ const resolvers = {
 };
 
 const server = new GraphQLServer({
-  typeDefs: "./schema.graphql",
+  typeDefs,
   resolvers
 });
 server.start(() => console.log(`Server is running on http://localhost:4000`));

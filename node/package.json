@@ -4,11 +4,13 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "node index.js"
+    "start": "nodemon index.js"
   },
   "dependencies": {
     "graphql-tag": "^2.10.1",
-    "graphql-yoga": "^1.17.4",
-    "nodemon": "^1.18.10"
+    "graphql-yoga": "^1.17.4"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
   }
 }
