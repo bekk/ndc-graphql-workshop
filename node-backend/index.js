@@ -32,18 +32,21 @@ const Query = {
 
 const Mutation = {
   pushFromWindow: (root, args, context) => {
-    const char = characters.find(
-      char => char.id === args.id || char.name === args.name
-    );
+    const char = characters.find(char => char.name === args.name);
     char.isHealthy = false;
     return char;
   },
   addTitle: (root, args, context) => {
-    const char = characters.find(
-      char => char.id === args.id || char.name === args.name
-    );
+    const char = characters.find(char => char.name === args.name);
     char.titles = [...(char.titles || []), args.title];
     return char;
+  },
+  marry: (root, args, context) => {
+    const spouse1 = characters.find(char => char.name === args.spouseName1);
+    const spouse2 = characters.find(char => char.name === args.spouseName2);
+    spouse1.spouseIds = [...spouse1.spouseIds, spouse2.id];
+    spouse2.spouseIds = [...spouse2.spouseIds, spouse1.id];
+    return [spouse1, spouse2];
   }
 };
 

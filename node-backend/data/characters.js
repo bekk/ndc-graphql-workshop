@@ -8,7 +8,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/3/37/Eddard_Stark_infobox_new.jpg/revision/latest/scale-to-width-down/323?cb=20160730050722"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/3/37/Eddard_Stark_infobox_new.jpg/revision/latest/scale-to-width-down/323?cb=20160730050722",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b86af3",
@@ -19,7 +21,9 @@ module.exports = [
     spouseIds: ["5cc0757c04e71a0010b86ac3"],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/d/d8/CatelynS3Promo.jpg/revision/latest/scale-to-width-down/333?cb=20131004004734"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/d/d8/CatelynS3Promo.jpg/revision/latest/scale-to-width-down/333?cb=20131004004734",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b86b16",
@@ -36,7 +40,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/5/50/S3E9_Robb_Stark_main.jpg/revision/latest/scale-to-width-down/327?cb=20160718071203"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/5/50/S3E9_Robb_Stark_main.jpg/revision/latest/scale-to-width-down/327?cb=20160718071203",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b86b44",
@@ -53,7 +59,9 @@ module.exports = [
     spouseIds: ["5cc0757c04e71a0010b86df9"],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/f/f3/Sansa_S8.jpg/revision/latest/scale-to-width-down/350?cb=20190206213553"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/f/f3/Sansa_S8.jpg/revision/latest/scale-to-width-down/350?cb=20190206213553",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b86b76",
@@ -70,7 +78,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/b/b1/Arya_Season_8.jpg/revision/latest/scale-to-width-down/350?cb=20190206213617"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/b/b1/Arya_Season_8.jpg/revision/latest/scale-to-width-down/350?cb=20190206213617",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b86bb0",
@@ -87,7 +97,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/1/1c/Bran_S8_EP2infobox.jpg/revision/latest/scale-to-width-down/304?cb=20190418012948"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/1/1c/Bran_S8_EP2infobox.jpg/revision/latest/scale-to-width-down/304?cb=20190418012948",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b86bdc",
@@ -104,7 +116,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/d/d9/Battle_of_the_Bastards_42.jpg/revision/latest/scale-to-width-down/350?cb=20160621185459"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/d/d9/Battle_of_the_Bastards_42.jpg/revision/latest/scale-to-width-down/350?cb=20160621185459",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b86bfb",
@@ -121,7 +135,9 @@ module.exports = [
     spouseIds: [],
     loverIds: ["5cc0757c04e71a0010b87449", "5cc0757c04e71a0010b87509"],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/d/d3/JonSnowSeason8HB.jpg/revision/latest/scale-to-width-down/333?cb=20190401173347"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/d/d3/JonSnowSeason8HB.jpg/revision/latest/scale-to-width-down/333?cb=20190401173347",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b86c3b",
@@ -132,7 +148,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/0/0f/610_Benjen_Promo_Crop.png/revision/latest/scale-to-width-down/350?cb=20160629183134"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/0/0f/610_Benjen_Promo_Crop.png/revision/latest/scale-to-width-down/350?cb=20160629183134",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b86c54",
@@ -151,7 +169,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/7/78/TheonS8E1.PNG/revision/latest/scale-to-width-down/314?cb=20190415192721"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/7/78/TheonS8E1.PNG/revision/latest/scale-to-width-down/314?cb=20190415192721",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b86c72",
@@ -162,7 +182,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/6/6b/Rodrik_profile.jpg/revision/latest?cb=20130122155003"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/6/6b/Rodrik_profile.jpg/revision/latest?cb=20130122155003",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b86c83",
@@ -173,7 +195,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/8/87/Jory_profile.jpg/revision/latest?cb=20130122153149"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/8/87/Jory_profile.jpg/revision/latest?cb=20130122153149",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b86c8c",
@@ -184,7 +208,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/5/53/Luwin.jpg/revision/latest?cb=20180702203634"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/5/53/Luwin.jpg/revision/latest?cb=20180702203634",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b86c9b",
@@ -195,7 +221,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/1/18/Season_6_hodor_main.jpg/revision/latest/scale-to-width-down/350?cb=20160617020835"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/1/18/Season_6_hodor_main.jpg/revision/latest/scale-to-width-down/350?cb=20160617020835",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b86cae",
@@ -206,7 +234,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/1/12/Vieille_Nan.jpg/revision/latest?cb=20180702205437"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/1/12/Vieille_Nan.jpg/revision/latest?cb=20180702205437",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b86cb9",
@@ -217,7 +247,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/2/20/MordaneCropped.jpg/revision/latest?cb=20190215194539"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/2/20/MordaneCropped.jpg/revision/latest?cb=20190215194539",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b86cbe",
@@ -228,7 +260,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/2/23/Ros-3x04a.jpg/revision/latest/scale-to-width-down/330?cb=20160719051204"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/2/23/Ros-3x04a.jpg/revision/latest/scale-to-width-down/330?cb=20160719051204",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b86cca",
@@ -239,7 +273,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/b/bb/GreatjonHD.png/revision/latest/scale-to-width-down/350?cb=20160112173027"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/b/bb/GreatjonHD.png/revision/latest/scale-to-width-down/350?cb=20160112173027",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b86cd0",
@@ -250,7 +286,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/3/37/Smalljon_umber_battle_of_bastards_promo_season_6.jpg/revision/latest/scale-to-width-down/350?cb=20160616012000"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/3/37/Smalljon_umber_battle_of_bastards_promo_season_6.jpg/revision/latest/scale-to-width-down/350?cb=20160616012000",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b86cdb",
@@ -261,7 +299,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/8/8b/NedUmberCropped8x01.PNG/revision/latest?cb=20190415193748"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/8/8b/NedUmberCropped8x01.PNG/revision/latest?cb=20190415193748",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b86ce1",
@@ -272,7 +312,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/f/fd/Karstark-ep-2.jpg/revision/latest/scale-to-width-down/333?cb=20160428141132"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/f/fd/Karstark-ep-2.jpg/revision/latest/scale-to-width-down/333?cb=20160428141132",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b86cec",
@@ -283,7 +325,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/c/c8/801_Alys_Karstark.png/revision/latest/scale-to-width-down/312?cb=20190415191848"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/c/c8/801_Alys_Karstark.png/revision/latest/scale-to-width-down/312?cb=20190415191848",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b86cf5",
@@ -294,7 +338,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/b/b9/Lyanna_S8_EP2infobox.jpg/revision/latest/scale-to-width-down/298?cb=20190418000519"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/b/b9/Lyanna_S8_EP2infobox.jpg/revision/latest/scale-to-width-down/298?cb=20190418000519",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b86cfc",
@@ -305,7 +351,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/6/64/702_Robett_Profile.png/revision/latest/scale-to-width-down/350?cb=20170830232320"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/6/64/702_Robett_Profile.png/revision/latest/scale-to-width-down/350?cb=20170830232320",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b86d01",
@@ -316,7 +364,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/7/7c/610_Cley_Cerwyn.png/revision/latest/scale-to-width-down/324?cb=20190416142540"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/7/7c/610_Cley_Cerwyn.png/revision/latest/scale-to-width-down/324?cb=20190416142540",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b86d03",
@@ -327,7 +377,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/8/87/Profile-WymanManderly.png/revision/latest/scale-to-width-down/350?cb=20170731100012"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/8/87/Profile-WymanManderly.png/revision/latest/scale-to-width-down/350?cb=20170731100012",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b86d05",
@@ -338,7 +390,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/2/23/Jojen-Reed-Profile.jpg/revision/latest/scale-to-width-down/315?cb=20170904015452"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/2/23/Jojen-Reed-Profile.jpg/revision/latest/scale-to-width-down/315?cb=20170904015452",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b86d11",
@@ -349,7 +403,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/9/93/Meera_Infobox.PNG/revision/latest?cb=20170807214241"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/9/93/Meera_Infobox.PNG/revision/latest?cb=20170807214241",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b86d1c",
@@ -360,7 +416,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/2/26/Profile-RooseBolton.png/revision/latest/scale-to-width-down/350?cb=20170728090234"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/2/26/Profile-RooseBolton.png/revision/latest/scale-to-width-down/350?cb=20170728090234",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b86d31",
@@ -371,7 +429,9 @@ module.exports = [
     spouseIds: ["5cc0757c04e71a0010b86b44"],
     loverIds: ["5cc0757c04e71a0010b86d64"],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/d/d2/Ramsay_S06E09_RESZIED_FOR_INFOBOX.jpg/revision/latest/scale-to-width-down/350?cb=20160622071734"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/d/d2/Ramsay_S06E09_RESZIED_FOR_INFOBOX.jpg/revision/latest/scale-to-width-down/350?cb=20160622071734",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b86d4a",
@@ -382,7 +442,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/c/cf/Locke_Staffel_4.jpg/revision/latest?cb=20170905200142"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/c/cf/Locke_Staffel_4.jpg/revision/latest?cb=20170905200142",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b86d64",
@@ -393,7 +455,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/9/92/Myranda.jpg/revision/latest/scale-to-width-down/296?cb=20161215025334"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/9/92/Myranda.jpg/revision/latest/scale-to-width-down/296?cb=20161215025334",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b86d6b",
@@ -404,7 +468,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/2/20/WolkenintheGodswood.png/revision/latest?cb=20190213213742"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/2/20/WolkenintheGodswood.png/revision/latest?cb=20190213213742",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b86d7c",
@@ -415,7 +481,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/c/c6/Steelshanks-Profile-HD.png/revision/latest/scale-to-width-down/350?cb=20140531185150"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/c/c6/Steelshanks-Profile-HD.png/revision/latest/scale-to-width-down/350?cb=20140531185150",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b86d80",
@@ -430,7 +498,9 @@ module.exports = [
     spouseIds: [],
     loverIds: ["5cc0757c04e71a0010b871f7"],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/7/71/Tywin_Lannister_4x08.jpg/revision/latest/scale-to-width-down/348?cb=20170830015346"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/7/71/Tywin_Lannister_4x08.jpg/revision/latest/scale-to-width-down/348?cb=20170830015346",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b86da4",
@@ -445,7 +515,9 @@ module.exports = [
       "5cc0757c04e71a0010b870d9"
     ],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/2/22/Cersei_on_Throne_Winterfell_Ep_s8_infobox_size.jpg/revision/latest/scale-to-width-down/325?cb=20190415180839"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/2/22/Cersei_on_Throne_Winterfell_Ep_s8_infobox_size.jpg/revision/latest/scale-to-width-down/325?cb=20190415180839",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b86dc8",
@@ -463,7 +535,9 @@ module.exports = [
     spouseIds: [],
     loverIds: ["5cc0757c04e71a0010b86da4"],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/5/51/JaimeLannisterSeason8.PNG/revision/latest/scale-to-width-down/317?cb=20190207112813"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/5/51/JaimeLannisterSeason8.PNG/revision/latest/scale-to-width-down/317?cb=20190207112813",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b86df9",
@@ -474,7 +548,9 @@ module.exports = [
     spouseIds: ["5cc0757c04e71a0010b86b44"],
     loverIds: ["5cc0757c04e71a0010b871f7"],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/a/ae/Tyrion_S8_EP2INFOBOX.jpg/revision/latest/scale-to-width-down/309?cb=20190417235117"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/a/ae/Tyrion_S8_EP2INFOBOX.jpg/revision/latest/scale-to-width-down/309?cb=20190417235117",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b86e2d",
@@ -485,7 +561,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/6/6d/Kevan-profile.png/revision/latest/scale-to-width-down/350?cb=20170421102914"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/6/6d/Kevan-profile.png/revision/latest/scale-to-width-down/350?cb=20170421102914",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b86e3f",
@@ -496,7 +574,9 @@ module.exports = [
     spouseIds: [],
     loverIds: ["5cc0757c04e71a0010b86da4"],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/a/a5/No_One_09.jpg/revision/latest/scale-to-width-down/296?cb=20170829235034"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/a/a5/No_One_09.jpg/revision/latest/scale-to-width-down/296?cb=20170829235034",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b86e51",
@@ -507,7 +587,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/0/02/Alton_profile.jpg/revision/latest?cb=20160719232326"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/0/02/Alton_profile.jpg/revision/latest?cb=20160719232326",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b86e58",
@@ -523,7 +605,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/4/48/GOT_Season_7_15.jpg/revision/latest/scale-to-width-down/319?cb=20170824224117"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/4/48/GOT_Season_7_15.jpg/revision/latest/scale-to-width-down/319?cb=20170824224117",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b86e68",
@@ -534,7 +618,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/0/02/Amory_Lorch.png/revision/latest?cb=20180702194703"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/0/02/Amory_Lorch.png/revision/latest?cb=20180702194703",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b86e6d",
@@ -552,7 +638,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/7/7e/SandorRidesThroughWinterTownSeason8Ep1.PNG/revision/latest/scale-to-width-down/292?cb=20190415193439"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/7/7e/SandorRidesThroughWinterTownSeason8Ep1.PNG/revision/latest/scale-to-width-down/292?cb=20190415193439",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b86e85",
@@ -570,7 +658,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/5/5d/Gregor_closeup_ep7.png/revision/latest/scale-to-width-down/344?cb=20170903033840"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/5/5d/Gregor_closeup_ep7.png/revision/latest/scale-to-width-down/344?cb=20170903033840",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b86ea1",
@@ -581,7 +671,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/0/02/Tickler.png/revision/latest/scale-to-width-down/350?cb=20120423144129"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/0/02/Tickler.png/revision/latest/scale-to-width-down/350?cb=20120423144129",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b86ea6",
@@ -592,7 +684,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/6/6c/Polliver-Profile-HD.jpg/revision/latest/scale-to-width-down/350?cb=20160718191846"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/6/6c/Polliver-Profile-HD.jpg/revision/latest/scale-to-width-down/350?cb=20160718191846",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b86eac",
@@ -607,7 +701,9 @@ module.exports = [
     spouseIds: ["5cc0757c04e71a0010b86da4"],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/d/d4/RobertBaratheon.jpg/revision/latest/scale-to-width-down/307?cb=20141119000127"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/d/d4/RobertBaratheon.jpg/revision/latest/scale-to-width-down/307?cb=20141119000127",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b86ecf",
@@ -618,7 +714,9 @@ module.exports = [
     spouseIds: ["5cc0757c04e71a0010b8705c"],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/2/25/Joffrey_Season_4_Episode_2_TLATR.jpg/revision/latest/scale-to-width-down/301?cb=20190418203833"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/2/25/Joffrey_Season_4_Episode_2_TLATR.jpg/revision/latest/scale-to-width-down/301?cb=20190418203833",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b86ef7",
@@ -629,7 +727,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/0/02/MyrcellaS5Cropped.jpg/revision/latest/scale-to-width-down/339?cb=20160802025401"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/0/02/MyrcellaS5Cropped.jpg/revision/latest/scale-to-width-down/339?cb=20160802025401",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b86f0f",
@@ -640,7 +740,9 @@ module.exports = [
     spouseIds: ["5cc0757c04e71a0010b8705c"],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/7/7c/Tommen_blood_of_my_blood.jpg/revision/latest/scale-to-width-down/350?cb=20160530234845"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/7/7c/Tommen_blood_of_my_blood.jpg/revision/latest/scale-to-width-down/350?cb=20160530234845",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b86f26",
@@ -651,7 +753,9 @@ module.exports = [
     spouseIds: ["5cc0757c04e71a0010b8705c"],
     loverIds: ["5cc0757c04e71a0010b87048"],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/f/ff/Profile-Renly_Baratheon.png/revision/latest/scale-to-width-down/328?cb=20171006064500"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/f/ff/Profile-Renly_Baratheon.png/revision/latest/scale-to-width-down/328?cb=20171006064500",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b86f45",
@@ -665,7 +769,9 @@ module.exports = [
     spouseIds: [],
     loverIds: ["5cc0757c04e71a0010b86f8f"],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/7/7a/Stannis_S05E09.png/revision/latest/scale-to-width-down/314?cb=20190412205744"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/7/7a/Stannis_S05E09.png/revision/latest/scale-to-width-down/314?cb=20190412205744",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b86f6f",
@@ -676,7 +782,9 @@ module.exports = [
     spouseIds: ["5cc0757c04e71a0010b86f45"],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/6/65/SelyseS05E05.png/revision/latest/scale-to-width-down/323?cb=20150515051443"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/6/65/SelyseS05E05.png/revision/latest/scale-to-width-down/323?cb=20150515051443",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b86f79",
@@ -687,7 +795,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/e/eb/Shireen_Baratheon_Season_4_profile.jpg/revision/latest/scale-to-width-down/350?cb=20161215030938"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/e/eb/Shireen_Baratheon_Season_4_profile.jpg/revision/latest/scale-to-width-down/350?cb=20161215030938",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b86f8f",
@@ -703,7 +813,9 @@ module.exports = [
     spouseIds: [],
     loverIds: ["5cc0757c04e71a0010b86f45"],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/0/07/Melisandre_%28The_Queen%27s_Justice%29.png/revision/latest/scale-to-width-down/319?cb=20170830235514"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/0/07/Melisandre_%28The_Queen%27s_Justice%29.png/revision/latest/scale-to-width-down/319?cb=20170830235514",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b86fa2",
@@ -718,7 +830,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/a/a8/Davos_s8_ep2_infobox.jpg/revision/latest/scale-to-width-down/319?cb=20190422024848"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/a/a8/Davos_s8_ep2_infobox.jpg/revision/latest/scale-to-width-down/319?cb=20190422024848",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b86fb7",
@@ -729,7 +843,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/b/b3/MatthosSeaworthHD2x09.png/revision/latest/scale-to-width-down/350?cb=20160724071826"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/b/b3/MatthosSeaworthHD2x09.png/revision/latest/scale-to-width-down/350?cb=20160724071826",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b86fc1",
@@ -740,7 +856,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/3/32/Cressen.png/revision/latest?cb=20130511145128"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/3/32/Cressen.png/revision/latest?cb=20130511145128",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b86fc5",
@@ -751,7 +869,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/a/a5/Salladhor.png/revision/latest?cb=20160825234532"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/a/a5/Salladhor.png/revision/latest?cb=20160825234532",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b86fc9",
@@ -768,7 +888,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/a/a9/S8_Brienne_Profil.jpg/revision/latest?cb=20190423165941"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/a/a9/S8_Brienne_Profil.jpg/revision/latest?cb=20190423165941",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b86fe5",
@@ -779,7 +901,9 @@ module.exports = [
     spouseIds: ["5cc0757c04e71a0010b8723f"],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/4/46/LysaArryn.png/revision/latest/scale-to-width-down/350?cb=20140523133128"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/4/46/LysaArryn.png/revision/latest/scale-to-width-down/350?cb=20140523133128",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b86ffb",
@@ -790,7 +914,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/9/94/Robin6x04.png/revision/latest?cb=20190417234149"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/9/94/Robin6x04.png/revision/latest?cb=20190417234149",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b8700f",
@@ -801,7 +927,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/3/32/Vardis_profile.jpg/revision/latest/scale-to-width-down/332?cb=20130126143838"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/3/32/Vardis_profile.jpg/revision/latest/scale-to-width-down/332?cb=20130126143838",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b87015",
@@ -812,7 +940,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/3/32/Mord.png/revision/latest?cb=20170826005529"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/3/32/Mord.png/revision/latest?cb=20170826005529",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b87019",
@@ -823,7 +953,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/d/df/Hugh_profile.jpg/revision/latest/scale-to-width-down/350?cb=20130111183816"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/d/df/Hugh_profile.jpg/revision/latest/scale-to-width-down/350?cb=20130111183816",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b8701e",
@@ -834,7 +966,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/7/73/Profile-YohnRoyce.png/revision/latest/scale-to-width-down/340?cb=20170814063933"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/7/73/Profile-YohnRoyce.png/revision/latest/scale-to-width-down/340?cb=20170814063933",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b8702c",
@@ -845,7 +979,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/0/07/Anya-Waynwood.jpg/revision/latest/scale-to-width-down/350?cb=20140412131700"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/0/07/Anya-Waynwood.jpg/revision/latest/scale-to-width-down/350?cb=20140412131700",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b87031",
@@ -856,7 +992,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/0/09/Vance_Corbray.png/revision/latest/scale-to-width-down/350?cb=20160724071558"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/0/09/Vance_Corbray.png/revision/latest/scale-to-width-down/350?cb=20160724071558",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b87033",
@@ -867,7 +1005,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/f/f2/Donnel-Waynwood.jpg/revision/latest/scale-to-width-down/316?cb=20170826005909"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/f/f2/Donnel-Waynwood.jpg/revision/latest/scale-to-width-down/316?cb=20170826005909",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b87035",
@@ -878,7 +1018,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/f/f0/Profile-MaceTyrell.png/revision/latest/scale-to-width-down/350?cb=20170729074743"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/f/f0/Profile-MaceTyrell.png/revision/latest/scale-to-width-down/350?cb=20170729074743",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b87048",
@@ -896,7 +1038,9 @@ module.exports = [
     spouseIds: [],
     loverIds: ["5cc0757c04e71a0010b86f26", "5cc0757c04e71a0010b87324"],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/0/02/LorasTyrell5X06.PNG/revision/latest?cb=20181013200613"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/0/02/LorasTyrell5X06.PNG/revision/latest?cb=20181013200613",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b8705c",
@@ -915,7 +1059,9 @@ module.exports = [
     ],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/b/b5/Margaery_Tyrell_S6.png/revision/latest?cb=20160729224605"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/b/b5/Margaery_Tyrell_S6.png/revision/latest?cb=20160729224605",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b8706f",
@@ -926,7 +1072,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/f/f2/OlennaS7E3.png/revision/latest/scale-to-width-down/350?cb=20170803074257"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/f/f2/OlennaS7E3.png/revision/latest/scale-to-width-down/350?cb=20170803074257",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b87080",
@@ -937,7 +1085,9 @@ module.exports = [
     spouseIds: ["5cc0757c04e71a0010b8708c"],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/7/78/Randyll-Tarly-Profile.png/revision/latest/scale-to-width-down/350?cb=20170815052729"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/7/78/Randyll-Tarly-Profile.png/revision/latest/scale-to-width-down/350?cb=20170815052729",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b8708c",
@@ -948,7 +1098,9 @@ module.exports = [
     spouseIds: ["5cc0757c04e71a0010b87080"],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/3/30/606_Melessa_Tarly.png/revision/latest/scale-to-width-down/350?cb=20161215030329"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/3/30/606_Melessa_Tarly.png/revision/latest/scale-to-width-down/350?cb=20161215030329",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b87095",
@@ -959,7 +1111,9 @@ module.exports = [
     spouseIds: [],
     loverIds: ["5cc0757c04e71a0010b87440"],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/3/30/Samwell_Season_8_Cropped.PNG/revision/latest/scale-to-width-down/315?cb=20190207112410"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/3/30/Samwell_Season_8_Cropped.PNG/revision/latest/scale-to-width-down/315?cb=20190207112410",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b870b1",
@@ -970,7 +1124,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/0/0f/Profile-DickonTarly.png/revision/latest/scale-to-width-down/339?cb=20170814064209"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/0/0f/Profile-DickonTarly.png/revision/latest/scale-to-width-down/339?cb=20170814064209",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b870ba",
@@ -981,7 +1137,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/8/84/Tally_tarly_infobox_blood_of_my_blood.jpg/revision/latest/scale-to-width-down/350?cb=20160617180545"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/8/84/Tally_tarly_infobox_blood_of_my_blood.jpg/revision/latest/scale-to-width-down/350?cb=20160617180545",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b870c2",
@@ -992,7 +1150,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/1/19/Balon-profile.png/revision/latest/scale-to-width-down/350?cb=20170420085750"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/1/19/Balon-profile.png/revision/latest/scale-to-width-down/350?cb=20170420085750",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b870ce",
@@ -1003,7 +1163,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/a/a8/Game_of_thrones_6x5_yara_promo.jpg/revision/latest?cb=20160808022737"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/a/a8/Game_of_thrones_6x5_yara_promo.jpg/revision/latest?cb=20160808022737",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b870d9",
@@ -1014,7 +1176,9 @@ module.exports = [
     spouseIds: [],
     loverIds: ["5cc0757c04e71a0010b86da4"],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/f/fc/Euron-Profile.PNG/revision/latest/scale-to-width-down/318?cb=20170916200257"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/f/fc/Euron-Profile.PNG/revision/latest/scale-to-width-down/318?cb=20170916200257",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b870e3",
@@ -1025,7 +1189,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/4/48/Aeron_Greyjoy_6x05_Cropped.png/revision/latest/scale-to-width-down/350?cb=20160521192831"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/4/48/Aeron_Greyjoy_6x05_Cropped.png/revision/latest/scale-to-width-down/350?cb=20160521192831",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b870e8",
@@ -1036,7 +1202,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/4/42/Lorren.png/revision/latest/scale-to-width-down/350?cb=20120430091344"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/4/42/Lorren.png/revision/latest/scale-to-width-down/350?cb=20120430091344",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b870ee",
@@ -1047,7 +1215,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/4/45/Dagmer.png/revision/latest/scale-to-width-down/350?cb=20120430092502"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/4/45/Dagmer.png/revision/latest/scale-to-width-down/350?cb=20120430092502",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b870f5",
@@ -1058,7 +1228,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/b/ba/Ralf-Kenning.png/revision/latest/scale-to-width-down/350?cb=20150607061223"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/b/ba/Ralf-Kenning.png/revision/latest/scale-to-width-down/350?cb=20150607061223",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b870f7",
@@ -1069,7 +1241,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/3/35/EdmureTheBrokenMan.png/revision/latest?cb=20190213215029"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/3/35/EdmureTheBrokenMan.png/revision/latest?cb=20190213215029",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b8710b",
@@ -1080,7 +1254,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/6/61/6x07_Blackfish.png/revision/latest/scale-to-width-down/350?cb=20160601191023"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/6/61/6x07_Blackfish.png/revision/latest/scale-to-width-down/350?cb=20160601191023",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b87120",
@@ -1091,7 +1267,9 @@ module.exports = [
     spouseIds: ["5cc0757c04e71a0010b87133", "5cc0757c04e71a0010b8715b"],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/e/e4/S06E06_-_Walder_Frey_Cropped_new.jpg/revision/latest/scale-to-width-down/329?cb=20161215025257"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/e/e4/S06E06_-_Walder_Frey_Cropped_new.jpg/revision/latest/scale-to-width-down/329?cb=20161215025257",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b87133",
@@ -1102,7 +1280,9 @@ module.exports = [
     spouseIds: ["5cc0757c04e71a0010b87120"],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/6/61/Joyeuse_Erenford_3x09.jpg/revision/latest/scale-to-width-down/240?cb=20160717060047"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/6/61/Joyeuse_Erenford_3x09.jpg/revision/latest/scale-to-width-down/240?cb=20160717060047",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b8713e",
@@ -1112,7 +1292,9 @@ module.exports = [
     allegiances: [],
     spouseIds: [],
     loverIds: [],
-    image: null
+    image: null,
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b8713f",
@@ -1123,7 +1305,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/e/e4/Lothar-Frey-S6.jpg/revision/latest/scale-to-width-down/350?cb=20160613143151"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/e/e4/Lothar-Frey-S6.jpg/revision/latest/scale-to-width-down/350?cb=20160613143151",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b8714b",
@@ -1133,7 +1317,9 @@ module.exports = [
     allegiances: [],
     spouseIds: [],
     loverIds: [],
-    image: null
+    image: null,
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b8714c",
@@ -1144,7 +1330,9 @@ module.exports = [
     spouseIds: ["5cc0757c04e71a0010b86d1c"],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/6/65/Walda_and_new_son_s6.jpg/revision/latest/scale-to-width-down/348?cb=20161215030743"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/6/65/Walda_and_new_son_s6.jpg/revision/latest/scale-to-width-down/348?cb=20161215030743",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b8715b",
@@ -1155,7 +1343,9 @@ module.exports = [
     spouseIds: ["5cc0757c04e71a0010b87120"],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/8/8c/Kitty_Frey.PNG/revision/latest?cb=20170613183920"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/8/8c/Kitty_Frey.PNG/revision/latest?cb=20170613183920",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b87165",
@@ -1170,7 +1360,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/f/f9/Profile-DoranMartell.png/revision/latest/scale-to-width-down/350?cb=20170728221257"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/f/f9/Profile-DoranMartell.png/revision/latest/scale-to-width-down/350?cb=20170728221257",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b87171",
@@ -1181,7 +1373,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/d/d5/Trystane.jpg/revision/latest/scale-to-width-down/318?cb=20160814024816"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/d/d5/Trystane.jpg/revision/latest/scale-to-width-down/318?cb=20160814024816",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b8717b",
@@ -1192,7 +1386,9 @@ module.exports = [
     spouseIds: [],
     loverIds: ["5cc0757c04e71a0010b8718d"],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/9/96/Oberyn-Martell-house-martell-37118334-2832-4256.jpg/revision/latest/scale-to-width-down/333?cb=20150815065729"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/9/96/Oberyn-Martell-house-martell-37118334-2832-4256.jpg/revision/latest/scale-to-width-down/333?cb=20150815065729",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b8718d",
@@ -1203,7 +1399,9 @@ module.exports = [
     spouseIds: [],
     loverIds: ["5cc0757c04e71a0010b8717b"],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/4/4c/Ellaria_Sand_The_End.png/revision/latest/scale-to-width-down/332?cb=20170830014137"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/4/4c/Ellaria_Sand_The_End.png/revision/latest/scale-to-width-down/332?cb=20170830014137",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b871a1",
@@ -1214,7 +1412,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/7/7b/Obaras6.png/revision/latest/scale-to-width-down/350?cb=20160531044948"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/7/7b/Obaras6.png/revision/latest/scale-to-width-down/350?cb=20160531044948",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b871ac",
@@ -1225,7 +1425,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/1/12/Nymerias6.png/revision/latest/scale-to-width-down/342?cb=20160531044501"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/1/12/Nymerias6.png/revision/latest/scale-to-width-down/342?cb=20160531044501",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b871b8",
@@ -1236,7 +1438,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/6/66/TyeneS7E3.png/revision/latest/scale-to-width-down/311?cb=20170803071652"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/6/66/TyeneS7E3.png/revision/latest/scale-to-width-down/311?cb=20170803071652",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b871c5",
@@ -1247,7 +1451,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/9/9e/Areo_Hotah_S05E06.jpg/revision/latest/scale-to-width-down/307?cb=20150515052400"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/9/9e/Areo_Hotah_S05E06.jpg/revision/latest/scale-to-width-down/307?cb=20150515052400",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b871cf",
@@ -1258,7 +1464,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/3/3d/Caleotte.png/revision/latest/scale-to-width-down/350?cb=20160425110709"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/3/3d/Caleotte.png/revision/latest/scale-to-width-down/350?cb=20160425110709",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b871d4",
@@ -1275,7 +1483,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/9/99/Bronn_Dragonpit.jpg/revision/latest?cb=20170903202847"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/9/99/Bronn_Dragonpit.jpg/revision/latest?cb=20170903202847",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b871f4",
@@ -1286,7 +1496,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/2/23/Marillion.jpg/revision/latest/scale-to-width-down/350?cb=20110517131506"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/2/23/Marillion.jpg/revision/latest/scale-to-width-down/350?cb=20110517131506",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b871f7",
@@ -1297,7 +1509,9 @@ module.exports = [
     spouseIds: [],
     loverIds: ["5cc0757c04e71a0010b86d80", "5cc0757c04e71a0010b86df9"],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/0/01/Shae_in_Two_Swords.png/revision/latest/scale-to-width-down/333?cb=20140505142823"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/0/01/Shae_in_Two_Swords.png/revision/latest/scale-to-width-down/333?cb=20140505142823",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b87200",
@@ -1308,7 +1522,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/f/f3/ShaggaThePointyEnd.jpg/revision/latest?cb=20190215195422"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/f/f3/ShaggaThePointyEnd.jpg/revision/latest?cb=20190215195422",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b87204",
@@ -1319,7 +1535,9 @@ module.exports = [
     spouseIds: ["5cc0757c04e71a0010b86b16"],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/c/ca/Talisa3x9.jpg/revision/latest/scale-to-width-down/315?cb=20150515053353"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/c/ca/Talisa3x9.jpg/revision/latest/scale-to-width-down/315?cb=20150515053353",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b87216",
@@ -1335,7 +1553,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/9/93/Profile-Thoros.png/revision/latest/scale-to-width-down/344?cb=20170916221933"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/9/93/Profile-Thoros.png/revision/latest/scale-to-width-down/344?cb=20170916221933",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b8721e",
@@ -1346,7 +1566,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/3/36/AnguyTBATMF.PNG/revision/latest?cb=20180702210809"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/3/36/AnguyTBATMF.PNG/revision/latest?cb=20180702210809",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b87223",
@@ -1362,7 +1584,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/1/19/Profile-Qyburn.png/revision/latest/scale-to-width-down/320?cb=20170819022259"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/1/19/Profile-Qyburn.png/revision/latest/scale-to-width-down/320?cb=20170819022259",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b87238",
@@ -1373,7 +1597,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/b/b4/Brother_ray_s6.jpg/revision/latest/scale-to-width-down/350?cb=20160707180248"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/b/b4/Brother_ray_s6.jpg/revision/latest/scale-to-width-down/350?cb=20160707180248",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b8723b",
@@ -1384,7 +1610,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/5/59/Lem_lemoncloak_season_6.jpg/revision/latest/scale-to-width-down/350?cb=20160608141643"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/5/59/Lem_lemoncloak_season_6.jpg/revision/latest/scale-to-width-down/350?cb=20160608141643",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b8723f",
@@ -1402,7 +1630,9 @@ module.exports = [
     spouseIds: ["5cc0757c04e71a0010b86fe5"],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/9/9f/Profile-Littlefinger.png/revision/latest/scale-to-width-down/335?cb=20170826005231"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/9/9f/Profile-Littlefinger.png/revision/latest/scale-to-width-down/335?cb=20170826005231",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b87262",
@@ -1417,7 +1647,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/0/0b/Pycelle_Infobo_Image.PNG/revision/latest?cb=20170421111211"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/0/0b/Pycelle_Infobo_Image.PNG/revision/latest?cb=20170421111211",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b8727d",
@@ -1428,7 +1660,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/5/58/Varys_Season_8.jpg/revision/latest/scale-to-width-down/333?cb=20190206212952"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/5/58/Varys_Season_8.jpg/revision/latest/scale-to-width-down/333?cb=20190206212952",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b872a0",
@@ -1439,7 +1673,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/3/3b/Blood_of_My_Blood_16.jpg/revision/latest/scale-to-width-down/333?cb=20160527164016"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/3/3b/Blood_of_My_Blood_16.jpg/revision/latest/scale-to-width-down/333?cb=20160527164016",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b872a7",
@@ -1458,7 +1694,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/1/1f/Barristan_Selmy_Sons_of_the_Harpy.jpg/revision/latest/scale-to-width-down/328?cb=20150504180820"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/1/1f/Barristan_Selmy_Sons_of_the_Harpy.jpg/revision/latest/scale-to-width-down/328?cb=20150504180820",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b872c8",
@@ -1469,7 +1707,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/4/46/Ser_Meryn.png/revision/latest/scale-to-width-down/350?cb=20140928135510"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/4/46/Ser_Meryn.png/revision/latest/scale-to-width-down/350?cb=20140928135510",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b872de",
@@ -1484,7 +1724,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/0/03/Ilyn_Payne_infobox.jpg/revision/latest/scale-to-width-down/350?cb=20160730061137"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/0/03/Ilyn_Payne_infobox.jpg/revision/latest/scale-to-width-down/350?cb=20160730061137",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b872e6",
@@ -1499,7 +1741,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/c/ce/S4_Slynt_HD.png/revision/latest/scale-to-width-down/350?cb=20151006235041"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/c/ce/S4_Slynt_HD.png/revision/latest/scale-to-width-down/350?cb=20151006235041",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b872ff",
@@ -1510,7 +1754,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/b/bc/Syrio_Forel-0.png/revision/latest?cb=20180702204345"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/b/bc/Syrio_Forel-0.png/revision/latest?cb=20180702204345",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b87303",
@@ -1521,7 +1767,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/4/46/Tobho_Mott.jpg/revision/latest?cb=20130126223820"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/4/46/Tobho_Mott.jpg/revision/latest?cb=20130126223820",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b87305",
@@ -1532,7 +1780,9 @@ module.exports = [
     spouseIds: [],
     loverIds: ["5cc0757c04e71a0010b86b76"],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/6/63/GENDRYAKOFTSK.PNG/revision/latest?cb=20190422030504"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/6/63/GENDRYAKOFTSK.PNG/revision/latest?cb=20190422030504",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b87324",
@@ -1543,7 +1793,9 @@ module.exports = [
     spouseIds: [],
     loverIds: ["5cc0757c04e71a0010b87048"],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/3/33/Olyvar-Profile-HD.png/revision/latest/scale-to-width-down/350?cb=20160829161239"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/3/33/Olyvar-Profile-HD.png/revision/latest/scale-to-width-down/350?cb=20160829161239",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b8732c",
@@ -1554,7 +1806,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/2/2e/Armeca.jpg/revision/latest?cb=20110819125244"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/2/2e/Armeca.jpg/revision/latest?cb=20110819125244",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b87330",
@@ -1565,7 +1819,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/8/81/Marei_4x01.jpg/revision/latest/scale-to-width-down/343?cb=20160809183744"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/8/81/Marei_4x01.jpg/revision/latest/scale-to-width-down/343?cb=20160809183744",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b8733d",
@@ -1576,7 +1832,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/2/2b/Lollys.jpg/revision/latest?cb=20160711023356"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/2/2b/Lollys.jpg/revision/latest?cb=20160711023356",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b87342",
@@ -1587,7 +1845,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/6/65/LommyS2.jpg/revision/latest/scale-to-width-down/332?cb=20131004001551"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/6/65/LommyS2.jpg/revision/latest/scale-to-width-down/332?cb=20131004001551",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b87348",
@@ -1598,7 +1858,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/8/88/Hot_Pie_at_the_Inn.PNG/revision/latest?cb=20170829234700"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/8/88/Hot_Pie_at_the_Inn.PNG/revision/latest?cb=20170829234700",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b87352",
@@ -1609,7 +1871,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/a/af/Rorge_S04.jpg/revision/latest/scale-to-width-down/350?cb=20170307154737"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/a/af/Rorge_S04.jpg/revision/latest/scale-to-width-down/350?cb=20170307154737",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b8735a",
@@ -1620,7 +1884,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/a/aa/Biterharrenhal.png/revision/latest?cb=20190214194345"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/a/aa/Biterharrenhal.png/revision/latest?cb=20190214194345",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b87360",
@@ -1631,7 +1897,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/d/da/The_Door_Jaqen_infobox.jpg/revision/latest/scale-to-width-down/322?cb=20160808073200"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/d/da/The_Door_Jaqen_infobox.jpg/revision/latest/scale-to-width-down/322?cb=20160808073200",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b8736c",
@@ -1642,7 +1910,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/6/6d/Hallyne.png/revision/latest/scale-to-width-down/350?cb=20160730012731"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/6/6d/Hallyne.png/revision/latest/scale-to-width-down/350?cb=20160730012731",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b8736f",
@@ -1653,7 +1923,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/1/1a/S06E06_-_Septa_Unella_Cropped.jpg/revision/latest/scale-to-width-down/350?cb=20160808031434"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/1/1a/S06E06_-_Septa_Unella_Cropped.jpg/revision/latest/scale-to-width-down/350?cb=20160808031434",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b87371",
@@ -1664,7 +1936,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/d/d8/DontosGoodQ.jpg/revision/latest/scale-to-width-down/332?cb=20170830011801"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/d/d8/DontosGoodQ.jpg/revision/latest/scale-to-width-down/332?cb=20170830011801",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b87377",
@@ -1675,7 +1949,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/8/86/Bernadette.PNG/revision/latest?cb=20170805215420"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/8/86/Bernadette.PNG/revision/latest?cb=20170805215420",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b8737b",
@@ -1686,7 +1962,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/f/f8/Archmaester_Eastwatch.png/revision/latest/scale-to-width-down/350?cb=20170814220655"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/f/f8/Archmaester_Eastwatch.png/revision/latest/scale-to-width-down/350?cb=20170814220655",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b8737c",
@@ -1697,7 +1975,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/1/1b/Jeor_Mormont_Season_2.jpg/revision/latest/scale-to-width-down/333?cb=20120705014740"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/1/1b/Jeor_Mormont_Season_2.jpg/revision/latest/scale-to-width-down/333?cb=20120705014740",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b8738c",
@@ -1708,7 +1988,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/1/16/Game-of-thrones-season-6-owen-teale.jpeg/revision/latest/scale-to-width-down/301?cb=20160711235109"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/1/16/Game-of-thrones-season-6-owen-teale.jpeg/revision/latest/scale-to-width-down/301?cb=20160711235109",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b8739c",
@@ -1719,7 +2001,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/3/32/Aemonepisode5.png/revision/latest/scale-to-width-down/328?cb=20150511170352"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/3/32/Aemonepisode5.png/revision/latest/scale-to-width-down/328?cb=20150511170352",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b873af",
@@ -1730,7 +2014,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/a/a8/Marsh_promo.png/revision/latest/scale-to-width-down/350?cb=20150427143614"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/a/a8/Marsh_promo.png/revision/latest/scale-to-width-down/350?cb=20150427143614",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b873b9",
@@ -1741,7 +2027,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/5/55/Othell_Yarwyck.png/revision/latest?cb=20180618205415"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/5/55/Othell_Yarwyck.png/revision/latest?cb=20180618205415",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b873c3",
@@ -1752,7 +2040,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/1/14/Yoren_profile.jpg/revision/latest/scale-to-width-down/350?cb=20130111172454"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/1/14/Yoren_profile.jpg/revision/latest/scale-to-width-down/350?cb=20130111172454",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b873cd",
@@ -1763,7 +2053,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/e/e6/Pypar-mockingbird.jpg/revision/latest/scale-to-width-down/287?cb=20161215025708"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/e/e6/Pypar-mockingbird.jpg/revision/latest/scale-to-width-down/287?cb=20161215025708",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b873d6",
@@ -1774,7 +2066,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/1/1b/Grenn.jpg/revision/latest?cb=20180702193920"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/1/1b/Grenn.jpg/revision/latest?cb=20180702193920",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b873e3",
@@ -1785,7 +2079,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/6/61/Rast-S4-EP-04.jpg/revision/latest/scale-to-width-down/314?cb=20140501100824"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/6/61/Rast-S4-EP-04.jpg/revision/latest/scale-to-width-down/314?cb=20140501100824",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b873f1",
@@ -1796,7 +2092,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/7/75/Edd_At_The_Wall.PNG/revision/latest?cb=20190415204333"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/7/75/Edd_At_The_Wall.PNG/revision/latest?cb=20190415204333",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b87407",
@@ -1807,7 +2105,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/1/15/Qhorin.png/revision/latest?cb=20160720012556"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/1/15/Qhorin.png/revision/latest?cb=20160720012556",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b87411",
@@ -1818,7 +2118,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/d/d0/Denys_Mallister.jpg/revision/latest/scale-to-width-down/350?cb=20170925074749"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/d/d0/Denys_Mallister.jpg/revision/latest/scale-to-width-down/350?cb=20170925074749",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b87417",
@@ -1829,7 +2131,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/5/58/Karl_tanner_released_by_HBO_S4.PNG/revision/latest?cb=20170506112727"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/5/58/Karl_tanner_released_by_HBO_S4.PNG/revision/latest?cb=20170506112727",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b8741f",
@@ -1840,7 +2144,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/5/51/602_Olly_Promo_Crop.png/revision/latest/scale-to-width-down/350?cb=20160708062640"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/5/51/602_Olly_Promo_Crop.png/revision/latest/scale-to-width-down/350?cb=20160708062640",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b87424",
@@ -1851,7 +2157,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/4/49/Osha-S3.jpg/revision/latest/scale-to-width-down/350?cb=20130305150846"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/4/49/Osha-S3.jpg/revision/latest/scale-to-width-down/350?cb=20130305150846",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b87437",
@@ -1862,7 +2170,9 @@ module.exports = [
     spouseIds: ["5cc0757c04e71a0010b87440"],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/7/78/CrasterHD3x03.png/revision/latest/scale-to-width-down/350?cb=20160829161002"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/7/78/CrasterHD3x03.png/revision/latest/scale-to-width-down/350?cb=20160829161002",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b87440",
@@ -1873,7 +2183,9 @@ module.exports = [
     spouseIds: ["5cc0757c04e71a0010b87437"],
     loverIds: ["5cc0757c04e71a0010b87095"],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/a/ad/Gilly8x02.PNG/revision/latest/scale-to-width-down/322?cb=20190417232735"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/a/ad/Gilly8x02.PNG/revision/latest/scale-to-width-down/322?cb=20190417232735",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b87449",
@@ -1884,7 +2196,9 @@ module.exports = [
     spouseIds: [],
     loverIds: ["5cc0757c04e71a0010b86bfb"],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/2/28/Ygritte-promotionals4pic.jpg/revision/latest/scale-to-width-down/334?cb=20170107042949"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/2/28/Ygritte-promotionals4pic.jpg/revision/latest/scale-to-width-down/334?cb=20170107042949",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b87451",
@@ -1895,7 +2209,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/1/1e/5x08_Lord_of_Bones.jpg/revision/latest/scale-to-width-down/350?cb=20160807064855"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/1/1e/5x08_Lord_of_Bones.jpg/revision/latest/scale-to-width-down/350?cb=20160807064855",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b87457",
@@ -1906,7 +2222,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/9/9a/Orell_S3_Crop.jpeg/revision/latest?cb=20140604150416"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/9/9a/Orell_S3_Crop.jpeg/revision/latest?cb=20140604150416",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b8745a",
@@ -1917,7 +2235,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/4/49/TormundWinterfell.PNG/revision/latest/scale-to-width-down/307?cb=20190415184600"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/4/49/TormundWinterfell.PNG/revision/latest/scale-to-width-down/307?cb=20190415184600",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b8746c",
@@ -1928,7 +2248,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/1/17/GOT_Season_5_10.jpg/revision/latest/scale-to-width-down/333?cb=20160826005613"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/1/17/GOT_Season_5_10.jpg/revision/latest/scale-to-width-down/333?cb=20160826005613",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b8747e",
@@ -1939,7 +2261,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/9/96/Styr-HD.png/revision/latest/scale-to-width-down/350?cb=20140512161058"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/9/96/Styr-HD.png/revision/latest/scale-to-width-down/350?cb=20140512161058",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b87482",
@@ -1950,7 +2274,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/f/f2/Mag_Mar_Tun_Doh_Weg.png/revision/latest/scale-to-width-down/350?cb=20160719014250"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/f/f2/Mag_Mar_Tun_Doh_Weg.png/revision/latest/scale-to-width-down/350?cb=20160719014250",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b87485",
@@ -1961,7 +2287,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/a/a8/Oathbreaker_05.jpg/revision/latest/scale-to-width-down/312?cb=20170818202718"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/a/a8/Oathbreaker_05.jpg/revision/latest/scale-to-width-down/312?cb=20170818202718",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b8748e",
@@ -1972,7 +2300,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/1/1b/Leafprofilenew.png/revision/latest/scale-to-width-down/350?cb=20160603052224"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/1/1b/Leafprofilenew.png/revision/latest/scale-to-width-down/350?cb=20160603052224",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b87491",
@@ -1983,7 +2313,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/1/1f/Night_King_BTW.jpg/revision/latest?cb=20171013162809"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/1/1f/Night_King_BTW.jpg/revision/latest?cb=20171013162809",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b8749a",
@@ -1994,7 +2326,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/1/19/5x08_Wun_Wun.png/revision/latest/scale-to-width-down/350?cb=20150601080502"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/1/19/5x08_Wun_Wun.png/revision/latest/scale-to-width-down/350?cb=20150601080502",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b8749e",
@@ -2005,7 +2339,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/a/a0/Karsi-hardhome.jpg/revision/latest/scale-to-width-down/341?cb=20161215025503"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/a/a0/Karsi-hardhome.jpg/revision/latest/scale-to-width-down/341?cb=20161215025503",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b874a3",
@@ -2016,7 +2352,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/1/1f/Loboda_Hardhome.PNG/revision/latest/scale-to-width-down/328?cb=20180702220807"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/1/1f/Loboda_Hardhome.PNG/revision/latest/scale-to-width-down/328?cb=20180702220807",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b874a6",
@@ -2027,7 +2365,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/6/65/607_Dim_Dalba.png/revision/latest/scale-to-width-down/350?cb=20160611072604"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/6/65/607_Dim_Dalba.png/revision/latest/scale-to-width-down/350?cb=20160611072604",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b874aa",
@@ -2038,7 +2378,9 @@ module.exports = [
     spouseIds: ["5cc0757c04e71a0010b87509"],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/1/1f/Drogo_1x01b.jpg/revision/latest/scale-to-width-down/307?cb=20110626031733"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/1/1f/Drogo_1x01b.jpg/revision/latest/scale-to-width-down/307?cb=20110626031733",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b874bb",
@@ -2049,7 +2391,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/a/a5/Qotho_1x08.png/revision/latest/scale-to-width-down/350?cb=20160829192752"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/a/a5/Qotho_1x08.png/revision/latest/scale-to-width-down/350?cb=20160829192752",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b874c1",
@@ -2060,7 +2404,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/c/ce/RakharoTheNorthRemembers.jpg/revision/latest?cb=20190215192725"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/c/ce/RakharoTheNorthRemembers.jpg/revision/latest?cb=20190215192725",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b874ca",
@@ -2071,7 +2417,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/a/a7/Kovarro_image_new.jpg/revision/latest?cb=20160625082705"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/a/a7/Kovarro_image_new.jpg/revision/latest?cb=20160625082705",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b874d3",
@@ -2082,7 +2430,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/4/4d/ProfilIrri1.png/revision/latest?cb=20170905201241"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/4/4d/ProfilIrri1.png/revision/latest?cb=20170905201241",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b874dc",
@@ -2093,7 +2443,9 @@ module.exports = [
     spouseIds: [],
     loverIds: ["5cc0757c04e71a0010b8756c"],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/0/07/Doreah_infobox_main.jpg/revision/latest/scale-to-width-down/338?cb=20160623000252"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/0/07/Doreah_infobox_main.jpg/revision/latest/scale-to-width-down/338?cb=20160623000252",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b874e8",
@@ -2104,7 +2456,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/8/86/Mago_profile.jpg/revision/latest/scale-to-width-down/337?cb=20130122155822"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/8/86/Mago_profile.jpg/revision/latest/scale-to-width-down/337?cb=20130122155822",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b874eb",
@@ -2115,7 +2469,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/6/64/MoroPro.png/revision/latest?cb=20160612012654"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/6/64/MoroPro.png/revision/latest?cb=20160612012654",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b874ed",
@@ -2126,7 +2482,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/7/77/High_Priestess_Dosh_Khaleen.png/revision/latest/scale-to-width-down/296?cb=20160825234656"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/7/77/High_Priestess_Dosh_Khaleen.png/revision/latest/scale-to-width-down/296?cb=20160825234656",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b874ef",
@@ -2137,7 +2495,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/9/99/604_Ornela.png/revision/latest/scale-to-width-down/338?cb=20160802075743"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/9/99/604_Ornela.png/revision/latest/scale-to-width-down/338?cb=20160802075743",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b874f1",
@@ -2148,7 +2508,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/f/ff/Qhono_Dragonpit.jpg/revision/latest/scale-to-width-down/305?cb=20170903203922"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/f/ff/Qhono_Dragonpit.jpg/revision/latest/scale-to-width-down/305?cb=20170903203922",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b874f9",
@@ -2159,7 +2521,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/4/46/Viseryspromoheadshot.jpg/revision/latest/scale-to-width-down/350?cb=20160730184148"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/4/46/Viseryspromoheadshot.jpg/revision/latest/scale-to-width-down/350?cb=20160730184148",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b87509",
@@ -2170,7 +2534,9 @@ module.exports = [
     spouseIds: [],
     loverIds: ["5cc0757c04e71a0010b86bfb", "5cc0757c04e71a0010b875a5"],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/3/3a/Dany_S8_EP2infobox.jpg/revision/latest/scale-to-width-down/300?cb=20190417235027"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/3/3a/Dany_S8_EP2infobox.jpg/revision/latest/scale-to-width-down/300?cb=20190417235027",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b87537",
@@ -2190,7 +2556,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/2/26/Winterfell_ep_Jorah_s8.jpg/revision/latest/scale-to-width-down/291?cb=20190418013520"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/2/26/Winterfell_ep_Jorah_s8.jpg/revision/latest/scale-to-width-down/291?cb=20190418013520",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b87555",
@@ -2201,7 +2569,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/d/d8/Illyrio-Mopatis-HD.png/revision/latest/scale-to-width-down/347?cb=20140502075721"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/d/d8/Illyrio-Mopatis-HD.png/revision/latest/scale-to-width-down/347?cb=20140502075721",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b8755b",
@@ -2212,7 +2582,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/6/69/Mirri_Speaks.png/revision/latest?cb=20170904121606"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/6/69/Mirri_Speaks.png/revision/latest?cb=20170904121606",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b8755e",
@@ -2223,7 +2595,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/7/79/Tycho_S7_Infobox.jpg/revision/latest/scale-to-width-down/350?cb=20170801025501"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/7/79/Tycho_S7_Infobox.jpg/revision/latest/scale-to-width-down/350?cb=20170801025501",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b87560",
@@ -2234,7 +2608,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/3/35/Ternesio_Terys_S5.jpg/revision/latest/scale-to-width-down/338?cb=20150422203249"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/3/35/Ternesio_Terys_S5.jpg/revision/latest/scale-to-width-down/338?cb=20150422203249",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b87562",
@@ -2245,7 +2621,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/4/4c/Waif6x08.png/revision/latest/scale-to-width-down/350?cb=20160609061651"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/4/4c/Waif6x08.png/revision/latest/scale-to-width-down/350?cb=20160609061651",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b87566",
@@ -2256,7 +2634,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/6/68/IzembaroHBOPromotionalImage.jpg/revision/latest?cb=20190216132137"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/6/68/IzembaroHBOPromotionalImage.jpg/revision/latest?cb=20190216132137",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b87568",
@@ -2267,7 +2647,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/a/a3/Lady_Crane.png/revision/latest/scale-to-width-down/350?cb=20160527131306"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/a/a3/Lady_Crane.png/revision/latest/scale-to-width-down/350?cb=20160527131306",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b8756b",
@@ -2278,7 +2660,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/4/4e/801_Strickland.png/revision/latest?cb=20190422062754"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/4/4e/801_Strickland.png/revision/latest?cb=20190422062754",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b8756c",
@@ -2289,7 +2673,9 @@ module.exports = [
     spouseIds: [],
     loverIds: ["5cc0757c04e71a0010b874dc"],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/1/1f/XaroXhoanDaxosPromo.jpg/revision/latest?cb=20131003195514"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/1/1f/XaroXhoanDaxosPromo.jpg/revision/latest?cb=20131003195514",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b87571",
@@ -2300,7 +2686,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/3/30/Pyat_profile.jpg/revision/latest/scale-to-width-down/321?cb=20170829212058"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/3/30/Pyat_profile.jpg/revision/latest/scale-to-width-down/321?cb=20170829212058",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b87576",
@@ -2311,7 +2699,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/7/76/Quaithe_profile.png/revision/latest/scale-to-width-down/350?cb=20130126185615"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/7/76/Quaithe_profile.png/revision/latest/scale-to-width-down/350?cb=20130126185615",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b8757c",
@@ -2322,7 +2712,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/3/32/Spice_King_profile.jpg/revision/latest/scale-to-width-down/350?cb=20130126135515"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/3/32/Spice_King_profile.jpg/revision/latest/scale-to-width-down/350?cb=20130126135515",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b87580",
@@ -2333,7 +2725,9 @@ module.exports = [
     spouseIds: [],
     loverIds: ["5cc0757c04e71a0010b87590"],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/0/0d/Profile-Missandei.PNG/revision/latest/scale-to-width-down/314?cb=20170818044646"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/0/0d/Profile-Missandei.PNG/revision/latest/scale-to-width-down/314?cb=20170818044646",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b87590",
@@ -2344,7 +2738,9 @@ module.exports = [
     spouseIds: [],
     loverIds: ["5cc0757c04e71a0010b87580"],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/0/0c/Grey_Worm_Longer.jpg/revision/latest/scale-to-width-down/332?cb=20170728152422"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/0/0c/Grey_Worm_Longer.jpg/revision/latest/scale-to-width-down/332?cb=20170728152422",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b8759b",
@@ -2355,7 +2751,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/c/cf/Kraznys-3x03.jpg/revision/latest/scale-to-width-down/350?cb=20130408113949"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/c/cf/Kraznys-3x03.jpg/revision/latest/scale-to-width-down/350?cb=20130408113949",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b875a0",
@@ -2366,7 +2764,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/d/db/Greizhen_mo_Ullhor.jpg/revision/latest?cb=20130415072504"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/d/db/Greizhen_mo_Ullhor.jpg/revision/latest?cb=20130415072504",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b875a2",
@@ -2377,7 +2777,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/a/a0/Mo_Ekloz_Battle_of_the_Bastards.PNG/revision/latest?cb=20170421105823"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/a/a0/Mo_Ekloz_Battle_of_the_Bastards.PNG/revision/latest?cb=20170421105823",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b875a5",
@@ -2388,7 +2790,9 @@ module.exports = [
     spouseIds: [],
     loverIds: ["5cc0757c04e71a0010b87509"],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/d/d8/Daario-s6e4.jpg/revision/latest/scale-to-width-down/323?cb=20160512195958"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/d/d8/Daario-s6e4.jpg/revision/latest/scale-to-width-down/323?cb=20160512195958",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b875b1",
@@ -2399,7 +2803,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/6/63/Mero_3x08.jpg/revision/latest/scale-to-width-down/350?cb=20130524070035"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/6/63/Mero_3x08.jpg/revision/latest/scale-to-width-down/350?cb=20130524070035",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b875b5",
@@ -2410,7 +2816,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/1/1c/Prendhahl_Second_Sons.png/revision/latest/scale-to-width-down/327?cb=20130526212955"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/1/1c/Prendhahl_Second_Sons.png/revision/latest/scale-to-width-down/327?cb=20130526212955",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b875b8",
@@ -2421,7 +2829,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/5/5f/Hizdahr_season_5_wars_to_come.jpg/revision/latest/scale-to-width-down/332?cb=20150415042040"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/5/5f/Hizdahr_season_5_wars_to_come.jpg/revision/latest/scale-to-width-down/332?cb=20150415042040",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b875bc",
@@ -2432,7 +2842,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/a/af/Mossador-s5e1-v2.jpg.jpg/revision/latest/scale-to-width-down/265?cb=20150427224509"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/a/af/Mossador-s5e1-v2.jpg.jpg/revision/latest/scale-to-width-down/265?cb=20150427224509",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b875c2",
@@ -2443,7 +2855,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/0/01/Malko_season_5.jpg/revision/latest/scale-to-width-down/303?cb=20150518053945"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/0/01/Malko_season_5.jpg/revision/latest/scale-to-width-down/303?cb=20150518053945",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b875c5",
@@ -2459,7 +2873,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/e/eb/Yezzan_Battle_of_the_Bastards.PNG/revision/latest?cb=20170421105444"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/e/eb/Yezzan_Battle_of_the_Bastards.PNG/revision/latest?cb=20170421105444",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b875c9",
@@ -2470,7 +2886,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/6/6a/Vala.png/revision/latest?cb=20180702222337"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/6/6a/Vala.png/revision/latest?cb=20180702222337",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b875cb",
@@ -2481,7 +2899,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/a/ab/Red_Priest_in_Meereen.png/revision/latest/scale-to-width-down/350?cb=20160425125520"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/a/ab/Red_Priest_in_Meereen.png/revision/latest/scale-to-width-down/350?cb=20160425125520",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b875cc",
@@ -2492,7 +2912,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/e/eb/S06E05_-_Kinvara_%281%29.jpg/revision/latest/scale-to-width-down/339?cb=20160812222946"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/e/eb/S06E05_-_Kinvara_%281%29.jpg/revision/latest/scale-to-width-down/339?cb=20160812222946",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b875cf",
@@ -2503,7 +2925,9 @@ module.exports = [
     spouseIds: ["5cc0757c04e71a0010b875e7"],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/8/85/Lyanna_S7_E7.jpg/revision/latest/scale-to-width-down/301?cb=20170830234842"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/8/85/Lyanna_S7_E7.jpg/revision/latest/scale-to-width-down/301?cb=20170830234842",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b875e7",
@@ -2514,7 +2938,9 @@ module.exports = [
     spouseIds: ["5cc0757c04e71a0010b875cf"],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/5/51/Rhaeger_main_infobox.png/revision/latest/scale-to-width-down/306?cb=20170829183657"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/5/51/Rhaeger_main_infobox.png/revision/latest/scale-to-width-down/306?cb=20170829183657",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b875fd",
@@ -2525,7 +2951,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/4/47/Aerys_II_Targaryen_Mad_King.jpg/revision/latest/scale-to-width-down/350?cb=20170821102509"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/4/47/Aerys_II_Targaryen_Mad_King.jpg/revision/latest/scale-to-width-down/350?cb=20170821102509",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b87615",
@@ -2536,7 +2964,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/0/0a/603_Arthur_Dayne_Side.png/revision/latest/scale-to-width-down/350?cb=20160719184728"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/0/0a/603_Arthur_Dayne_Side.png/revision/latest/scale-to-width-down/350?cb=20160719184728",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757c04e71a0010b87621",
@@ -2547,7 +2977,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/2/22/GeroldHightower-Profile.jpg/revision/latest/scale-to-width-down/350?cb=20170623134427"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/2/22/GeroldHightower-Profile.jpg/revision/latest/scale-to-width-down/350?cb=20170623134427",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757d04e71a0010b8762b",
@@ -2558,7 +2990,9 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/f/f1/Howland_Reed_ToJ.png/revision/latest/scale-to-width-down/350?cb=20160531001135"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/f/f1/Howland_Reed_ToJ.png/revision/latest/scale-to-width-down/350?cb=20160531001135",
+    titles: [],
+    isHealthy: true
   },
   {
     id: "5cc0757d04e71a0010b87632",
@@ -2569,6 +3003,8 @@ module.exports = [
     spouseIds: [],
     loverIds: [],
     image:
-      "https://vignette.wikia.nocookie.net/gameofthrones/images/e/eb/Vlcsnap-2016-05-23-02h18m09s851.png/revision/latest?cb=20160523052104"
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/e/eb/Vlcsnap-2016-05-23-02h18m09s851.png/revision/latest?cb=20160523052104",
+    titles: [],
+    isHealthy: true
   }
 ];
