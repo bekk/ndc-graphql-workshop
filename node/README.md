@@ -28,6 +28,8 @@ You are now ready to start doing the exercises.
 
 ### Project structure
 
+We use the [graphql-yoga](https://github.com/prisma/graphql-yoga), which means that we can focus on the functional parts of a GraphQL server.
+
 To solve the exercises, you only need to make changes to `index.js` and `schema.graphql`.
 
 - `index.js` includes the setup for the GraphQL server, and the implementation of the resolvers. We will use an in memory database, which includes all the files in the `node/data` folder. Import the data needed as done with `characters` in `index.js`.
