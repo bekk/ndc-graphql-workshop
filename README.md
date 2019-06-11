@@ -10,7 +10,9 @@ TODO:
 
 ## Introduction
 
-(TODO KNA TEKSTEN) Most of us may be very familiar with creating REST APIs. GraphQL is a query language, created by Facebook with the purpose of building client applications based on intuitive and flexible syntax, for describing their data requirements and interactions. GraphQL was designed to solve one of the biggest drawbacks of REST-like APIs. A GraphQL service is created by defining types and fields on those types, then providing functions for each field on each type.
+GraphQL is an open-source data query language for API's, and a runtime for fulfilling those queries with existing data. It represent a new way to think about API's compared to traditional methods like REST. This workshop will give you hands-on experience using GraphQL to master common API operations.
+
+We will cover basic topics like fetching data from a GraphQL server using queries and mutations, writing schemas to describe what data can be queried and getting to know the schema type system. At the end of the workshop you will be well equipped to start implementing a new, or to query an existing, GraphQL API.
 
 ## Prerequisites
 
