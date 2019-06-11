@@ -9,8 +9,8 @@ type Query {
 
 type Mutation {
   pushFromWindow(name: String!): Character
-  addTitle(name: String!, title: String!): Character
   marry(spouseName1: String!, spouseName2: String!): [Character!]
+  addTitle(name: String!, title: String!): Character
 }
 
 type Character {
