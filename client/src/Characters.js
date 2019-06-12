@@ -5,16 +5,16 @@ import { withRouter, Link } from 'react-router-dom';
 
 const View = ({ characters }) => {
   return (
-    <ul>
+    <>
       {characters.map(({ name, image }) => (
-        <li key={name}>
-          <Link to={`/character/${name}`}>
+        <Link to={`/character/${name}`}>
+          <div className="character-list-item" key={name}>
             <img src={image} alt="" />
-            <span>{name}</span>
-          </Link>
-        </li>
+            <h1>{name}</h1>
+          </div>
+        </Link>
       ))}
-    </ul>
+    </>
   );
 };
 

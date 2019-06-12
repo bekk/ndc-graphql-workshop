@@ -54,12 +54,15 @@ const View = ({ character }) => {
           {!isHealthy && <div className="hurt">IS HURTING</div>}
         </div>
         <div className="characteristics">
-          <strong>Titles</strong>
-          <ul>
-            {titles.map(title => (
-              <li>{title}</li>
-            ))}
-          </ul>
+          <strong>Titles:</strong>
+          {titles.length === 0 && <span> No titles</span>}
+          {titles.length > 0 && (
+            <ul>
+              {titles.map(title => (
+                <li>{title}</li>
+              ))}
+            </ul>
+          )}
         </div>
       </div>
       <div className="character-actions">

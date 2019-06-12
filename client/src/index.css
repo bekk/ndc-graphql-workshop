@@ -6,6 +6,27 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+a {
+  text-decoration: none;
+}
+
+.character-list-item {
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+  border: 1px solid black;
+}
+
+.character-list-item img {
+  width: 150px;
+  height: 100%;
+}
+
+.character-list-item h1 {
+  margin-left: 20px;
+  color: black;
+}
+
 .character {
   display: flex;
   flex-direction: column;
