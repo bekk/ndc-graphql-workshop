@@ -4,6 +4,7 @@ import { GET_CHARACTERS } from './queries';
 import { withRouter, Link } from 'react-router-dom';
 
 const View = ({ characters }) => {
+  // ToDo: show character image
   return (
     <>
       {characters.map(({ name }) => (
