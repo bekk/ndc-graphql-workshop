@@ -6,16 +6,16 @@ import Character from './Character';
 
 const App = () => {
   return (
-      <BrowserRouter basename="/">
-        <>
-          <main className="main">
-            <Switch>
-              <Route path="/character/:id" component={Character}/>
-              <Route path="/" component={Characters}/>
-            </Switch>
-          </main>
-        </>
-      </BrowserRouter>
+    <BrowserRouter basename="/">
+      <>
+        <main className="main">
+          <Switch>
+            <Route path="/character/:name" component={Character} />
+            <Route path="/" component={Characters} />
+          </Switch>
+        </main>
+      </>
+    </BrowserRouter>
   );
 };
 
