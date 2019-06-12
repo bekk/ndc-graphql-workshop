@@ -6,10 +6,10 @@ import { withRouter, Link } from 'react-router-dom';
 const View = ({ characters }) => {
   return (
     <>
-      {characters.map(({ name }) => (
+      {characters.map(({ name, image }) => (
         <Link to={`/character/${name}`}>
           <div className="character-list-item" key={name}>
-            {/* insert img-tag here */}
+            <img src={image} alt="" />
             <h1>{name}</h1>
           </div>
         </Link>

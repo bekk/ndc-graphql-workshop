@@ -1,38 +1,44 @@
 import React, { useState } from 'react';
+import { Query, Mutation } from 'react-apollo';
 import { withRouter } from 'react-router-dom';
+import { ADD_CHARACTER_TITLE, GET_CHARACTER, PUSH_CHARACTER } from './queries';
 
 const Push = ({ name }) => {
-  const pushFromWindow = () => {}; // ToDo: impl GraphQl mutation function
-
   return (
-    <button
-      onClick={() => {
-        pushFromWindow(); // ToDo: add input parameters
-        window.location.reload();
-      }}
-    >
-      Push
-    </button>
+    <Mutation mutation={PUSH_CHARACTER}>
+      {pushFromWindow => (
+        <button
+          onClick={() => {
+            pushFromWindow({ variables: { name } });
+            window.location.reload();
+          }}
+        >
+          Push
+        </button>
+      )}
+    </Mutation>
   );
 };
 
 const AddTitle = ({ name }) => {
   const [titleInput, setTitleInput] = useState('');
 
-  const addTitle = () => {}; // ToDo impl GraphQl mutation function
-
   return (
-    <div>
-      <input type="text" value={titleInput} onChange={event => setTitleInput(event.currentTarget.value)} />
-      <button
-        onClick={() => {
-          addTitle(); // ToDo: add input parameters
-          window.location.reload();
-        }}
-      >
-        Add title
-      </button>
-    </div>
+    <Mutation mutation={ADD_CHARACTER_TITLE}>
+      {addTitle => (
+        <div>
+          <input type="text" value={titleInput} onChange={event => setTitleInput(event.currentTarget.value)} />
+          <button
+            onClick={() => {
+              addTitle({ variables: { name, title: titleInput } });
+              window.location.reload();
+            }}
+          >
+            Add title
+          </button>
+        </div>
+      )}
+    </Mutation>
   );
 };
 
@@ -71,14 +77,21 @@ class Character extends React.Component {
   render() {
     const paramName = this.props.match.params.name;
 
-    // ToDo: get character from GraphQL server by 'paramName' from URL
-    const character = {
-      name: 'Unknown',
-      titles: [],
-      image: undefined
-    };
+    return (
+      <Query query={GET_CHARACTER} variables={{ name: paramName }}>
+        {({ loading, error, data }) => {
+          if (loading) {
+            return <h1>Laster...</h1>;
+          }
 
-    return <View character={character} />;
+          if (error) {
+            return <h1>Error!</h1>;
+          }
+
+          return <View character={data.character} />;
+        }}
+      </Query>
+    );
   }
 }
 

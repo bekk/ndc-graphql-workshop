@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import './App.css';
 import Characters from './Characters';
 import Character from './Character';
 
