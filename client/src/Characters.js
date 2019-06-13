@@ -4,13 +4,13 @@ import { GET_CHARACTERS } from './queries';
 import { withRouter, Link } from 'react-router-dom';
 
 const View = ({ characters }) => {
-  // ToDo: show character image
+  // ToDo: Task 1c - show character image
   return (
     <>
       {characters.map(({ name }) => (
         <Link to={`/character/${name}`}>
           <div className="character-list-item" key={name}>
-            {/* insert img-tag here */}
+            {/* ToDo: Task 1c - insert img-tag here */}
             <h1>{name}</h1>
           </div>
         </Link>

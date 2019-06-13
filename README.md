@@ -41,18 +41,21 @@ query {
 
 **a) Use the query above to list all character id's in GraphiQL**
 
-The client decides which character fields it needs. It can ask for both id and name like this:
+The client decides which character fields it needs. It can ask for id, name and image like this:
 
 ```graphql
 query {
   characters {
     id
     name
+    image
   }
 }
 ```
 
-**b) Extend the the query from a) to also list the `name` of each character.**
+**b) Extend the the query from a) to also list the `name` and `image` of each character.**
+
+**c) [Frontend] Add image for each character in `Character.js`** 
 
 Nested queries can be used to find information about a characters siblings:
 
@@ -68,7 +71,7 @@ query {
 }
 ```
 
-**c) Use a nested query to see the characters' siblings.**
+**d) Use a nested query to see the characters' siblings.**
 
 ## Task 2 - Schemas and Types
 
@@ -172,6 +175,8 @@ type House {
 
 **c) It should also be possible to find which house a character belongs to.**
 
+**d) [Frontend] Get required data for a specific character in `Character.js`**
+
 ## Task 4 - Mutations
 
 Mutations are the second main operation in GraphQL. It deals with creating, deleting and updating data. As with the `Query` type in your schema, you will need to add a `Mutation` type. Lets imagine you are Jaime Lannister, secrets are important to you - sometimes desperate actions are needed:
@@ -184,9 +189,11 @@ type Mutation {
 
 **a) Implement the pushFromWindow mutation. This includes changes to both schema and resolver. The push should set the isHealthy field to false for Bran Stark.**
 
+**b) [Frontend] Implement the `pushFromWindow` mutation in the `Push`-component in `Character.js`**
+
 It is not just in Westeros the action is happening. Across the Narrow Sea, an important wedding is taking place. The ruggedly handsome Khal Drogo is marrying the beautiful Daenerys Targaryan.
 
-**b) Make sure the wedding takes place. Create a mutation taking two names as arguments.**
+**c) Make sure the wedding takes place. Create a mutation taking two names as arguments.**
 
 ```graphql
 type Mutation {
@@ -197,7 +204,9 @@ type Mutation {
 
 Although the claim may be poor, Joffrey Baratheon manages to be crowned King of the Seven Kingdoms. We have to make sure our API keeps track.
 
-**c) Give King Joffrey the titles: the First of His Name, King of the Andals and the First Men, Lord of the Seven Kingdoms, and Protector of the Realm**
+**d) Give King Joffrey the titles: the First of His Name, King of the Andals and the First Men, Lord of the Seven Kingdoms, and Protector of the Realm**
+
+**e) [Frontend] Make it possible to add titles to a character by implementing a mutation in the `AddTitle`-component in `Character.js`**
 
 ## Bonus task
 
