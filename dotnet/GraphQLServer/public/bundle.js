@@ -31947,7 +31947,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 function graphQLFetcher(graphQLParams) {
   return (0, _axios2.default)({
     method: 'POST',
-    url: window.location.origin + '/api/graphql',
+    url: window.location.origin + '/',
     data: graphQLParams
   }).then(function (resp) {
     return resp.data;
