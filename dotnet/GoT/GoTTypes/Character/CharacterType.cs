@@ -11,26 +11,11 @@ namespace GoT.GoTTypes.Character
 
             Field(h => h.Id);
             Field(h => h.Name, nullable: true);
-            Field(h => h.Image, nullable: true);
-            Field(h => h.Allegiances, nullable: true);
-            Field<ListGraphType<CharacterType>>(
-                "lovers",
-                resolve: context => data.GetLovers(context.Source)
-            );
-            Field<ListGraphType<CharacterType>>(
-                "spouses",
-                resolve: context => data.GetSpouses(context.Source)
-            );
             Field<ListGraphType<CharacterType>>(
                 "siblings",
                 resolve: context => data.GetSiblings(context.Source)
             );
-            Field<HouseType>(
-                "house",
-                resolve: context => data.GetHouseById(context.Source.HouseId)
-            );
-            Field(h => h.IsHealthy, nullable: true);
-            Field(h => h.Titles, nullable: true);
+            
 
         }
     }

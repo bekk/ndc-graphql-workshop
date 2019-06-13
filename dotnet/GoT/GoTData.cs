@@ -6,7 +6,6 @@ using GoT.GoTTypes.Castles;
 using GoT.GoTTypes.Character;
 using GoT.GoTTypes.Houses;
 using GraphQL;
-using GraphQL.Types;
 using Newtonsoft.Json;
 
 namespace GoT
@@ -42,116 +41,9 @@ namespace GoT
             return _characters.Find(x => x.Id == id);
         }
 
-        public Character GetCharacterByName(string name)
-        {
-            return _characters.Find(x => x.Name.Equals(name));
-        }
-
-        public IEnumerable<Character> GetLovers(Character character)
-        {
-            return character?.LoverIds?.Select(GetCharacterById);
-        }
-
-        public IEnumerable<Character> GetSpouses(Character character)
-        {
-            return character?.SpouseIds?.Select(GetCharacterById);
-        }
-
         public IEnumerable<Character> GetSiblings(Character character)
         {
             return character?.SiblingIds?.Select(GetCharacterById);
-        }
-
-        public IEnumerable<House> GetHouses()
-        {
-            return _houses;
-        }
-
-        public House GetHouseById(string id)
-        {
-            return _houses.Find(x => x.Id == id);
-        }
-
-        public IEnumerable<House> GetAllegiance(House house)
-        {
-            return house?.AllegionHouseIds?.Select(GetHouseById);
-        }
-
-        public IEnumerable<Castle> GetCastles()
-        {
-            return _castles;
-        }
-
-        public IEnumerable<Castle> GetSeatsForHouse(House house)
-        {
-            return _castles.Where(castle => house.SeatIds.Any(id => id == castle.Id));
-        }
-
-        public IEnumerable<House> GetRulers(Castle castle)
-        {
-            return castle?.RulerIds.Select(GetHouseById);
-        }
-
-        public Character PushFromwindow(string name)
-        {
-
-            var character = _characters.Find(x => x.Name == name);
-            character.IsHealthy = false;
-            return character;
-        }
-
-        public IEnumerable<Character> GetResidents(House house)
-        {
-            return _characters.Where(x => x.HouseId == house.Id);
-        }
-
-        public Character GetCharacter(ResolveFieldContext<object> context)
-        {
-            var id = context.GetArgument<string>("id");
-            var name = context.GetArgument<string>("name");
-            if (id != null)
-            {
-                return GetCharacterById(id);
-            }
-
-            if (name != null)
-            {
-                return GetCharacterByName(name);
-            }
-
-            return null;
-        }
-
-        public House GetHouse(ResolveFieldContext<object> context)
-        {
-            var id = context.GetArgument<string>("id");
-            var name = context.GetArgument<string>("name");
-            if (id != null)
-            {
-                return _houses.Find(x => x.Id == id);
-            }
-
-            if (name != null)
-            {
-                return _houses.Find(x => x.Name.Equals(name));
-            }
-
-            return null;
-        }
-
-        public Character AddTitles(string characterName, IEnumerable<string> titles)
-        {
-            var character = _characters.Find(x => x.Name == characterName);
-            character.Titles = titles;
-            return character;
-        }
-        public List<Character> Marry(string spouseName1, string spouseName2)
-        {
-            var spouse1 = _characters.Find(x => x.Name == spouseName1);
-            var spouse2 = _characters.Find(x => x.Name == spouseName2);
-            spouse1.SpouseIds = spouse1.SpouseIds.Concat(new List<string>(){ spouse2.Id});
-            spouse2.SpouseIds = spouse2.SpouseIds.Concat(new List<string>(){ spouse1.Id});
-            return new List<Character>() {spouse1, spouse2};
         }
     }
 }

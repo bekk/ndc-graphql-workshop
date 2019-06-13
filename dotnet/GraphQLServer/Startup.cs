@@ -1,7 +1,5 @@
 using GoT;
-using GoT.GoTTypes.Castles;
 using GoT.GoTTypes.Character;
-using GoT.GoTTypes.Houses;
 using GraphQL;
 using GraphQL.Http;
 using GraphQL.Types;
@@ -26,8 +24,6 @@ namespace GraphQLServer
             services.AddSingleton<GotMutation>();
             services.AddSingleton<CharacterInputType>();
             services.AddSingleton<CharacterType>();
-            services.AddSingleton<HouseType>();
-            services.AddSingleton<CastleType>();
             services.AddSingleton<ISchema, GoTSchema>();
 
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
