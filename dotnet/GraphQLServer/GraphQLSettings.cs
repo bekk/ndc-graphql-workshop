@@ -5,7 +5,7 @@ namespace GraphQLServer
 {
     public class GraphQLSettings
     {
-        public PathString Path { get; set; } = "/api/graphql";
+        public PathString Path { get; set; } = "/";
         public Func<HttpContext, object> BuildUserContext { get; set; }
     }
 }

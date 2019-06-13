@@ -25,7 +25,10 @@ namespace GraphQLServer
             services.AddSingleton<CharacterInputType>();
             services.AddSingleton<CharacterType>();
             services.AddSingleton<ISchema, GoTSchema>();
-
+            services.AddCors(options =>
+                options.AddPolicy("AllowAll", p => p.AllowAnyOrigin()
+                    .AllowAnyMethod()
+                    .AllowAnyHeader()));
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
         }
 
@@ -33,6 +36,7 @@ namespace GraphQLServer
         {
             loggerFactory.AddConsole();
             app.UseDeveloperExceptionPage();
+            app.UseCors("AllowAll");
 
             app.UseMiddleware<GraphQLMiddleware>(new GraphQLSettings
             {
@@ -41,7 +45,6 @@ namespace GraphQLServer
                     User = ctx.User
                 }
             });
-
             app.UseDefaultFiles();
             app.UseStaticFiles();
         }
