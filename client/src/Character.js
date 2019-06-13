@@ -2,12 +2,12 @@ import React, { useState } from 'react';
 import { withRouter } from 'react-router-dom';
 
 const Push = ({ name }) => {
-  const pushFromWindow = () => {}; // ToDo: impl GraphQl mutation function
+  const pushFromWindow = () => {}; // ToDo: Task 4b - impl GraphQl mutation function
 
   return (
     <button
       onClick={() => {
-        pushFromWindow(); // ToDo: add input parameters
+        pushFromWindow(); // ToDo: Task 4b - add input parameters
         window.location.reload();
       }}
     >
@@ -19,14 +19,14 @@ const Push = ({ name }) => {
 const AddTitle = ({ name }) => {
   const [titleInput, setTitleInput] = useState('');
 
-  const addTitle = () => {}; // ToDo impl GraphQl mutation function
+  const addTitle = () => {}; // ToDo: Task 4d - impl GraphQl mutation function
 
   return (
     <div>
       <input type="text" value={titleInput} onChange={event => setTitleInput(event.currentTarget.value)} />
       <button
         onClick={() => {
-          addTitle(); // ToDo: add input parameters
+          addTitle(); // ToDo: Task 4d - add input parameters
           window.location.reload();
         }}
       >
@@ -71,7 +71,7 @@ class Character extends React.Component {
   render() {
     const paramName = this.props.match.params.name;
 
-    // ToDo: get character from GraphQL server by 'paramName' from URL
+    // ToDo: Task 3d - get character from GraphQL server by 'paramName' from URL
     const character = {
       name: 'Unknown',
       titles: [],
