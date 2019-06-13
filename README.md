@@ -1,9 +1,5 @@
 # GraphQL Workshop
 
-TODO:
-
-- Lag ferdig intro for graphQL (THORSTEIN)
-
 ## Introduction
 
 GraphQL is an open-source data query language for API's, and a runtime for fulfilling those queries with existing data. It represent a new way to think about API's compared to traditional methods like REST. This workshop will give you hands-on experience using GraphQL to master common API operations.
@@ -64,7 +60,7 @@ query {
   characters {
     name
     allegiances
-    lovers {
+    siblings {
       name
     }
   }
@@ -114,6 +110,7 @@ The `!` behind `ID` simply means that the field is non-nullable.
 
 Resolvers are responsible for mapping the operations to actual functions. For the `Character` type, there is already defined one resolver - the one that resolved your query for siblings earlier.
 
+With Javascript it would look something like this:
 ```js
 const Character = {
   siblings: (root, args) => {
@@ -124,6 +121,20 @@ const Character = {
 };
 ```
 
+With C# you would have to do something like this in the `GotQuery`-file
+
+```c#
+  Field<CharacterType>(
+                "character",
+                arguments: new QueryArguments(
+                    new QueryArgument<StringGraphType> { Name = "name", Description = "name of the character" }
+                ),
+                resolve: context =>
+                {
+                    var name = context.GetArgument<string>("name");
+                    return data.GetCharacter(name);
+                });
+```
 All resolvers receives the `root` argument, which is the parent beeing resolved. To find all the siblings, the resolver filters all characters using the `siblingIds` list.
 
 **a) Add lovers and spouses to `Character`. Remember to also add it to your schema**
@@ -143,7 +154,7 @@ To support this query you need to extend the `Query` type in your schema:
 ```graphql
 type Query {
   characters: [Character]
-  character(id: String, name: String): Character
+  character(name: String): Character
 }
 ```
 
