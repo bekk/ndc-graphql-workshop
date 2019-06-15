@@ -51,8 +51,6 @@ query {
 
 **b) Extend the the query from a) to also list the `name` and `image` of each character.**
 
-**c) [Frontend] Add image for each character in `Character.js`** 
-
 Nested queries can be used to find information about a characters siblings:
 
 ```graphql
@@ -67,7 +65,7 @@ query {
 }
 ```
 
-**d) Use a nested query to see the characters' siblings.**
+**c) Use a nested query to see the characters' siblings.**
 
 ## Task 2 - Schemas and Types
 
@@ -87,6 +85,7 @@ The `characters` field is defined as a list of type `Character`.
 type Character {
   id: ID!
   name: String
+  image: String
   allegiances: [String]
   siblings: [Character]
 }
@@ -105,6 +104,8 @@ For scalar types, you can just add a field to a type in your schema - and GraphQ
 The `!` behind `ID` simply means that the field is non-nullable.
 
 **a) Add the field `alligiances`to the `Character`type. Use GraphiQL to find alligiances of all characters.**
+
+**b) [Frontend] Add image for each character in `Characters.js`** 
 
 ## Task 3 - Resolvers
 
@@ -186,7 +187,7 @@ type House {
 
 **c) It should also be possible to find which house a character belongs to.**
 
-**d) [Frontend] Get required data for a specific character in `Character.js`**
+**d) [Frontend] Get required data for a specific character in `Character.js` by implementing `react-apollo`'s `Query`-component. You might need to update your server side GraphQL schema to get all required fields. Useful documentation can be found here: https://www.apollographql.com/docs/react/essentials/queries/**
 
 ## Task 4 - Mutations
 
@@ -200,7 +201,7 @@ type Mutation {
 
 **a) Implement the pushFromWindow mutation. This includes changes to both schema and resolver. The push should set the isHealthy field to false for Bran Stark.**
 
-**b) [Frontend] Implement the `pushFromWindow` mutation in the `Push`-component in `Character.js`**
+**b) [Frontend] Implement the `pushFromWindow` mutation in the `Push`-component in `Character.js`. Use `react-apollos`'s `Mutation`-component. Useful documentation can be found here: https://www.apollographql.com/docs/react/essentials/mutations/**
 
 It is not just in Westeros the action is happening. Across the Narrow Sea, an important wedding is taking place. The ruggedly handsome Khal Drogo is marrying the beautiful Daenerys Targaryan.
 
