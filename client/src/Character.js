@@ -37,7 +37,7 @@ const AddTitle = ({ name }) => {
 };
 
 const View = ({ character }) => {
-  const { name, image, titles, isHealthy = true } = character;
+  const { name, image, titles = [], isHealthy = true } = character;
 
   return (
     <section className="character">
