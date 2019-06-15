@@ -20,7 +20,7 @@ To start the server, run
 npm run start
 ```
 
-and open [http://localhost:4000]() in the browser. All changes to the API will restart the server.
+and open [http://localhost:4000](http://localhost:4000) in the browser. All changes to the API will restart the server.
 
 You are now ready to start doing the exercises.
 
