@@ -8,6 +8,7 @@ module.exports = gql`
   type Character {
     id: ID!
     name: String
+    image: String
     siblings: [Character]
   }
 `;
