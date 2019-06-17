@@ -1,5 +1,8 @@
 # GraphQL Workshop
 
+TODO:
+- legg til image i type schema
+
 ## Introduction
 
 GraphQL is an open-source data query language for API's, and a runtime for fulfilling those queries with existing data. It represent a new way to think about API's compared to traditional methods like REST. This workshop will give you hands-on experience using GraphQL to master common API operations.
