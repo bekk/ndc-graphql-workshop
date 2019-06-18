@@ -11,6 +11,7 @@ namespace GoT.GoTTypes.Character
 
             Field(h => h.Id);
             Field(h => h.Name, nullable: true);
+            Field(h => h.Image, nullable: true);
             Field<ListGraphType<CharacterType>>(
                 "siblings",
                 resolve: context => data.GetSiblings(context.Source)

@@ -1,7 +1,6 @@
 # GraphQL Workshop
 
 TODO:
-- legg til image i type schema for .NET (STAUR)
 - merge master inn i fasit-branch når web-del er ferdig. Og evt legge inn mer styling (SIGURD)
 
 ## Introduction
