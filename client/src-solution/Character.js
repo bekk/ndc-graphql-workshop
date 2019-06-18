@@ -28,7 +28,12 @@ const AddTitle = ({ name }) => {
     <Mutation mutation={ADD_CHARACTER_TITLE}>
       {addTitle => (
         <div>
-          <input type="text" placeholder="Title..." value={titleInput} onChange={event => setTitleInput(event.currentTarget.value)} />
+          <input
+            type="text"
+            placeholder="Title..."
+            value={titleInput}
+            onChange={event => setTitleInput(event.currentTarget.value)}
+          />
           <button
             className="button-good"
             onClick={() => {

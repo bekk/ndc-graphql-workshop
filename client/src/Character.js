@@ -24,7 +24,12 @@ const AddTitle = ({ name }) => {
 
   return (
     <div>
-      <input type="text" placeholder="Title..." value={titleInput} onChange={event => setTitleInput(event.currentTarget.value)} />
+      <input
+        type="text"
+        placeholder="Title..."
+        value={titleInput}
+        onChange={event => setTitleInput(event.currentTarget.value)}
+      />
       <button
         className="button-good"
         onClick={() => {
