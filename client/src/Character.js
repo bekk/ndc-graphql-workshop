@@ -6,6 +6,7 @@ const Push = ({ name }) => {
 
   return (
     <button
+      className="button-bad"
       onClick={() => {
         pushFromWindow(); // ToDo: Task 4b - add input parameters
         window.location.reload();
@@ -23,8 +24,9 @@ const AddTitle = ({ name }) => {
 
   return (
     <div>
-      <input type="text" value={titleInput} onChange={event => setTitleInput(event.currentTarget.value)} />
+      <input type="text" placeholder="Title..." value={titleInput} onChange={event => setTitleInput(event.currentTarget.value)} />
       <button
+        className="button-good"
         onClick={() => {
           addTitle(); // ToDo: Task 4d - add input parameters
           window.location.reload();
@@ -41,27 +43,27 @@ const View = ({ character }) => {
 
   return (
     <section className="character">
-      <h1>{name}</h1>
+      <div className="character-image">
+        <img src={image} alt="" className="image-large" />
+        {!isHealthy && <div className="hurt">X</div>}
+      </div>
       <div className="character-info">
-        <div className="character-image">
-          <img src={image} alt="" className="image-large" />
-          {!isHealthy && <div className="hurt">IS HURTING</div>}
-        </div>
-        <div className="characteristics">
-          <strong>Titles:</strong>
-          {titles.length === 0 && <span> No titles</span>}
-          {titles.length > 0 && (
+        <h1>{name}</h1>
+        {titles.length === 0 && <h2>No titles</h2>}
+        {titles.length > 0 && (
+          <>
+            <h2>Titles</h2>
             <ul>
               {titles.map(title => (
                 <li>{title}</li>
               ))}
             </ul>
-          )}
+          </>
+        )}
+        <div className="character-actions">
+          <AddTitle name={name} />
+          <Push name={name} />
         </div>
-      </div>
-      <div className="character-actions">
-        <AddTitle name={name} />
-        <Push name={name} />
       </div>
     </section>
   );

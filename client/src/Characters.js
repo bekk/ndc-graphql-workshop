@@ -8,7 +8,7 @@ const View = ({ characters }) => {
   return (
     <>
       {characters.map(({ name }) => (
-        <Link to={`/character/${name}`}>
+        <Link key={name} to={`/character/${name}`}>
           <div className="character-list-item" key={name}>
             {/* ToDo: Task 1c - insert img-tag here */}
             <h1>{name}</h1>

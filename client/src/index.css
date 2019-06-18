@@ -1,25 +1,64 @@
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
-    'Droid Sans', 'Helvetica Neue', sans-serif;
+  'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+h1 {
+  font-size: 35px;
+}
+
+h2 {
+  font-size: 25px;
 }
 
 a {
   text-decoration: none;
 }
 
-.character-list-item {
-  display: flex;
-  flex-direction: row;
-  margin: 10px;
+input {
+  padding: 5px;
+  font-size: 20px;
   border: 1px solid black;
 }
 
+button {
+  border: none;
+  padding: 10px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.button-good {
+  background-color: #4CAF50;
+  color: white;
+  margin-left: 15px;
+}
+
+.button-bad {
+  background-color: #af2f22;
+  color: white;
+  margin-top: 20px;
+}
+
+.character-list-item {
+  display: flex;
+  flex-direction: row;
+  max-width: 800px;
+  margin: 20px auto;
+  border: 2px solid black;
+  border-radius: 20px;
+}
+
 .character-list-item img {
-  width: 150px;
+  width: 100px;
   height: 100%;
+  border-radius: 20px 0 0 20px;
 }
 
 .character-list-item h1 {
@@ -29,21 +68,18 @@ a {
 
 .character {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 20px;
 }
 
 .character-info {
-  display: flex;
-  flex-direction: row;
-}
-
-.characteristics {
-  margin-left: 25px;
+  margin-left: 20px;
 }
 
 .character-image {
   position: relative;
-  width: 200px;
+  width: 300px;
 }
 
 .character-image .hurt {
@@ -52,7 +88,7 @@ a {
   left: 0;
   width: 100%;
   height: 100%;
-  font-size: 20px;
+  font-size: 300px;
   font-weight: bold;
   color: red;
   text-align: center;
@@ -61,8 +97,9 @@ a {
 }
 
 .image-large {
-  width: 200px;
+  width: 300px;
 }
 
 .character-actions {
+  margin-top: 25px;
 }

@@ -7,7 +7,7 @@ const View = ({ characters }) => {
   return (
     <>
       {characters.map(({ name, image }) => (
-        <Link to={`/character/${name}`}>
+        <Link key={name} to={`/character/${name}`}>
           <div className="character-list-item" key={name}>
             <img src={image} alt="" />
             <h1>{name}</h1>
