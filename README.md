@@ -1,15 +1,18 @@
+TODO:
+
+- merge master inn i fasit-branch når web-del er ferdig. Og evt legge inn mer styling (SIGURD)
+
 # GraphQL Workshop
 
-TODO:
-- merge master inn i fasit-branch når web-del er ferdig. Og evt legge inn mer styling (SIGURD)
+The master of whisperers is starting to lose track of all the comings and goings in Westeros. He has decides to build an GraphQL API to keep track, and has demanded that you help him.
+
+Good luck!
 
 ## Introduction
 
 GraphQL is an open-source data query language for API's, and a runtime for fulfilling those queries with existing data. It represent a new way to think about API's compared to traditional methods like REST. This workshop will give you hands-on experience using GraphQL to master common API operations.
 
 We will cover basic topics like fetching data from a GraphQL server using queries and mutations, writing schemas to describe what data can be queried and getting to know the schema type system. At the end of the workshop you will be well equipped to start implementing a new, or to query an existing, GraphQL API.
-
-The master of whisperers is starting to lose track of all the comings and goings in Westeros. So he decides to build an GraphQL API to keep track.
 
 ## Getting started
 
@@ -28,8 +31,6 @@ We also provide a React client that is set ut to consume data exposed from our G
 
 Your React.js app should now show some html on [http://localhost:3000](http://localhost:3000).
 
-Good luck!
-
 ## Task 1 - Basic Queries
 
 The GraphQL query language is basically about selecting fields on objects, which means that the client is now in control. The GraphQL server will return only the fields asked for.
@@ -44,7 +45,7 @@ query {
 }
 ```
 
-**a) Use the query above to list all character id's in GraphiQL**
+### a) Use the query above to list all character id's in GraphiQL
 
 The client decides which character fields it needs. It can ask for id, name and image like this:
 
@@ -58,7 +59,7 @@ query {
 }
 ```
 
-**b) Extend the the query from a) to also list the `name` and `image` of each character.**
+### b) Extend the the query from a) to also list the `name` and `image` of each character.
 
 Nested queries can be used to find information about a characters siblings:
 
@@ -73,7 +74,7 @@ query {
 }
 ```
 
-**c) Use a nested query to see the characters' siblings.**
+### c) Use a nested query to see the characters' siblings.
 
 ## Task 2 - Schemas and Types
 
@@ -111,16 +112,18 @@ For scalar types, you can just add a field to a type in your schema - and GraphQ
 
 The `!` behind `ID` simply means that the field is non-nullable.
 
-**a) Add the field `alligiances`to the `Character`type. Use GraphiQL to find alligiances of all characters.**
+### a) Add the field `alligiances`to the `Character`type. Use GraphiQL to find alligiances of all characters.
 
-**b) [Frontend] Add image for each character in `Characters.js`** 
+### b) [Frontend] Add image for each character in `Characters.js`
 
 ## Task 3 - Resolvers
 
 Resolvers are responsible for mapping the operations to actual functions. For the `Character` type, there is already defined one resolver - the one that resolved your query for siblings earlier.
 
 ### JS
+
 With Javascript it would look something like this:
+
 ```js
 const Character = {
   siblings: (root, args) => {
@@ -130,6 +133,7 @@ const Character = {
   }
 };
 ```
+
 All resolvers receives the `root` argument, which is the parent beeing resolved. To find all the siblings, the resolver filters all characters using the `siblingIds` list.
 
 ### C#
@@ -143,8 +147,7 @@ In C# the resolver responsible for mapping siblings is placed in `CharacterType.
             );
 ```
 
-
-**a) Add lovers and spouses to `Character`. Remember to also add it to your schema**
+### a) Add lovers and spouses to `Character`. Remember to also add it to your schema
 
 Up until now we have queried all characters, but we want to be able to get one specific. The following query should return Bran Stark:
 
@@ -165,7 +168,7 @@ type Query {
 }
 ```
 
-### JS 
+### JS
 
 Now we will make use of the `args` argument. Adding a `character` resolver like below, will allow you to query a specific character by name.
 
@@ -179,7 +182,9 @@ const Query = {
   }
 };
 ```
-### C# 
+
+### C#
+
 With C# you would have to do something like this in the `GotQuery`-file
 
 ```c#
@@ -195,7 +200,7 @@ With C# you would have to do something like this in the `GotQuery`-file
                 });
 ```
 
-**b) Add `character(name: String): Character` to the API.**
+### b) Add `character(name: String): Character` to the API.
 
 ```graphql
 type House {
@@ -208,11 +213,11 @@ type House {
 }
 ```
 
-**c) Add `House` to the API. Use GraphiQL to list all houses.**
+### c) Add `House` to the API. Use GraphiQL to list all houses.
 
-**d) It should also be possible to find which house a character belongs to.**
+### d) It should also be possible to find out which house a character belongs to.
 
-**e) [Frontend] Get required data for a specific character in `Character.js` by implementing `react-apollo`'s `Query`-component. You might need to update your server side GraphQL schema to get all required fields. Useful documentation can be found here: https://www.apollographql.com/docs/react/essentials/queries/**
+### e) [Frontend] Get required data for a specific character in `Character.js` by implementing `react-apollo`'s `Query`-component. You might need to update your server side GraphQL schema to get all required fields. Useful documentation can be found here: https://www.apollographql.com/docs/react/essentials/queries/
 
 ## Task 4 - Mutations
 
@@ -224,13 +229,13 @@ type Mutation {
 }
 ```
 
-**a) Implement the pushFromWindow mutation. This includes changes to both schema and resolver. The push should set the isHealthy field to false for Bran Stark.**
+### a) Implement the `pushFromWindow` mutation. This includes changes to both schema and resolver.
 
-**b) [Frontend] Implement the `pushFromWindow` mutation in the `Push`-component in `Character.js`. Use `react-apollos`'s `Mutation`-component. Useful documentation can be found here: https://www.apollographql.com/docs/react/essentials/mutations/**
+### b) [Frontend] Implement the `pushFromWindow` mutation in the `Push`-component in `Character.js`. Use `react-apollos`'s `Mutation`-component. Useful documentation can be found here: https://www.apollographql.com/docs/react/essentials/mutations/**
 
 It is not just in Westeros the action is happening. Across the Narrow Sea, an important wedding is taking place. The ruggedly handsome Khal Drogo is marrying the beautiful Daenerys Targaryen.
 
-**c) Make sure the wedding takes place. Create a mutation taking two names as arguments.**
+### c) Make sure the wedding takes place. Create a mutation taking two names as arguments.
 
 ```graphql
 type Mutation {
@@ -241,9 +246,9 @@ type Mutation {
 
 Although the claim may be poor, Joffrey Baratheon manages to be crowned King of the Seven Kingdoms. We have to make sure our API keeps track.
 
-**d) Give King Joffrey the titles: the First of His Name, King of the Andals and the First Men, Lord of the Seven Kingdoms, and Protector of the Realm**
+### d) Give King Joffrey the titles: the First of His Name, King of the Andals and the First Men, Lord of the Seven Kingdoms, and Protector of the Realm
 
-**e) [Frontend] Make it possible to add titles to a character by implementing a mutation in the `AddTitle`-component in `Character.js`**
+### e) [Frontend] Make it possible to add titles to a character by implementing a mutation in the `AddTitle`-component in `Character.js`
 
 ## Bonus task
 
