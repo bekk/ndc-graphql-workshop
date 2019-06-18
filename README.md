@@ -183,7 +183,7 @@ const Query = {
 };
 ```
 
-### C
+### C#
 
 With C# you would have to do something like this in the `GotQuery`-file
 
