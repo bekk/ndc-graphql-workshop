@@ -119,6 +119,7 @@ The `!` behind `ID` simply means that the field is non-nullable.
 
 Resolvers are responsible for mapping the operations to actual functions. For the `Character` type, there is already defined one resolver - the one that resolved your query for siblings earlier.
 
+### JS
 With Javascript it would look something like this:
 ```js
 const Character = {
@@ -130,6 +131,8 @@ const Character = {
 };
 ```
 All resolvers receives the `root` argument, which is the parent beeing resolved. To find all the siblings, the resolver filters all characters using the `siblingIds` list.
+
+### C#
 
 In C# the resolver responsible for mapping siblings is placed in `CharacterType.cs` and looks like this:
 
@@ -162,6 +165,8 @@ type Query {
 }
 ```
 
+### JS 
+
 Now we will make use of the `args` argument. Adding a `character` resolver like below, will allow you to query a specific character by name.
 
 ```js
@@ -174,7 +179,7 @@ const Query = {
   }
 };
 ```
-
+### C# 
 With C# you would have to do something like this in the `GotQuery`-file
 
 ```c#
