@@ -1,7 +1,3 @@
-TODO:
-
-- merge master inn i fasit-branch når web-del er ferdig. Og evt legge inn mer styling (SIGURD)
-
 # GraphQL Workshop
 
 The master of whisperers is starting to lose track of all the comings and goings in Westeros. He has decides to build an GraphQL API to keep track, and has demanded that you help him.
