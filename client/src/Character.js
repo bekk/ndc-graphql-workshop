@@ -8,6 +8,7 @@ const Push = ({ name }) => {
     <Mutation mutation={PUSH_CHARACTER}>
       {pushFromWindow => (
         <button
+          className="button-bad"
           onClick={() => {
             pushFromWindow({ variables: { name } });
             window.location.reload();
@@ -27,8 +28,9 @@ const AddTitle = ({ name }) => {
     <Mutation mutation={ADD_CHARACTER_TITLE}>
       {addTitle => (
         <div>
-          <input type="text" value={titleInput} onChange={event => setTitleInput(event.currentTarget.value)} />
+          <input type="text" placeholder="Title..." value={titleInput} onChange={event => setTitleInput(event.currentTarget.value)} />
           <button
+            className="button-good"
             onClick={() => {
               addTitle({ variables: { name, title: titleInput } });
               window.location.reload();
@@ -43,31 +45,31 @@ const AddTitle = ({ name }) => {
 };
 
 const View = ({ character }) => {
-  const { name, image, titles, isHealthy = true } = character;
+  const { name, image, titles = [], isHealthy = true } = character;
 
   return (
     <section className="character">
-      <h1>{name}</h1>
+      <div className="character-image">
+        <img src={image} alt="" className="image-large" />
+        {!isHealthy && <div className="hurt">X</div>}
+      </div>
       <div className="character-info">
-        <div className="character-image">
-          <img src={image} alt="" className="image-large" />
-          {!isHealthy && <div className="hurt">IS HURTING</div>}
-        </div>
-        <div className="characteristics">
-          <strong>Titles:</strong>
-          {titles.length === 0 && <span> No titles</span>}
-          {titles.length > 0 && (
+        <h1>{name}</h1>
+        {titles.length === 0 && <h2>No titles</h2>}
+        {titles.length > 0 && (
+          <>
+            <h2>Titles</h2>
             <ul>
               {titles.map(title => (
                 <li>{title}</li>
               ))}
             </ul>
-          )}
+          </>
+        )}
+        <div className="character-actions">
+          <AddTitle name={name} />
+          <Push name={name} />
         </div>
-      </div>
-      <div className="character-actions">
-        <AddTitle name={name} />
-        <Push name={name} />
       </div>
     </section>
   );
