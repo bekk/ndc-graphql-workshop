@@ -180,7 +180,7 @@ const Query = {
 };
 ```
 
-**b) Add `House` to the API.**
+**b) Add `character(name: String): Character` to the API.**
 
 ```graphql
 type House {
@@ -193,9 +193,11 @@ type House {
 }
 ```
 
-**c) It should also be possible to find which house a character belongs to.**
+**c) Add `House` to the API. Use GraphiQL to list all houses.**
 
-**d) [Frontend] Get required data for a specific character in `Character.js` by implementing `react-apollo`'s `Query`-component. You might need to update your server side GraphQL schema to get all required fields. Useful documentation can be found here: https://www.apollographql.com/docs/react/essentials/queries/**
+**d) It should also be possible to find which house a character belongs to.**
+
+**e) [Frontend] Get required data for a specific character in `Character.js` by implementing `react-apollo`'s `Query`-component. You might need to update your server side GraphQL schema to get all required fields. Useful documentation can be found here: https://www.apollographql.com/docs/react/essentials/queries/**
 
 ## Task 4 - Mutations
 
