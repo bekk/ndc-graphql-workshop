@@ -228,7 +228,7 @@ type Mutation {
 
 **b) [Frontend] Implement the `pushFromWindow` mutation in the `Push`-component in `Character.js`. Use `react-apollos`'s `Mutation`-component. Useful documentation can be found here: https://www.apollographql.com/docs/react/essentials/mutations/**
 
-It is not just in Westeros the action is happening. Across the Narrow Sea, an important wedding is taking place. The ruggedly handsome Khal Drogo is marrying the beautiful Daenerys Targaryan.
+It is not just in Westeros the action is happening. Across the Narrow Sea, an important wedding is taking place. The ruggedly handsome Khal Drogo is marrying the beautiful Daenerys Targaryen.
 
 **c) Make sure the wedding takes place. Create a mutation taking two names as arguments.**
 
