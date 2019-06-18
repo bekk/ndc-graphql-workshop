@@ -66,7 +66,6 @@ Nested queries can be used to find information about a characters siblings:
 query {
   characters {
     name
-    allegiances
     siblings {
       name
     }
@@ -130,6 +129,7 @@ const Character = {
   }
 };
 ```
+All resolvers receives the `root` argument, which is the parent beeing resolved. To find all the siblings, the resolver filters all characters using the `siblingIds` list.
 
 With C# you would have to do something like this in the `GotQuery`-file
 
@@ -145,7 +145,6 @@ With C# you would have to do something like this in the `GotQuery`-file
                     return data.GetCharacter(name);
                 });
 ```
-All resolvers receives the `root` argument, which is the parent beeing resolved. To find all the siblings, the resolver filters all characters using the `siblingIds` list.
 
 **a) Add lovers and spouses to `Character`. Remember to also add it to your schema**
 
