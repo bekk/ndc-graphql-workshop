@@ -227,7 +227,7 @@ type Mutation {
 
 ### a) Implement the `pushFromWindow` mutation. This includes changes to both schema and resolver.
 
-### b) [Frontend] Implement the `pushFromWindow` mutation in the `Push`-component in `Character.js`. Use `react-apollos`'s `Mutation`-component. Useful documentation can be found here: https://www.apollographql.com/docs/react/essentials/mutations/**
+### b) [Frontend] Implement the `pushFromWindow` mutation in the `Push`-component in `Character.js`. Use `react-apollos`'s `Mutation`-component. Useful documentation can be found here: https://www.apollographql.com/docs/react/essentials/mutations/
 
 It is not just in Westeros the action is happening. Across the Narrow Sea, an important wedding is taking place. The ruggedly handsome Khal Drogo is marrying the beautiful Daenerys Targaryen.
 
