@@ -131,20 +131,15 @@ const Character = {
 ```
 All resolvers receives the `root` argument, which is the parent beeing resolved. To find all the siblings, the resolver filters all characters using the `siblingIds` list.
 
-With C# you would have to do something like this in the `GotQuery`-file
+In C# the resolver responsible for mapping siblings is placed in `CharacterType.cs` and looks like this:
 
 ```c#
-  Field<CharacterType>(
-                "character",
-                arguments: new QueryArguments(
-                    new QueryArgument<StringGraphType> { Name = "name", Description = "name of the character" }
-                ),
-                resolve: context =>
-                {
-                    var name = context.GetArgument<string>("name");
-                    return data.GetCharacter(name);
-                });
+ Field<ListGraphType<CharacterType>>(
+                "siblings",
+                resolve: context => data.GetSiblings(context.Source)
+            );
 ```
+
 
 **a) Add lovers and spouses to `Character`. Remember to also add it to your schema**
 
@@ -178,6 +173,21 @@ const Query = {
     return characters.find(char => char.name === args.name);
   }
 };
+```
+
+With C# you would have to do something like this in the `GotQuery`-file
+
+```c#
+  Field<CharacterType>(
+                "character",
+                arguments: new QueryArguments(
+                    new QueryArgument<StringGraphType> { Name = "name", Description = "name of the character" }
+                ),
+                resolve: context =>
+                {
+                    var name = context.GetArgument<string>("name");
+                    return data.GetCharacter(name);
+                });
 ```
 
 **b) Add `character(name: String): Character` to the API.**
