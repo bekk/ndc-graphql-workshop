@@ -136,7 +136,7 @@ const Character = {
 
 All resolvers receives the `root` argument, which is the parent beeing resolved. To find all the siblings, the resolver filters all characters using the `siblingIds` list.
 
-### C
+### C#
 
 In C# the resolver responsible for mapping siblings is placed in `CharacterType.cs` and looks like this:
 
