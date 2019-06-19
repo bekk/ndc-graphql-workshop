@@ -25,7 +25,7 @@ We also provide a React client that is set up to consume data exposed from our G
 
 - [Client (React.js)](/client/README.md)
 
-Your React.js app should now show some html on [http://localhost:3000](http://localhost:3000).
+Your React.js app should now show some html on [http://localhost:3000](http://localhost:3000). Inspecting network requests in your browser Developer Console is a neat trick to do debugging. GraphQL returns great error responses if something is wrong with the network request,
 
 ## Task 1 - Basic Queries
 
