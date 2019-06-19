@@ -18,15 +18,15 @@ namespace GoT
 
         public GoTData()
         {
-            var charactersPath = Path.Combine(Directory.GetCurrentDirectory() + "\\..\\GoT\\data\\characters.json");
+            var charactersPath = Path.Combine(Directory.GetCurrentDirectory(), "..", "GoT", "data", "characters.json");
             var jsonText = System.IO.File.ReadAllText(charactersPath);
             _characters = JsonConvert.DeserializeObject<CharacterWrapper>(jsonText).Characters;
 
-            var housesPath = Path.Combine(Directory.GetCurrentDirectory() + "\\..\\GoT\\data\\houses.json");
+            var housesPath = Path.Combine(Directory.GetCurrentDirectory(), "..", "GoT", "data", "houses.json");
             var jsonTextHouses = System.IO.File.ReadAllText(housesPath);
             _houses = JsonConvert.DeserializeObject<HousesWrapper>(jsonTextHouses).Houses;
 
-            var castlePath = Path.Combine(Directory.GetCurrentDirectory() + "\\..\\GoT\\data\\castles.json");
+            var castlePath = Path.Combine(Directory.GetCurrentDirectory(), "..", "GoT", "data", "castles.json");
             var jsonTextCastles = System.IO.File.ReadAllText(castlePath);
             _castles = JsonConvert.DeserializeObject<CastleWrapper>(jsonTextCastles).Castles;
         }
